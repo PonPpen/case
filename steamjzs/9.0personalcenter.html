@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>9.0 个人中心</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/jzs.css1.0.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animations.css"/>
+	
+	
+</head>
+<body class="bg-2">
+	<!--top S-->
+	<div class="header">
+		<div class="wrap">
+			<a href="1.0index.html" class="logo"><img src="images/index_logo.png"/></a>
+			<ul class="menu clearfix">
+				<li><a href="#" class="cur"><span class="k-left"></span><span class="k-right"></span>首页</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>学科练习</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>STEAM游戏</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>星球部落</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>错题本</a></li>
+			</ul>
+			<div class="user-box">
+				<a href="#" class="dropbtn" class="clearfix">
+					<div class="user-img"><img src="images/user.jpg"/></div>
+					<span class="name">昵   称</span>
+					<i class="ico"></i>
+				</a>
+				<div class="dropbox">
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">我的消息</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--top E-->
+	<!--9.0 个人中心-->
+	<div class="localtion"></div>
+	<div class="pr-vcenter clearfix">
+		<div class="pr-vcenter-left">
+			<ul>
+				<li><a href="#" class="cur">基本信息</a></li>
+				<li><a href="#">我的年级</a></li>
+				<li><a href="#">我的教材</a></li>
+				<li><a href="#">成长之路</a></li>
+				<li><a href="#">修改密码</a></li>
+				<li><a href="#">用户反馈</a></li>
+			</ul>
+		</div>
+		<div class="pr-vcenter-right">
+			<div class="u-top">
+				<div class="user-photo"><img src="images/dati/user_photo.png"/><a href="javascript:;">点击修改</a></div>
+				<div class="user-name">昵称</div>
+				<div class="user-line"></div>
+			</div>
+			<div class="u-bottom">
+				<div class="u-title"><h2>我的资料</h2></div>
+				<div class="u-ct">
+					<ul>
+						<li class="clearfix"><span>昵称：昵称</span><a href="javascript:;" class="u-prcenter-btn u-modify">修改</a></li>
+						<li class="clearfix"><span>年级：七年级</span><a href="javascript:;" class="u-prcenter-btn u-grade">修改</a></li>
+						<li class="clearfix"><span>成长之路：未开启</span><a href="javascript:;" class="u-prcenter-btn u-road">开启</a></li>
+					</ul>
+				</div>
+				<div class="u-title"><h2>帐号安全</h2></div>
+				<div class="u-ct">
+					<ul>
+						<li class="clearfix"><span>手机号：18020392938</span><a href="javascript:;" class="u-prcenter-btn u-phone">修改</a></li>
+						<li class="clearfix"><span>密码：＊＊＊＊＊＊＊</span><a href="javascript:;" class="u-prcenter-btn u-password">修改</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--弹窗-->
+	<div class="layer-bg"></div>
+	<div class="layer-box layer-box-nichen">
+		<div class="box-top">
+			<h3>修改昵称</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<form action="" method="post">
+			<ul class="modifybox">
+				<li><input type="text" class="txt" placeholder="输入昵称" /><span class="k-left"></span><span class="k-right"></span></li>
+			</ul>
+			<input type="button" value="确定" class="btn-enter"/>
+			</form>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	
+	<div class="layer-box layer-box-phone">
+		<div class="box-top">
+			<h3>修改手机号</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<form action="" method="post">
+			<ul class="modifybox phonebox">
+				<li><input type="text" class="txt" placeholder="输入昵称" /><span class="k-left"></span><span class="k-right"></span></li>
+				<li class="clearfix">
+					<div class="yzm"><input type="text" class="txt" placeholder="输入验证码" /><span class="k-left"></span><span class="k-right"></span></div>
+					<div class="huoqu"><input type="button" class="yzmbtn" value="获取验证码" /><span class="k-left"></span><span class="k-right"></span></div>
+				</li>
+				<li><input type="password" class="txt txt2" placeholder="输入您的新密码" /><span class="k-left"></span><span class="k-right"></span></li>
+				<li><input type="password" class="txt txt2" placeholder="确认您的新密码" /><span class="k-left"></span><span class="k-right"></span></li>
+			</ul>
+			<input type="button" value="确定" class="btn-enter btn-enter2"/>
+			</form>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	<!--9.0 个人中心-->
+	
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mjzs.js" type="text/javascript" charset="utf-8"></script>
+	
+</body>
+</html>

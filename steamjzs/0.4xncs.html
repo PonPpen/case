@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>0.4 学能测试</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/jzs.css1.0.css"/>
+	
+	
+</head>
+<body class="bg-1">
+	<!--Move element S-->
+	<div class="left-display bgMarquee-top">
+		<div class="triangle-left"></div>
+		<div class="biaochi-left ">
+			<ul class="bd">
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="right-display bgMarquee-top">
+		<div class="triangle-right"></div>
+		<div class="biaochi-right">
+			<ul class="bd">
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<!--Move element E-->
+	<div class="login-box xn-main">
+		<div class="xn-title">首先，来完成你的第一份学能测评吧！</div>
+		<div class="login-main">
+			<div class="wrap">
+				<div class="currentNum"><span>1/20</span></div>
+				<div class="currentQues">
+					<p>我喜欢和别人一起运动，例如踢足球、打羽毛球。还有很多其他合作类型的运动。</p>
+				</div>
+				<div class="xn-bot-r"><img src="images/logo_bottom_r.png"/></div>
+			</div>
+		</div>
+	</div>
+	<!--yes no-->
+	<div class="xn-yse-no clearfix">
+		<div class="k-yes">
+			<span class="k-left"></span><span class="k-right"></span>
+			<a href="#" class="yes"><i class="ico-ys"></i>是</a>
+		</div>
+		<div class="k-no">
+			<span class="k-left"></span><span class="k-right"></span>
+			<a href="#" class="no"><i class="ico-no"></i>否</a>
+		</div>
+	</div>
+	
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(".bgMarquee-top").slide({mainCell:".bd",autoPlay:true,effect:"topMarquee",opp:true,vis:1,interTime:50,mouseOverStop:false});
+	</script>
+</body>
+</html>

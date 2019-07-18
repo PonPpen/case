@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>报名页</title>
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/swiper.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<script type="text/javascript" src="js/materialMenu.min.js" ></script>
+	<script type="text/javascript" src="js/jQuery1.7.js" ></script>
+	<script type="text/javascript" src="js/index.js" ></script>
+	<script type="text/javascript" src="js/new_filea.js" ></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js" ></script>
+</head>
+<body>
+<!--侧边导航-->
+
+<div class="sideMenu" style="margin:0 auto">
+	<h3>群体</h3>
+	<ul>
+		<li><a href="javascript:;">高中生留学</a></li>
+		<li><a href="javascript:;">大学生留学</a></li>
+		<li><a href="javascript:;">中学生留学</a></li>
+	</ul>
+	<h3 class="on">国家</h3>
+	<ul>
+		<li><a href="javascript:;">美国留学</a></li>
+		<li><a href="javascript:;">英国留学</a></li>
+		<li><a href="javascript:;">澳洲留学</a></li>
+		<li><a href="javascript:;">加拿大留学</a></li>
+		<li><a href="javascript:;">韩国留学</a></li>
+	</ul>
+	<h3>方案</h3>
+	<ul>
+		<li><a href="javascript:;">高考留学</a></li>
+		<li><a href="javascript:;">双录取留学</a></li>
+		<li><a href="javascript:;">留学预科</a></li>
+		<li><a href="javascript:;">3+1留学</a></li>
+		<li><a href="javascript:;">2+2留学</a></li>
+		<li><a href="javascript:;">1+3留学</a></li>
+		<li><a href="javascript:;">商科留学</a></li>
+		<li><a href="javascript:;">艺术留学</a></li>
+		<li><a href="javascript:;">免学费留学</a></li>
+	</ul>
+	<h3>服务</h3>
+	<ul>
+		<li><a href="javascript:;">留学院校库</a></li>
+		<li><a href="javascript:;">优选方案</a></li>
+		<li><a href="javascript:;">留学评估</a></li>
+		<li><a href="javascript:;">入学申请</a></li>
+	</ul>
+</div>
+<div class="divBoxWrap">
+	<div class="divBox">
+		<!--top-->
+		<div class="topDiv clearfix">
+			<a href="#" class="mxwy">名校无忧</a>
+			<div class="topDiv_r">
+				<a href="#">返回首页</a>
+				<a href="#">咨询专家</a>
+				<a href="#">联系我们</a>
+			</div>
+		</div>
+		<!--header-->
+		<div class="headerWrap headerWrapA clearfix">
+			<div class="logo logob fl"><a href="index.html"><img src="img/back_icon.png"/></a></div>
+			报名
+			<div class="headerR fr">
+				<a href="javascript:;" class="topMnu topMnub"></a>
+			</div>
+		</div>
+		<!--banner-->
+		<div class="bannerWrap clearfix">
+			<div id="header3" class="bann">
+				<div class="swiper-wrapper swiper-wrapper1">
+					<div class="swiper-slide"><img src="temp/grap_banner.png"></div>
+					<div class="swiper-slide"><img src="temp/grap_banner.png"></div>
+					<div class="swiper-slide"><img src="temp/grap_banner.png"></div>
+				</div>
+				<div class="swiper-pagination swiper-pagination3"></div>
+			</div>
+		</div>
+		<div class="bannerjian"><img src="img/main_top_jt.jpg"></div>
+		<!--main-->
+		<div class="mainWrap  clearfix">
+			<div class="maintop">
+				<h2>填写录取评测 定制留学方案</h2>
+				<p><em>通知：</em>请准确填写学生的个人信息，我们将以此来确认您是否符合入学要求。</p>
+				<span>官方招生咨询电话：400-611-1978</span>
+				<ul>
+					<li>
+						<label class="icon icon1"></label>
+						<input type="text" class="anli_inp" id="testA" value="请输入考生本人中文姓名" onClick="testa()" onblur="testb()"/>
+					</li>
+					<li>
+						<label class="icon icon2"></label>
+						<input type="text" class="anli_inp" id="testB" value="请输入本人或父母联系电话" onClick="testc()" onblur="testd()"/>
+					</li>
+					<li>
+						<label class="icon icon3"></label>
+						<!--<input type="text" class="anli_inp" id="testC" value="请输入本人意向留学国家" onClick="teste()" onblur="testf()"/>-->
+						<select class="select">
+							<option>请输入本人意向留学国家</option>
+							<option>请输入本人意向留学国家1</option>
+							<option>请输入本人意向留学国家2</option>
+							<option>请输入本人意向留学国家3</option>
+							<option>请输入本人意向留学国家4</option>
+							<option>请输入本人意向留学国家5</option>
+						</select>
+					</li>
+					<li>
+						<label class="icon icon4"></label>
+						<input type="text" class="anli_inp" id="testD" value="请输入考生当前学历" onClick="testg()" onblur="testh()"/>
+					</li>
+					<li>
+						<label class="icon icon5"></label>
+						<input type="text" class="anli_inp" id="testE" value="请输入高考英语成绩/托福/雅思等" onClick="testi()" onblur="testj()"/>
+					</li>
+					<input type="submit" class="submit" value="提交评估" />
+				</ul>
+			</div>
+		</div>
+		<!--优势学员案例-->
+		<div class="abroad interlocution">
+			<div id="tabA" class="tabA">
+				<ul class="tab_menuA clearfix">
+					<li class="selectedA icona">优秀学员案例</li>
+					<li class="iconb">美国留学问答</li>
+				</ul>
+				<div class="tab_box_int">
+					<div>
+						<div class="interl_con">
+							<ul class="clearfix">
+								<li>
+									<div class="proMliL fl">
+										<a href="#">
+											<img src="temp/inter_pic1.jpg">
+										</a>
+									</div>
+									<div class="proMliR fr">
+										<div class="proMliRT proMliRB">
+											<div class="proRBL fl">
+												<img src="temp/inter_pic2.jpg">
+											</div>
+											<div class="proRBL proRBR fr">
+												<img src="temp/inter_pic3.jpg">
+											</div>
+										</div>
+										<div class="proMliRB clearfix">
+											<div class="proRBL fl">
+												<img src="temp/inter_pic4.jpg">
+											</div>
+											<div class="proRBL proRBR fr">
+												<img src="temp/inter_pic5.jpg">
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="proUl fl">
+										<img src="temp/inter_pic6.jpg">
+									</div>
+									<div class="proUl fr">
+										<img src="temp/inter_pic7.jpg">
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="hide">
+						<div class="interl_con interl_con1">
+							<div class="reason">
+								<ol>
+									<li>
+										<h2>问：孩子出国留学费用大概要多少钱？<em><img src="img/ico_btn36.png"></em></h2>
+										<p>答：发达国家英、美、澳、加的学费平均一年8万元。生活费至少也应该是8万元/年，基本...详细咨询</p>
+									</li>
+									<li>
+										<h2>问：没有托福成绩可以留学美国吗？<em><img src="img/ico_btn36.png"></em></h2>
+										<p>答：发达国家英、美、澳、加的学费平均一年8万元。生活费至少也应该是8万元/年，基本...详细咨询</p>
+									</li>
+									<li>
+										<h2>问：美国留学每年的学费是多少？<em><img src="img/ico_btn36.png"></em></h2>
+										<p>答：发达国家英、美、澳、加的学费平均一年8万元。生活费至少也应该是8万元/年，基本...详细咨询</p>
+									</li>
+									<li>
+										<h2>问：高中生留美能读医科吗？<em><img src="img/ico_btn36.png"></em></h2>
+										<p>答：发达国家英、美、澳、加的学费平均一年8万元。生活费至少也应该是8万元/年，基本...详细咨询</p>
+									</li>
+								</ol>
+							</div>
+							<div class="reasonAsk"><input type="button" value="我要提问"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--留学无忧 人人都是名校生-->
+		<div class="easy">
+			<h2>留学无忧&nbsp;人人都是名校生</h2>
+			<ul class="clearfix">
+				<li>
+					<div class="easyL fl"><img src="img/ico_btn18.png"></div>
+					<div class="easyR fr">
+						<h3>10+</h3>
+						<p>11届名校留学展</p>
+					</div>
+				</li>
+				<li>
+					<div class="easyL fl"><img src="img/ico_btn19.png"></div>
+					<div class="easyR fr">
+						<h3>158+</h3>
+						<p>国内重点大学</p>
+					</div>
+				</li>
+				<li>
+					<div class="easyL fl"><img src="img/ico_btn20.png"></div>
+					<div class="easyR fr">
+						<h3>21566+</h3>
+						<p>学员成功申请</p>
+					</div>
+				</li>
+				<li>
+					<div class="easyL fl"><img src="img/ico_btn21.png"></div>
+					<div class="easyR fr">
+						<h3>100%</h3>
+						<p>成功留学保障</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+
+	</div>
+</div>
+<!--底部菜单-->
+<div class="footerMenu">
+	<div class="footerM">
+		<ul class="clearfix">
+			<li class="cur">
+				<a href="javascript:;">
+					<i class="ico"></i>
+					<p>网站首页</p>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="ico1"></i>
+					<p>立即通话</p>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="ico2"><em>1</em></i>
+					<p>在线咨询</p>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="ico3"></i>
+					<p>录取测试</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!--动画按钮-->
+<div class="animation clearfix" id="animation" >
+	<div class="PathMain"></div>
+	<div class="PathItem Menu1">
+		<a class="link1" href="http://wpa.qq.com/msgrd?v=3&uin=6021551&site=qq&menu=yes"></a>
+	</div>
+	<div class="PathItem Menu2">
+		<a class="link2" href="javascript:;"></a>
+	</div>
+	<div class="PathItem Menu3">
+		<a class="link3" href="javascript:;"></a>
+	</div>
+	<div class="PathItem Menu4">
+		<a class="link4" href="javascript:;"></a>
+	</div>
+	<div class="PathItem Menu5">
+		<a class="link5" id="gotop" href="javascript:;"></a>
+	</div>
+</div>
+
+<!--弹出层-->
+<div class="Pop_up"><img src="img/ico_btn24.png"></div>
+<div id="TB_overlayBG"></div>
+<div class="PopLayer">
+	<a href="javascript:;">马上咨询名校专家<em>1</em></a>
+	<div class="popM clearfix"><input onClick="test1()"  onblur="test2()" id="test" type="text" value="请输入您的电话号码"><input class="popBut" type="button" value="免费回电"></div>
+	<div class="popclose"></div>
+</div>
+<!--微信弹出-->
+<div class="webchat"><div class="popclose"></div><img src="temp/webchat.jpg"></div>
+</body>
+</html>

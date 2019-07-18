@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>3.1 学能报告</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/jzs.css1.0.css"/>
+	
+	
+</head>
+<body class="bg-2">
+	<!--top S-->
+	<div class="header">
+		<div class="wrap">
+			<a href="1.0index.html" class="logo"><img src="images/index_logo.png"/></a>
+			<ul class="menu clearfix">
+				<li><a href="#" class="cur"><span class="k-left"></span><span class="k-right"></span>首页</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>学科练习</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>STEAM游戏</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>星球部落</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>错题本</a></li>
+			</ul>
+			<div class="user-box">
+				<a href="#" class="dropbtn" class="clearfix">
+					<div class="user-img"><img src="images/user.jpg"/></div>
+					<span class="name">昵   称</span>
+					<i class="ico"></i>
+				</a>
+				<div class="dropbox">
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">我的消息</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--top E-->
+	<!--STEAM游戏报告-->
+	<div class="xq-local">
+		<div class="jzs-localtion"><a href="#">STEAM课程</a>  >  报告</div>
+	</div>
+	
+	<div class="baob-box">
+		<div class="title">报告</div>
+		<div class="baob-box-wrap clearfix">
+			<div class="baob-side">
+				<div class="top-info"><span class="zongfen">总得分：3044</span><span class="defen">今日得分：19</span></div>
+				<ul>
+					<li class="cur"><a href="3.1baogao_xueneng.html">学能</a></li>
+					<li><a href="3.1baogao_steam.html">STEAM</a></li>
+				</ul>
+			</div>
+			<div class="baob-content">
+				<h2>学能报告</h2>
+				<div class="xnsort">
+					<h3>记忆力</h3>
+					<div class="progressbar" data-perc="65">
+						<div class="bar color1"><span></span></div>
+						<div class="label"><span></span></div>
+					</div>
+				</div>
+				<div class="xnsort">
+					<h3>专注力</h3>
+					<div class="progressbar" data-perc="41">
+						<div class="bar color2"><span></span></div>
+						<div class="label"><span></span></div>
+					</div>
+				</div>
+				<div class="xnsort">
+					<h3>反应力</h3>
+					<div class="progressbar" data-perc="21">
+						<div class="bar color3"><span></span></div>
+						<div class="label"><span></span></div>
+					</div>
+				</div>
+				<div class="xnsort">
+					<h3>空间想象能力</h3>
+					<div class="progressbar" data-perc="31">
+						<div class="bar color4"><span></span></div>
+						<div class="label"><span></span></div>
+					</div>
+				</div>
+				<div class="xnsort">
+					<h3>问题解决能力</h3>
+					<div class="progressbar" data-perc="27">
+						<div class="bar color5"><span></span></div>
+						<div class="label"><span></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--STEAM游戏报告-->
+	
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mjzs.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(function(){
+		 //进度条
+	   	$('.progressbar').each(function(){
+			var t = $(this),
+			dataperc = t.attr('data-perc'),
+			barperc = Math.round(dataperc*5.5);
+			t.find('.bar').animate({width:barperc}, dataperc*25);
+			t.find('.label').append('<div class="perc"></div>');
+			
+			function perc(){
+				var length = t.find('.bar').css('width'),
+				perc = Math.round(parseInt(length)/5.5),
+				labelpos = (parseInt(length)-2);
+				t.find('.perc').text(perc+'%');
+			}
+			perc();
+			setInterval(perc, 0); 
+		});
+	})
+	</script>
+</body>
+</html>

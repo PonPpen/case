@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>steam个人中心</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/steam.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animations.css"/>
+	
+</head>
+<body class="st-bg">
+	<div class="pt-perspective">
+		<!--nav-->
+		<div class="steam-nav clearfix">
+			<div class="logo"><a href="#"><img src="images/steam/steam_logo.png"/></a></div>
+			<div class="menu">
+				<ul class="clearfix">
+					<li class="cur"><a href="index.html">首页</a></li>
+					<li><a href="steam-game.html">steam游戏</a></li>
+					<li><a href="steam-paihangb.html">排行榜</a></li>
+				</ul>
+			</div>
+			<div class="userinfo clearfix">
+				<span class="name"><a href="#">尼古拉斯..Zhao4</a></span>
+				<span class="uerung"><a href="steam-personal.html"><img src="images/steam/steam_nav_user.png"/></a></span>
+			</div>
+		</div>
+		<!--个人中心-->
+		<div class="per-center">
+			<div class="per-center-main">
+				<div class="title">个人中心</div>
+				<div class="line"></div>
+				<div class="shengyu">会员剩余：23天</div>
+				<div class="duihuanma"><a href="javascript:;" class="duihuanmabtn">输入兑换码</a></div>
+				<div class="item clearfix">
+					<span class="t">姓名</span>
+					<span class="ct">茶香四溢</span>
+					<a href="javascript:;" class="Bn-revise Bn-name">修改</a>
+				</div>
+				<div class="item clearfix">
+					<span class="t">密码</span>
+					<span class="ct">**********</span>
+					<a href="javascript:;" class="Bn-revise Bn-psw">修改</a>
+				</div>
+				<div class="item clearfix">
+					<span class="t">学段</span>
+					<span class="ct">小学</span>
+					<a href="javascript:;" class="Bn-revise Bn-section">修改</a>
+				</div>
+				<div class="item clearfix">
+					<span class="t">手机</span>
+					<span class="ct">120383839456</span>
+					<a href="javascript:;" class="Bn-revise Bn-phone">修改</a>
+				</div>
+				<input type="button" class="quitBtn" value="退出"/>
+			</div>
+		
+			<!--////////////弹窗////////////-->
+			<!--修改昵称-->
+			<div class="layer-ui layer-username">
+				<div class="title">修改</div>
+				<div class="line"></div>
+				<span class="close layerClose"></span>
+				<div class="layer-main reviseMain">
+				<form action="" method="post">
+					<ul class="formul">
+						<li class="clearfix">
+							<span class="label">姓名</span>
+							<input type="text" class="txt" placeholder="输入新昵称" />
+						</li>
+					</ul>
+					<div class="line-reserve"></div>
+					<input type="button" class="reserveBtn" value="保存"/>
+				</form>
+				</div>
+			</div>
+			<!--修改密码-->
+			<div class="layer-ui layer-password">
+				<div class="title">修改密码</div>
+				<div class="line"></div>
+				<span class="close layerClose"></span>
+				<div class="layer-main reviseMain">
+				<form action="" method="post">
+					<ul class="formul">
+						<li class="clearfix">
+							<span class="label">手机</span>
+							<input type="text" class="txt" placeholder="输入手机" />
+						</li>
+						<li class="clearfix">
+							<span class="label">验证码</span>
+							<input type="text" class="txt yz-txt" placeholder="输入验证码" />
+							<span class="vertifblock">获取验证码</span>
+						</li>
+						<li class="clearfix">
+							<span class="label">新密码</span>
+							<input type="password" class="txt" placeholder="输入新密码" />
+							<a href="javascript:;" class="seeyesno"></a>
+						</li>
+						<li class="clearfix">
+							<span class="label">确认密码</span>
+							<input type="password" class="txt" placeholder="再次输入新密码" />
+						</li>
+					</ul>
+					<div class="line-reserve"></div>
+					<input type="button" class="reserveBtn" value="保存"/>
+				</form>
+				</div>
+			</div>
+			<!--修改学段-->
+			<div class="layer-ui layer-xueduan">
+				<div class="title">修改</div>
+				<div class="line"></div>
+				<span class="close layerClose"></span>
+				<div class="layer-main reviseMain">
+				<form action="" method="post">
+					<ul class="formul">
+						<li class="clearfix">
+							<span class="label">学段：</span>
+							<div class="sectionbox clearfix">
+								<span class="on">小学</span><span>初中</span><span>高中</span>
+							</div>
+						</li>
+					</ul>
+					<div class="line-reserve"></div>
+					<input type="button" class="reserveBtn" value="保存"/>
+				</form>
+				</div>
+			</div>
+			<!--绑定手机-->
+			<div class="layer-ui layer-bangding">
+				<div class="title">绑定</div>
+				<div class="line"></div>
+				<span class="close layerClose"></span>
+				<div class="layer-main reviseMain">
+				<form action="" method="post">
+					<ul class="formul">
+						<li class="clearfix">
+							<span class="label">手机</span>
+							<input type="text" class="txt" placeholder="输入手机号" />
+						</li>
+						<li class="clearfix">
+							<span class="label">验证码</span>
+							<input type="text" class="txt yz-txt" placeholder="输入验证码" />
+							<span class="vertifblock">获取验证码</span>
+						</li>
+						<li class="clearfix">
+							<span class="label">新手机</span>
+							<input type="text" class="txt" placeholder="输入新手机号" />
+						</li>
+					</ul>
+					<div class="line-reserve"></div>
+					<input type="button" class="reserveBtn" value="保存"/>
+				</form>
+				</div>
+			</div>
+			
+			<!--兑换码-->
+			<div class="layer-ui layer-duihuan">
+				<div class="title">兑换</div>
+				<div class="line"></div>
+				<span class="close layerClose"></span>
+				<div class="layer-main reviseMain">
+				<form action="" method="post">
+					<ul class="formul">
+						<li class="clearfix">
+							<span class="label">兑换码</span>
+							<input type="text" class="txt" placeholder="点击输入兑换码" />
+							<span class="tips error">兑换码错误，请重新输入！</span>
+						</li>
+					</ul>
+					<div class="line-reserve"></div>
+					<input type="button" class="reserveBtn" value="立即兑换"/>
+				</form>
+				</div>
+			</div>
+			
+			<!--////////////弹窗////////////-->
+			
+		</div>
+		
+		<!--底部-->
+		<div class="footer"></div>
+		<div class="duoyu" style="height: 88px;"></div>
+	</div>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('.per-center-main .item').hover(function(){
+			$(this).addClass('active');
+		},function(){
+			$(this).removeClass('active');
+		});
+		//翻转
+		var $elmain=$('.per-center-main'),$ele1=$('.layer-username'),$ele2=$('.layer-password'),$ele3=$('.layer-xueduan'),$ele4=$('.layer-bangding'),$ele5=$('.layer-duihuan');
+		//修改昵称
+		$('.Bn-name').on("click",function(){
+			$elmain.hide().removeClass('pt-page-flipInLeft');
+			$ele1.show().addClass('pt-page-flipInLeft');
+		});
+		//修改密码
+		$('.Bn-psw').on("click",function(){
+			$elmain.hide().removeClass('pt-page-flipInLeft');
+			$ele2.show().addClass('pt-page-flipInLeft');
+		});
+		//修改学段
+		$('.Bn-section').on("click",function(){
+			$elmain.hide().removeClass('pt-page-flipInLeft');
+			$ele3.show().addClass('pt-page-flipInLeft');
+		});
+		$('.sectionbox span').on("click",function(){
+			$(this).addClass('on').siblings().removeClass('on');
+		});
+		//绑定手机
+		$('.Bn-phone').on("click",function(){
+			$elmain.hide().removeClass('pt-page-flipInLeft');
+			$ele4.show().addClass('pt-page-flipInLeft');
+		});
+		//兑换码
+		$('.duihuanmabtn').on("click",function(){
+			$elmain.hide().removeClass('pt-page-flipInLeft');
+			$ele5.show().addClass('pt-page-flipInLeft');
+		});
+		
+		$('.layerClose ,.reserveBtn').on("click",function(){
+			$elmain.show().addClass('pt-page-flipInRight');
+			$ele1.hide().removeClass('pt-page-flipInLeft');
+			$ele2.hide().removeClass('pt-page-flipInLeft');
+			$ele3.hide().removeClass('pt-page-flipInLeft');
+			$ele4.hide().removeClass('pt-page-flipInLeft');
+			$ele5.hide().removeClass('pt-page-flipInLeft');
+		});
+		//可见不可见
+		$('.seeyesno').on("click",function(){
+			$(this).toggleClass('off');
+		})
+	
+	})
+	</script>
+</body>
+</html>

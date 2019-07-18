@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style/cmstyle.css" rel="stylesheet" type="text/css" />
+<title>成美慈善基金会</title>
+<script type='text/javascript' src='js/jquery.min.js'></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript" src="js/tm.js" ></script>
+<![endif]-->
+<script type="text/javascript" src="js/addfavorite_home.js"></script><!--设为首页and加入收藏--> 
+<!--导航栏-->  
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/lrtk.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){   //等待dom加载完毕
+var $div_li =$("#nav ul li");    //定义div_li元素
+$div_li.hover(function(){     //定义hover
+		$(this).addId("current")   //给当前元素添加current类
+			.siblings().removeId(this);    //移除同级别兄弟元素的类
+});
+});
+</script>
+<script language="javascript" type="text/javascript">
+//搜索栏
+function glb_searchTextOnfocus(obj) {
+	if (obj.value == '请输入关键词...')
+		obj.value = '';
+	obj.style.color = '#3e3a39';
+}
+function glb_searchTextOnBlur(obj) {
+	if (obj.value == '') {
+		obj.value = '请输入关键词...';
+		obj.style.color = '#c2c2c2';
+	} else {
+		obj.style.color = '#3e3a39';
+	}
+}
+</script>
+
+</head>
+
+<body>
+<div class="main">
+<div class="head">
+ <div class="logo"><img src="images/logo.png" /></div>
+ <div class="search">
+    <ul class="collect">
+      <li><a href="#">English</a></li>
+      <li><a href="#">联系我们</a><span>></span></li>
+      <li><a href="#" onclick="AddFavorite(window.location,document.title)" >加入收藏</a><span>></span></li>
+      <li><a href="#" onclick="SetHome(this,window.location)" >设为首页</a><span>></span></li>
+    </ul>
+   <i><p>分享至:</p><!-- Baidu Button BEGIN -->
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<a class="bds_douban">豆瓣网</a>
+<a class="bds_tsina">新浪微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_renren">人人网</a>
+<a class="bds_tqq">腾讯微博</a>
+<span class="bds_more"></span>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6783158" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END --></i>
+   <em><span class="zx"><p>了解成美最新资讯</p><a href="#"><img src="images/zxbutton.png"/></a></span>
+   <span class="s">
+   <form name="cscsearch" action="#" method="get" id="cscsearch" target="_blank">
+   <input name="" type="text" class="intext" maxlength="14" value="请输入关键词..." onfocus="glb_searchTextOnfocus(this);"  onblur="glb_searchTextOnBlur(this);"/>
+   </form>
+   <a href="#" target="_blank"><img src="images/sbutton.png"/></a></span></em>
+ </div> 
+</div>
+<!--end head-->
+
+<div class="box" id="nav">
+	<div class="menu" id="current"><p><a href="index.html">首页</a></p></div>
+	<div class="menu">
+		<p><a href="about.html">关于我们</a></p>
+		<ul>
+			<li class="c1"><a href="#">基金会简介</a></li>
+			<li class="c2"><a href="#">理事会介绍</a></li>
+			<li class="c3"><a href="#">秘书处介绍</a></li>
+			<li class="c4"><a href="#">成美大事记</a></li>
+            <li class="c10"></li>
+		</ul>
+	</div>
+	<div class="menu">
+		<p><a href="item.html">项目展示</a></p>
+		<ul>
+			<li class="c1"><a href="#">慈善救助</a></li>
+            <li class="c2"><a href="#">可持续发展</a></li>
+            <li class="c3"><a href="#">社会创新</a></li>
+            <li class="c4"><a href="#">研究与倡导</a></li>
+			<li class="c10"></li>
+		</ul>
+	</div>
+	<div class="menu">
+        <p><a href="item_apply.html">项目申请</a></p>
+        <ul>
+			<li class="c1"><a href="#">申请指南</a></li>
+			<li class="c2"><a href="#">在线申请</a></li>
+            <li class="c2"><a href="#">申请通报</a></li>
+			<li class="c10"></li>
+		</ul>
+    </div>
+	<div class="menu">
+		<p><a href="message.html">信息公开</a></p>
+		<ul>
+			<li class="c1"><a href="#">机构动态</a></li>
+			<li class="c2"><a href="#">活动公告</a></li>
+            <li class="c3"><a href="#">行业资讯</a></li>
+            <li class="c4"><a href="#">工作报告</a></li>
+            <li class="c5"><a href="#">审计报告</a></li>
+            <li class="c6"><a href="#">管理文件</a></li>
+            <li class="c7"><a href="#">宣传刊物</a></li>
+            <li class="c8"><a href="message(信息公开-视频影像).html">影像视频</a></li>
+			<li class="c10"></li>
+		</ul>
+	</div>
+    <div class="menu">
+		<p><a href="sustain(支持我们-在线捐款).html">支持我们</a></p>
+		<ul>
+			<li class="c1"><a href="sustain(支持我们-在线捐款).html">捐款指南</a></li>
+            <li class="c1"><a href="sustain(支持我们-在线捐款人信息页).html">在线捐款</a></li>
+            <li class="c1"><a href="sustain(支持我们-爱心名录).html">爱心名录</a></li>
+            <li class="c1"><a href="sustain(支持我们-爱心留言).html">爱心留言</a></li>
+			<li class="c10"></li>
+		</ul>
+	</div>
+    <div class="menu">
+		<p><a href="cooperation.html">合作伙伴</a></p>
+		<ul>
+			<li class="c1"><a href="#">爱心企业</a></li>
+            <li class="c1"><a href="#">爱心人士</a></li>
+            <li class="c1"><a href="#">公益伙伴</a></li>
+            <li class="c1"><a href="#">品牌伙伴</a></li>
+			<li class="c10"></li>
+		</ul>
+	</div>
+    <div class="menu">
+		<p><a href="job.html">招贤纳士</a></p>
+		<ul>
+			<li class="c1"><a href="#">人才招聘</a></li>
+            <li class="c1"><a href="#">志愿者申请</a></li>
+            <li class="c1"><a href="#">实习生申请</a></li>
+			<li class="c10"></li>
+		</ul>
+	</div>
+    <div class="menu">
+		<p>联系我们</p>
+		<ul>
+			<li class="c1"><a href="lxwm.html">联系方式</a></li>
+			<li class="c10"></li>
+		</ul>
+	</div>
+</div>
+<!--end nav-->
+<div class="focus">
+<img src="images/inpicture7.jpg" width="1000" height="210" /></div>
+<!--end focus-->
+<div class="in_content">
+ <div class="left_box">
+      <div class="left_topic">
+        <div class="lix_title"><i><img src="images/logo_icon1.png" /></i><h3>信息公开</h3></div>
+          <ul class="bl">
+            <li><a href="#"> <span>>></span>机构动态</a></li>
+            <li><a href="#"> <span>>></span>活动公告</a></li>
+            <li><a href="#"> <span>>></span>行业资讯</a></li>
+            <li><a href="#"> <span>>></span>工作报告</a></li>
+            <li><a href="#"> <span>>></span>审计报告</a></li>
+            <li><a href="#"> <span>>></span>管理文件</a></li>
+            <li><a href="#"> <span>>></span>宣传刊物</a></li>
+            <li><a href="#"> <span>>></span>影像视频</a></li>
+          </ul>                                                                                                  
+      </div>
+    <img src="images/ad3.jpg" width="208" height="285" />
+    </div>
+<!--//left_box-->  
+ <div class="right_box">
+   <div class="right_topic"><h3><span class="icon2"></span>机构动态</h3><p>您当前位置：网站首页 > 信息公开 ><strong>机构动态 </strong></p></div>
+   <div class="in_message">
+      <!-- 文本信息 -->
+       <div class="listbox">
+       <div class="headline">
+        <h4>美丽鸟社区发展中心项目在银谷苑启动</h4>
+       </div>
+       <!-- /title -->
+       <div class="info"><small>时间:</small>2013-05-23 23:29<small>阅读:</small> 1206次</div>
+       <div class="article">
+       <img src="images/imgs1.jpg"/>
+       <p>    2013年5月24日上午，海南成美慈善基金会在海口市海甸岛银谷苑小区发布“做一只美丽鸟-银谷苑社区发展中心”项目。出席启动仪式的嘉宾有海南省民政厅组织人事处陈寅女士、成美慈善基金会理事及海南第一物业管理有限公司田勤总经理、海南成美慈善基金会任君恒副秘书长、海口市龙华区乐助社会服务社李洛�c社长、上海青翼社工中心李兆伟主任、以及第一物业银谷苑管理处朱向东主任。
+</p><p>     美丽鸟社区发展中心项目是由海南成美慈善基金会发起，由海口市龙华区乐助社会服务社承办，上海青翼社工服务中心提供技术支持的城市社区发展项目。项目旨在为银谷苑小区居民引入专业社工服务并搭建社区服务平台，让“候鸟”老人尽快融入这个新城市，改善人际交往关系，适应这个城市，发挥“候鸟”老人的优势和特长，重新担任社会角色，提高生活质量，让他们做一只美丽的“候鸟”，促进邻里的互助支持以不断充实和壮大社区支持网络，更好服务于社区居民，实现“个人成长、和谐家庭、友好睦邻、幸福社区”的总体目标，最后达到共建“幸福家园”的愿景。    美丽鸟社区发展中心作为海口第一家社区发展中心，希望通过多方合作，探索一条推动本地社工人才发展，提高社区居民服务品质，促进社会和谐进步的模式，进而在更多的社区推广，让更多的居民享受专业的社工服务。
+</p>
+</div>  
+    </div>
+     <!--//listbox-->
+   </div>
+ </div> 
+ <!--//right_box-->  
+ </div> 
+<!--end in_content-->
+ <div class="imglist">
+     <div id="demo">
+      <div id="indemo">
+       <div id="demo1">
+        <a href="#"><img src="images/img1.jpg" border="0" /></a><a href="#"><img src="images/img2.jpg" border="0" /></a>
+        <a href="#"><img src="images/img3.jpg" border="0" /></a><a href="#"><img src="images/img1.jpg" border="0" /></a>
+        <a href="#"><img src="images/img2.jpg" border="0" /></a><a href="#"><img src="images/img3.jpg" border="0" /></a>
+       </div>
+        <div id="demo2"></div></div></div></div>
+        <script>
+(function($){
+var speed=18;
+var tab=document.getElementById("demo");
+var tab1=document.getElementById("demo1");
+var tab2=document.getElementById("demo2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+})(jQuery)
+</script> 
+<div class="foot"><p><span style="font-family:Arial;">&copy;</span> 2013 Copyright 成美慈善基金会 琼ICP备11001299号-1</p></div>      
+</div>
+<!--end main-->
+</body>
+</html>

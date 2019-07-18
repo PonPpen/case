@@ -1,0 +1,350 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<title>家装商城_红三维</title>
+	<meta name="keywords" content="网站关键词网站关键词网站关键词网站关键词网站关键词1"/>
+	<meta name="description" content="网站描述网站描述网站描述网站描述1"/>
+	<link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+	<script src="./Public/js/jquery-1.8.3.min.js"></script>
+	<script src="./Public/js/TouchSlide.1.1.js"></script>
+</head>
+
+<body  class="bg_gray">
+<header>
+	<dl class="header dis-box">
+		<dt class="flex_box_1" data-href="/pro/cate"><i class="iconfont icon-liebiao" style="margin-top: 10px;"></i></dt>
+		<dd class="search-top flex_box_4">
+			<input type="text" value="" id="myq1" placeholder="搜索商品">
+		</dd>
+		<!--<dd class="flex_box_1 text" id="sreachbtn">搜索</dd>-->
+		<dd class="flex_box_1" data-href="/cart"><i class="iconfont icon-gouwuche"></i></dd>
+	</dl>
+</header>
+<section  id="pop_search" class="pop_search transformLeftMoved">
+	<dl class="header dis-box">
+		<dt class="flex_box_1" id="pop_close"><i class="iconfont icon-llmainpageback"></i></dt>
+		<dd class="search-top flex_box_4">
+			<input type="text" value="" id="myq" placeholder="搜索商品">
+		</dd>
+		<dd class="flex_box_1 text pr10" id="gotop">搜索</dd>
+	</dl>
+	<div class="shop_search">
+		<ul class="shop_search_box" id="shop_search_box"></ul>
+		<ul class="shop_search_box" id="myhistory"></ul>
+	</div>
+</section>
+<span id="ismobile"></span>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#myq1').click(function(){
+			$('#myq').focus();
+			$('#pop_search').addClass("moved");
+		});
+		$('#pop_close').click(function(){
+			$('#pop_search').removeClass("moved");
+		});
+		$('#gotop').click(function(){
+			mysearch();
+
+		});
+
+	});
+</script>
+<section>
+	<div id="focus" class="focus">
+		<div class="hd"><ul></ul></div>
+		<div class="bd">
+			<ul>
+				<li><a href="#"><img _src="./Public/temp/595f3a9465f2e.jpg" src="./Public/temp/595f3a9465f2e.jpg" /></a></li>
+				<li><a href="#"><img _src="./Public/temp/595f3b2222a99.jpg" src="./Public/temp/595f3b2222a99.jpg" /></a></li>
+				<li><a href="#"><img _src="./Public/temp/595f3b25a3f5c.jpg" src="./Public/temp/595f3b25a3f5c.jpg" /></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="shop_nav">
+		<ul>
+			<li class="shop_nav01" data-href=""><i class="s_icon"></i><h5>建材</h5></a></li>
+			<li class="shop_nav02" data-href=""><i class="s_icon"></i><h5>家电</h5></li>
+			<li class="shop_nav03" data-href=""><i class="s_icon"></i><h5>家具</h5></li>
+			<li class="shop_nav04" data-href=""><i class="s_icon"></i><h5>全屋定制</h5></li>
+			<li class="shop_nav06" data-href="favorites"><i class="s_icon"></i><h5>收藏</h5></li>
+			<li class="shop_nav10" data-href="order"><i class="s_icon"></i><h5>订单</h5></li>
+			<li class="shop_nav07" data-href="cart"><i class="s_icon"></i><h5>购物车</h5></li>
+			<li class="shop_nav11" data-href="address"><i class="s_icon"></i><h5>收货地址</h5></li>
+			<li class="shop_nav08" data-href="zb"><i class="s_icon"></i><h5>装币</h5></li>
+			<li class="shop_nav09" data-href="cate"><i class="s_icon"></i><h5>分类</h5></li>
+		</ul>
+	</div>
+	<div class="av_notice none">
+		<ul>
+			<li><a href="javascript:void(0);">家电低至1折 送亿元红包</a></li>
+			<li><a href="javascript:void(0);">红三维2016年春节大促正式启动</a></li>
+			<li><a href="javascript:void(0);">南方黑芝麻赢大奖低至9.9</a></li>
+			<li><a href="javascript:void(0);">联想电脑1999秒杀 速来！</a></li>
+		</ul>
+	</div>
+	<div class="hd5"></div>
+	<div class="buytime">
+		<div class="buytime_tit">
+			<div class="name">每日特惠</div>
+			<!--<div class="clock"><span>12</span><em>：</em><span>40</span><em>：</em><span>33</span></div>-->
+			<!-- <a href="#">更多特惠 ></a>-->
+		</div>
+		<div class="channel">
+			<div class="channel-inner">
+				<ul class="channel-list">
+					<li>
+						<a href="#"><img src="./Public/temp/59438016b67ba.png" width="100%"  alt=""/><p>
+							<span class="price">特惠</span>
+							<span>￥559</span></p>
+						</a>
+					</li><li>
+					<a href="#"><img src="./Public/temp/59438016b67ba.png" width="100%"  alt=""/><p>
+						<span class="price">特惠</span>
+						<span>￥31</span></p>
+					</a>
+				</li><li>
+					<a href="#"><img src="./Public/temp/59438016b67ba.png" width="100%"  alt=""/><p>
+						<span class="price">特惠</span>
+						<span>￥11.7</span></p>
+					</a>
+				</li><li>
+					<a href="#"><img src="./Public/temp/59438016b67ba.png" width="100%"  alt=""/><p>
+						<span class="price">特惠</span>
+						<span>￥50</span></p>
+					</a>
+				</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="hd5"></div>
+	<div class="products">
+		<div class="title zxzc">— 装修主材 —</div>
+		<div class="products_ad dis-box">
+			<div class="flex_box_1 adbg_a">
+				<a href="#">
+					<h3>尚高浴室柜</h3>
+					<h4>连体盆3件套</h4>
+					<img src="./Public/temp/594224dcbc4b1.png"  alt="尚高浴室柜"/>
+					<span><em>优惠价</em>￥<b>1245</b></span>
+				</a>
+			</div><div class="flex_box_1 adbg_a">
+			<a href="#">
+				<h3>雷士照明灯</h3>
+				<h4>智能无极 双色调光</h4>
+				<img src="./Public/temp/59474b4483e83.png"  alt="雷士照明灯"/>
+				<span><em>优惠价</em>￥<b>1428</b></span>
+			</a>
+		</div>
+		</div>
+		<div class="products_box">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="./Public/temp/59422509219a2.jpg" alt=""/>
+						<div class="text"><p>大唐合盛吉祥玉大理石瓷砖 </p><p class="tex c_red">￥45</p></div>
+					</a>
+				</li><li>
+				<a href="#">
+					<img src="./Public/temp/59422509219a2.jpg" alt=""/>
+					<div class="text"><p>科勒梅玛8寸全铜水龙头</p><p class="tex c_red">￥1860</p></div>
+				</a>
+			</li><li>
+				<a href="#">
+					<img src="./Public/temp/59422509219a2.jpg" alt=""/>
+					<div class="text"><p>西蒙电气二位单极开关</p><p class="tex c_red">￥33</p></div>
+				</a>
+			</li><li>
+				<a href="#">
+					<img src="./Public/temp/59422509219a2.jpg" alt=""/>
+					<div class="text"><p>东鹏洁具惠普洗衣机水龙头</p><p class="tex c_red">￥42</p></div>
+				</a>
+			</li>            </ul>
+		</div>
+	</div>
+	<div class="hd5"></div>
+	<div class="products">
+		<div class="title jydq">— 家用电器 —</div>
+		<div class="products_ad dis-box">
+
+			<div class="flex_box_1 adbg_b">
+				<a href="#">
+					<h3>尚高浴室柜</h3>
+					<h4>连体盆3件套</h4>
+					<img src="./Public/temp/594224dcbc4b1.png"  alt="尚高浴室柜"/>
+					<span><em>优惠价</em>￥<b>1245</b></span>
+				</a>
+			</div><div class="flex_box_1 adbg_b">
+			<a href="#">
+				<h3>雷士照明灯</h3>
+				<h4>智能无极 双色调光</h4>
+				<img src="./Public/temp/59474b4483e83.png"  alt="雷士照明灯"/>
+				<span><em>优惠价</em>￥<b>1428</b></span>
+			</a>
+		</div>
+		</div>
+		<div class="products_box">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="./Public/temp/59422509219a2.jpg" alt=""/>
+						<div class="text"><p>大唐合盛吉祥玉大理石瓷砖 </p><p class="tex c_red">￥45</p></div>
+					</a>
+				</li><li>
+				<a href="#">
+					<img src="./Public/temp/59422509219a2.jpg" alt=""/>
+					<div class="text"><p>科勒梅玛8寸全铜水龙头</p><p class="tex c_red">￥1860</p></div>
+				</a>
+			</li><li>
+				<a href="#">
+					<img src="./Public/temp/59422509219a2.jpg" alt=""/>
+					<div class="text"><p>西蒙电气二位单极开关</p><p class="tex c_red">￥33</p></div>
+				</a>
+			</li><li>
+				<a href="#">
+					<img src="./Public/temp/59422509219a2.jpg" alt=""/>
+					<div class="text"><p>东鹏洁具惠普洗衣机水龙头</p><p class="tex c_red">￥42</p></div>
+				</a>
+			</li>            </ul>
+		</div>
+	</div>
+	<div class="hd5"></div>
+	<div class="products">
+		<div class="title zzjj">— 家具软装 —</div>
+		<div class="products_ad dis-box">
+
+			<div class="flex_box_1 adbg_c">
+				<a href="#">
+					<h3>尚高浴室柜</h3>
+					<h4>连体盆3件套</h4>
+					<img src="./Public/temp/594224dcbc4b1.png"  alt="尚高浴室柜"/>
+					<span><em>优惠价</em>￥<b>1245</b></span>
+				</a>
+			</div><div class="flex_box_1 adbg_c">
+			<a href="#">
+				<h3>雷士照明灯</h3>
+				<h4>智能无极 双色调光</h4>
+				<img src="./Public/temp/59474b4483e83.png"  alt="雷士照明灯"/>
+				<span><em>优惠价</em>￥<b>1428</b></span>
+			</a>
+		</div>
+		</div>
+		<div class="products_box">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="./Public/temp/59422509219a2.jpg" alt=""/>
+						<div class="text"><p>大唐合盛吉祥玉大理石瓷砖 </p><p class="tex c_red">￥45</p></div>
+					</a>
+				</li><li>
+				<a href="#">
+					<img src="./Public/temp/59422509219a2.jpg" alt=""/>
+					<div class="text"><p>科勒梅玛8寸全铜水龙头</p><p class="tex c_red">￥1860</p></div>
+				</a>
+			</li><li>
+				<a href="#">
+					<img src="./Public/temp/59422509219a2.jpg" alt=""/>
+					<div class="text"><p>西蒙电气二位单极开关</p><p class="tex c_red">￥33</p></div>
+				</a>
+			</li><li>
+				<a href="#">
+					<img src="./Public/temp/59422509219a2.jpg" alt=""/>
+					<div class="text"><p>东鹏洁具惠普洗衣机水龙头</p><p class="tex c_red">￥42</p></div>
+				</a>
+			</li>            </ul>
+		</div>
+	</div>
+	<div class="hd5"></div>
+	<div class="shop_sales">
+		<a href="#"><img src="./Public/temp/595f093ba1b7e.jpg" width="100%" alt=""/></a>
+	</div>
+	<div class="hd5"></div>
+	<div class="alike oh">
+		<div class="alike_tit"><div class="tc"><i class="icon icon_collect"></i>猜你喜欢</div></div>
+		<ul class="alike_pro">
+			<li>
+				<a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%"  alt=""/></a>
+				<p class="tit">尚高 地排去水管 洗手盆下水管排水管伸缩软管配件 SF5020X</p>
+				<p class="zzjj">&yen;<span>36.00</span></p>
+			</li><li>
+			<a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%"  alt=""/></a>
+			<p class="tit">尚高 地排去水管 洗手盆下水管排水管伸缩软管配件 SF5020X</p>
+			<p class="zzjj">&yen;<span>36.00</span></p>
+		</li>
+			<li>
+				<a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%"  alt=""/></a>
+				<p class="tit">尚高 地排去水管 洗手盆下水管排水管伸缩软管配件 SF5020X</p>
+				<p class="zzjj">&yen;<span>36.00</span></p>
+			</li>
+			<li>
+				<a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%"  alt=""/></a>
+				<p class="tit">尚高 地排去水管 洗手盆下水管排水管伸缩软管配件 SF5020X</p>
+				<p class="zzjj">&yen;<span>36.00</span></p>
+			</li>
+			<li>
+				<a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%"  alt=""/></a>
+				<p class="tit">尚高 地排去水管 洗手盆下水管排水管伸缩软管配件 SF5020X</p>
+				<p class="zzjj">&yen;<span>36.00</span></p>
+			</li>
+			<li>
+				<a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%"  alt=""/></a>
+				<p class="tit">尚高 地排去水管 洗手盆下水管排水管伸缩软管配件 SF5020X</p>
+				<p class="zzjj">&yen;<span>36.00</span></p>
+			</li>
+			<li>
+				<a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%"  alt=""/></a>
+				<p class="tit">尚高 地排去水管 洗手盆下水管排水管伸缩软管配件 SF5020X</p>
+				<p class="zzjj">&yen;<span>36.00</span></p>
+			</li>
+			<li>
+				<a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%"  alt=""/></a>
+				<p class="tit">尚高 地排去水管 洗手盆下水管排水管伸缩软管配件 SF5020X</p>
+				<p class="zzjj">&yen;<span>36.00</span></p>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<nav>
+	<div class="mb80"></div>
+	<ul class="footer pf_bottom">
+		<li data-href="index" class=""><i class="iconfont icon-shouye"></i><span>首页</span></li>
+		<li data-href="bespeak" class=""><i class="iconfont icon-sheji"></i><span>免费设计</span></li>
+		<li data-href="mallindex" class="center-icon cur"><i class="iconfont icon-shangcheng"></i><span>家装商城</span></li>
+		<li data-href="" class=""><i class="iconfont icon-gongsi1"></i><span>样板间</span></li>
+		<li data-href="member" class=""><i class="iconfont icon-ren2"></i><span>我的</span></li>
+	</ul>
+</nav>
+<script>
+	$(document).ready(function(){
+		$('[data-href]').live("click",function(){
+			if($(this).data('href')){
+				location.href= $(this).data('href');
+			}
+		});
+	});
+</script>
+<script type="text/javascript">
+	TouchSlide({
+		slideCell:"#focus",
+		titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+		mainCell:".bd ul",
+		effect:"left",
+		autoPlay:true,//自动播放
+		autoPage:true, //自动分页
+		switchLoad:"_src" //切换加载，真实图片路径为"_src"
+	});
+</script>
+</body>
+</html>

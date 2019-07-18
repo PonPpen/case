@@ -1,0 +1,151 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商城-商品列表页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+    <script src="./Public/js/jquery-1.8.3.min.js"></script>
+
+</head>
+
+<body class="bg_gray">
+
+<header>
+    <dl class="header dis-box">
+        <dt class="flex_box_1" data-href="/pro/cate"><i class="iconfont icon-llmainpageback"></i></dt>
+        <dd class="search-top flex_box_4">
+            <input type="text" value="" id="myq1" placeholder="搜索商品">
+        </dd>
+        <!--<dd class="flex_box_1 text" id="sreachbtn">搜索</dd>-->
+        <dd class="flex_box_1" data-href="/cart"><i class="iconfont icon-gouwuche"></i></dd>
+    </dl>
+</header>
+<section>
+    <div id="wrapper" class="btt_1">
+        <div id="scroller" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+            <div id="scroller-pullDown" style="display: none;">
+                <span id="down-icon" class="icon-double-angle-down pull-down-icon"></span>
+                <span id="pullDown-msg" class="pull-down-msg"><img src="/Public/mytools/images/loading.gif" class="loading">下拉刷新</span>
+            </div>
+            <div class="shop_list">
+                <ul class="dis-box">
+                    <li class="flex_box_1 list_01"><a href="javascript:void(0);" data-sort="default" class="mysort" data-isch="0">综合<span class="x"></span></a></li>
+                    <li class="flex_box_1"><a href="javascript:void(0);" data-sort="sale" class="mysort" data-isch="0">销量<span class="x"></span></a></li>
+                    <li class="flex_box_1"><a href="javascript:void(0);" data-sort="price" class="mysort" data-isch="1">价格<span class="s"></span></a></li>
+                    <li class="flex_box_1"><a href="javascript:void(0);" data-sort="renqi" class="mysort" data-isch="0">人气<span class="x"></span></a></li>
+                    <li class="flex_box_1" style="cursor:pointer;" id="saixuan"><a href="javascript:void(0);" class="saixuan">筛选<i class="iconfont icon-shaixuan c_gray pl5"></i></a></li>				</ul>
+            </div>
+            <div class="alike oh">
+                <ul id="scroller-content" class="alike_pro">
+                    <li><a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%" alt=""></a><p class="tit">奢家 12W LED现代 橙色 卧室灯 书房灯 简约时尚 吸顶灯 HD12242-1ORG-1</p><p class="zzjj">￥<span>160.00</span></p></li>
+                    <li><a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%" alt=""></a><p class="tit">奢家 LED方形三色 卧室灯 书房灯 简约时尚 吸顶灯 ARJ-T8-1</p><p class="zzjj">￥<span>158.00</span></p></li>
+                    <li><a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%" alt=""></a><p class="tit">奢家  12W 卧室灯 书房灯 简约时尚 吸顶灯MA1002-12-1</p><p class="zzjj">￥<span>171.00</span></p></li>
+                    <li><a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%" alt=""></a><p class="tit">奢家 6头现代简约 客厅灯 卧室灯 餐厅灯 书房灯 7015</p><p class="zzjj">￥<span>490.00</span></p></li>
+                    <li><a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%" alt=""></a><p class="tit">奢家 4头方形 客厅灯 卧室灯 餐厅灯 书房灯 7015</p><p class="zzjj">￥<span>350.00</span></p></li>
+                    <li><a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%" alt=""></a><p class="tit">奢家 LED镂空 客厅灯 卧室灯 餐厅灯 书房灯 7014</p><p class="zzjj">￥<span>188.00</span></p></li>
+                    <li><a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%" alt=""></a><p class="tit">奢家 LED镂空 客厅灯 卧室灯 餐厅灯 书房灯 7013</p><p class="zzjj">￥<span>188.00</span></p></li>
+                    <li><a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%" alt=""></a><p class="tit">奢家 LED镂空 客厅灯 卧室灯 餐厅灯 书房灯 7012</p><p class="zzjj">￥<span>188.00</span></p></li>
+                    <li><a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%" alt=""></a><p class="tit">奢家 LED异形 客厅灯 卧室灯 餐厅灯 书房灯 7011</p><p class="zzjj">￥<span>269.00</span></p></li>
+                    <li><a href="#"><img src="./Public/temp/59411a259bffa.jpg_500.jpg" width="100%" alt=""></a><p class="tit">奢家 LED错层圆形 客厅灯 卧室灯 餐厅灯 书房灯 7010</p><p class="zzjj">￥<span>224.00</span></p></li>
+                </ul>
+            </div>
+            <div id="scroller-pullUp" style="display: none;">
+                <span id="up-icon" class="icon-double-angle-up pull-up-icon"></span>
+                <span id="pullUp-msg" class="pull-up-msg"><img src="/Public/mytools/images/loading.gif" class="loading">上拉加载更多</span>
+            </div>
+        </div>
+    </div>
+    <!--//end wrapper-->
+    <div class="slide-mask"></div>
+    <aside class="sxselectparent transformLeftMoved" id="saixuan_con">
+        <ul class="sxselect">
+            <li class="sxselect-list list_index">
+                <dl id="sxselect1" class="sxselectA" data_status="show">
+                    <dt>
+                    <h4 class="fl pl15">品牌</h4>
+                    <span class="fr pr15"><em class="c_blue none">全部</em><i class="iconfont icon-shang pl5"></i></span>
+                    <div class="clear"></div>
+                    </dt>
+                    <dd>
+                        <span class="mypid sxselect-all sxselected" id="subcl_2398"><a href="javascript:void(0);">全部</a></span>
+                        <span class="mypid" data-id="3881" data-pid="2398" data-title="虚拟产品"><a href="javascript:void(0);">虚拟产品</a></span>
+                        <span class="mypid" data-id="4189" data-pid="2398" data-title="光印灯饰"><a href="javascript:void(0);">光印灯饰</a></span>
+                        <span class="mypid" data-id="4190" data-pid="2398" data-title="雷士照明"><a href="javascript:void(0);">雷士照明</a></span>
+                        <span class="mypid" data-id="4387" data-pid="2398" data-title="鸿胜灯饰"><a href="javascript:void(0);">鸿胜灯饰</a></span>
+                        <span class="mypid" data-id="4938" data-pid="2398" data-title="奢家灯饰"><a href="javascript:void(0);">奢家灯饰</a></span>
+                        <span class="mypid" data-id="4939" data-pid="2398" data-title="奢家"><a href="javascript:void(0);">奢家</a></span>
+                    </dd>
+                </dl>
+            </li>
+            <li class="sxselect-list list_index">
+                <dl id="sxselect3" class="sxselectA" data_status="show">
+                    <dt>
+                    <h4 class="fl pl15">风格</h4>
+                    <span class="fr pr15"><em class="c_blue none">全部</em><i class="iconfont icon-shang pl5"></i></span>
+                    <div class="clear"></div>
+                    </dt>
+                    <dd>
+                        <span class="mypid sxselect-all sxselected" id="subcl_2404"><a href="javascript:void(0);">全部</a></span>
+                        <span class="mypid" data-id="2412" data-pid="2404" data-title="现代简约"><a href="javascript:void(0);">现代简约</a></span>
+                        <span class="mypid" data-id="4409" data-pid="2404" data-title="中式风格"><a href="javascript:void(0);">中式风格</a></span>
+                        <span class="mypid" data-id="4410" data-pid="2404" data-title="欧式风格"><a href="javascript:void(0);">欧式风格</a></span>
+                        <span class="mypid" data-id="4411" data-pid="2404" data-title="美式风格"><a href="javascript:void(0);">美式风格</a></span>
+                        <span class="mypid" data-id="4432" data-pid="2404" data-title="田园风格"><a href="javascript:void(0);">田园风格</a></span>
+                        <span class="mypid" data-id="4433" data-pid="2404" data-title="地中海风格"><a href="javascript:void(0);">地中海风格</a></span>
+                        <span class="mypid" data-id="4434" data-pid="2404" data-title="田园风格"><a href="javascript:void(0);">田园风格</a></span>
+                        <span class="mypid" data-id="4435" data-pid="2404" data-title="北欧风格"><a href="javascript:void(0);">北欧风格</a></span>
+                    </dd>
+                </dl>
+            </li>
+            <li class="sxselect-result hasBeenSelected">
+                <dl>
+                    <dt class="pl15">已选条件：</dt>
+                    <dd id="sxselect-Selected"><div class="c_gray pl15 pt15">暂时没有选择过滤条件</div></dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="selBtn dis-box">
+            <button type="button" class="flex_box_1" id="resetting">重置</button>
+            <button type="button" class="flex_box_1" id="sxsure">确定</button>
+        </div>
+    </aside>
+    <!--//end sxselectparent-->
+</section>
+
+<nav>
+    <div class="mb80"></div>
+    <ul class="footer pf_bottom">
+        <li data-href="index" class=""><i class="iconfont icon-shouye"></i><span>首页</span></li>
+        <li data-href="bespeak" class=""><i class="iconfont icon-sheji"></i><span>免费设计</span></li>
+        <li data-href="mallindex" class="center-icon cur"><i class="iconfont icon-shangcheng"></i><span>家装商城</span></li>
+        <li data-href="" class=""><i class="iconfont icon-gongsi1"></i><span>样板间</span></li>
+        <li data-href="member" class=""><i class="iconfont icon-ren2"></i><span>我的</span></li>
+    </ul>
+</nav>
+<script>
+    $(document).ready(function(){
+        $('[data-href]').live("click",function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('#saixuan').on('click', function(e){
+            var wh = $('div.wrapper').height();
+            $('.slide-mask').css('height', wh).show();
+            $('#saixuan_con').css('height', wh).addClass('moved');
+        });
+        $('.slide-mask').on('click', function(){
+            $('.slide-mask').hide();
+            $('#saixuan_con').removeClass('moved');
+        });
+
+    });
+</script>
+
+</body>
+</html>

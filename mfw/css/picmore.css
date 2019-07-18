@@ -1,0 +1,29 @@
+.pm_top {width:1000px;height:32px;line-height:32px;margin:auto; background:#eeeeee;}
+.pm_top ul {float:left;padding:0 0 0 15px;}
+.pm_top ul li {float:left;}
+.pm_top ul li span {color:#585858;padding:0 5px 0 5px;}
+.pm_top ul li  a {color:#585858;}
+.pm_title {width:1000px;margin:auto;padding:15px 0 15px 0;}
+.pm_title ul li {float:left;color:#585858;}
+.pm_title ul li img {width:136px;height:83px;border:1px solid #ddd;padding:4px;}
+.pm_title ul li h2 {font-family:"Microsoft YaHei";font-size:20px;color:#585858;padding:15px 0 10px 15px;}
+.pm_title ul li h3 {font-size:12px;font-weight:normal;padding:0 0 0 15px;}
+.pm_title ul li h3 span {padding:0 5px 0 0;color:#f00;}
+.pm_title ul li a {color:#585858;}
+.picmore {width:1000px;margin:auto;}
+.picmore .top {height:50px; background:url(../img/pmtop.jpg) no-repeat;}
+.picmore .top ul {padding:0 0 0 15px;}
+.picmore .top ul li {width:83px;height:50px;float:left; text-align:center;margin:0 15px 0 0;}
+.picmore .top ul li a {color:#707070;width:83px;height:50px; display:block;float:left;}
+.picmore .top ul li a:hover { background:url(../img/pmhover.jpg) no-repeat;}
+.picmore .top ul li a.hover { background:url(../img/pmhover.jpg) no-repeat;}
+.picmore .top ul li a p {padding:10px 0 5px 0;}
+.picmore .top ul li a span {font-family:"Arial";color:#f00;font-size:12px;}
+.picmore .box {border:1px solid #cacaca;padding:0 20px 0 20px; border-top:none;}
+.pmpic li {float:left;padding:28px 18px 0 15px;}
+.pmpic li img {width:196px;height:147px;border:1px solid #ddd;padding:4px;}
+.pmpagenum {text-align:center;}
+.pmpagenum li {display:inline;line-height:60px;}
+.pmpagenum li a {padding:4px 6px 4px 6px;color:#000;}
+.pmpagenum li a:hover { background:#f00;color:#fff;}
+.pmpagenum li a.hover { background:#f00;color:#fff;}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>快捷登录</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+	<script src="./Public/js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="head_login">
+			<p onclick="history.go(-1);"><i class="iconfont icon-llmainpageback"></i></p>
+			<h4>快捷登录</h4>
+		</div>
+	</header>
+	<section>
+		<div class="log">
+			<form method="post" action="" name="myform" id="myform">
+				<input type="hidden" value="" name="ref" id="ref"  />
+				<input type="hidden" value="" name="sku" id="sku"  />
+				<input type="text" class="log_input" name="mobile" id="mobile" value="" placeholder="请输入手机号">
+				<div class="sendmsg_input">
+					<input type="text" class="log_input" name="mobilecode" id="mobilecode" value="" placeholder="请输入获取的验证码">
+					<button type="button" class="sendmsg" id="sendmsg">获取校验码</button>
+				</div>
+				<input type="button" class="log_submit reg_btn" id="reg_submit" value="登录">
+			</form>
+		</div>
+	</section>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>1.0首页</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/jzs.css1.0.css"/>
+	
+	
+</head>
+<body class="bg-1">
+	<!--top S-->
+	<div class="header">
+		<div class="wrap">
+			<a href="1.0index.html" class="logo"><img src="images/index_logo.png"/></a>
+			<ul class="menu clearfix">
+				<li><a href="#" class="cur"><span class="k-left"></span><span class="k-right"></span>首页</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>学科练习</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>STEAM游戏</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>星球部落</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>错题本</a></li>
+			</ul>
+			<div class="user-box">
+				<a href="#" class="dropbtn" class="clearfix">
+					<div class="user-img"><img src="images/user.jpg"/></div>
+					<span class="name">昵   称</span>
+					<i class="ico"></i>
+				</a>
+				<div class="dropbox">
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">我的消息</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--top E-->
+	
+	<div class="jzsmain clearfix">
+		<!--天数-->
+		<div class="jzs-days">
+			<div class="Severalday clearfix"><em></em><span class="counter">129</span></div>
+			<div class="progressbr">
+				<div class="items">
+					<i class="ico-xn"></i>
+					<span class="title">学能：</span>
+					<div class="progressbar" data-perc="76">
+						<div class="bar color1"><span></span></div>
+						<div class="label"><span></span></div>
+					</div>
+				</div>
+				<div class="items">
+					<i class="ico-xk"></i>
+					<span class="title">学科：</span>
+					<div class="progressbar" data-perc="55">
+						<div class="bar color2"><span></span></div>
+						<div class="label"><span></span></div>
+					</div>
+				</div>
+				<div class="items">
+					<i class="ico-tl"></i>
+					<span class="title">体力：</span>
+					<div class="progressbar progressbar3" data-perc="40">
+						<div class="bar color3"><span></span></div>
+						<div class="label"><span class="counter">3760</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--转动的地球-->
+		<div class="jzs-center">
+			<div class="star">
+				<div class="rocket"></div>
+				<div class="circle-inner"></div>
+				<span class="guide"></span>
+			</div>
+			<div id="main" class="echartsbox"></div>
+		</div>
+		<!--每日任务-->
+		<div class="Everytask">
+			<div class="title">每日任务</div>
+			<div class="cont">
+				<div class="line"></div>
+				<ul>
+					<li class="clearfix"><a href="#">
+						<i class="ico-1"></i>
+						<div class="info"><h2>数学</h2>
+							<div class="taskzt">
+								<em></em>任务未完成
+							</div>
+						</div>
+					</a></li>
+					<li class="clearfix"><a href="#"><i class="ico-2"></i>
+						<div class="info"><h2>物理</h2>
+							<div class="taskzt">
+								<em></em>任务未完成
+							</div>
+						</div>
+					</a></li>
+					<li class="clearfix"><a href="#"><i class="ico-3"></i>
+						<div class="info"><h2>化学</h2>
+							<div class="taskzt">
+								<em></em>任务未完成
+							</div>
+						</div>
+					</a></li>
+					<li class="clearfix"><a href="#"><i class="ico-4"></i>
+						<div class="info"><h2>steam</h2>
+							<div class="taskzt">
+								<em></em>任务未完成
+							</div>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mjzs.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Counter Up  -->
+	<script src="js/jquery.waypoints.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.counterup.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--雷达图-->
+	<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/westeros.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script>
+	$(function(){
+		var myChart = echarts.init(document.getElementById('main'), 'westeros');
+		option = {
+			tooltip : { },
+		    radar: {
+		        //shape: 'circle',
+		        indicator: [
+		           { name: '数学', max: 100},
+		           { name: '物理', max: 100},
+		           { name: '化学', max: 100}
+		        ]
+		    },
+		    series: [{
+		        name: '预算 vs 开销（Budget vs spending）',
+		        type: 'radar',
+		        areaStyle: {normal: {}},
+		        data : [
+		            {
+		                value : [90, 80, 40],
+		                name : '数学'
+		            },
+		             {
+		                value : [90, 30, 70],
+		                name : '物理'
+		            }
+		        ]
+		    }]
+		};
+		myChart.setOption(option);
+		
+		$('.counter').counterUp({
+	        delay: 100,
+	        time: 1200
+	   });
+	   //进度条
+	   $('.progressbar').each(function(){
+			var t = $(this),
+			dataperc = t.attr('data-perc'),
+			barperc = Math.round(dataperc*1.12);
+			t.find('.bar').animate({width:barperc}, dataperc*25);
+			t.find('.label').append('<div class="perc"></div>');
+			
+			function perc(){
+				var length = t.find('.bar').css('width'),
+				perc = Math.round(parseInt(length)/1.12),
+				labelpos = (parseInt(length)-2);
+				t.find('.perc').text(perc+'%');
+			}
+			perc();
+			setInterval(perc, 0); 
+		});
+		
+	})  
+	</script>
+</body>
+</html>

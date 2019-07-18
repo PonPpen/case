@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>0.1登录</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/jzs.css1.0.css"/>
+	
+	
+</head>
+<body class="bg-1">
+	<!--Move element S-->
+	<div class="left-display bgMarquee-top">
+		<div class="triangle-left"></div>
+		<div class="biaochi-left ">
+			<ul class="bd">
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="right-display bgMarquee-top">
+		<div class="triangle-right"></div>
+		<div class="biaochi-right">
+			<ul class="bd">
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<!--Move element E-->
+	<div class="login-box">
+		<div class="logo"><img src="images/logo.png"/></div>
+		<div class="login-main">
+			<div class="wrap">
+				<form action="" method="post">
+					<div class="ipt-form">
+						<ul>
+							<li>
+								<div class="k">
+									<span class="k-left"></span><span class="k-right"></span><input type="text" placeholder="输入账号"/>
+								</div>
+							</li>
+							<li>
+								<div class="k">
+									<span class="k-left"></span><span class="k-right"></span><input type="password" placeholder="输入密码"/>
+								</div>
+							</li>
+						</ul>
+						<div class="reg-forget clearfix">
+							<a href="0.2register.html" class="reg-go">立即注册</a>
+							<a href="0.3findpsw.html" class="fg-go">忘记密码？</a>
+						</div>
+					</div>
+					<a href="#" class="logbtn"><span>登录</span></a>
+				</form>
+				<div class="bot-left-logo">
+					<img src="images/logo_bottom.png"/>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!--滚动信息-->
+	<div class="scrollmsg">
+		<div class="scrollinner txtScroll-top clearfix">
+			<span class="t">tips：</span>
+			<ul class="bd">
+				<li>多学科齐头并进学习效果才会最好哦！</li>
+				<li>多学科齐头并进学习效果才会最好哦！</li>
+				<li>多学科齐头并进学习效果才会最好哦！</li>
+			</ul>
+		</div>
+	</div>
+	
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(".txtScroll-top").slide({mainCell:".bd",autoPage:true,effect:"topLoop",autoPlay:true,vis:1});
+	$(".bgMarquee-top").slide({mainCell:".bd",autoPlay:true,effect:"topMarquee",opp:true,vis:1,interTime:50,mouseOverStop:false});
+	</script>
+</body>
+</html>

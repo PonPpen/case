@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商城-商品分类</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+    <script src="./Public/js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body style="background-color:#eef3fa">
+<header>
+    <dl class="header dis-box">
+        <dt class="flex_box_1" onclick="window.history.back();"><i class="iconfont icon-llmainpageback"></i></dt>
+        <dd class="search-top flex_box_4">
+            <input type="text" value="" id="myq1" placeholder="搜索商品">
+        </dd>
+        <!--<dd class="flex_box_1 text" id="sreachbtn">搜索</dd>-->
+        <dd class="flex_box_1" data-href="/cart"><i class="iconfont icon-gouwuche"></i></dd>
+    </dl>
+</header>
+
+<section>
+    <!-----nav----->
+    <div class="shop_classify">
+        <ul class="dis-box" id="topmenuul">
+            <li class="flex_box_1 topmenu cur" data-id="1"><a href="javascript:void(0);"><span class="nav01">建材</span></a></li>
+            <li class="flex_box_1 topmenu" data-id="2"><a href="javascript:void(0);"><span class="nav02">家具</span></a></li>
+            <li class="flex_box_1 topmenu" data-id="3"><a href="javascript:void(0);"><span class="nav03">家电</span></a></li>
+            <li class="flex_box_1 topmenu" data-id="143"><a href="javascript:void(0);"><span class="nav04">定制</span></a></li>
+        </ul>
+    </div>
+    <!-----kinds---->
+    <div class="shop_kinds dis-box">
+        <ul class="left flex_box_1" id="leftmenu">
+            <li class="flex_box_1 cur" style="clear:both" data-id="139"><a href="javascript:void(0);">灯饰照明</a></li>
+            <li class="flex_box_1 " style="clear:both" data-id="140"><a href="javascript:void(0);">厨房用品</a></li>
+            <li class="flex_box_1 " style="clear:both" data-id="141"><a href="javascript:void(0);">卫浴用品</a></li>
+            <li class="flex_box_1 " style="clear:both" data-id="142"><a href="javascript:void(0);">建材五金</a></li>
+            <li class="flex_box_1 " style="clear:both" data-id="144"><a href="javascript:void(0);">墙地面</a></li>
+        </ul>
+        <ul class="right flex_box_4" id="righthtml">
+            <li><a href="#"><img src="./Public/temp/5934d43b9feca.jpg" alt=""><p>LED照明</p></a></li>
+            <li><a href="#"><img src="./Public/temp/5934d43b9feca.jpg" alt=""><p>吸顶灯</p></a></li>
+            <li><a href="#"><img src="./Public/temp/5934d43b9feca.jpg" alt=""><p>吊灯</p></a></li>
+            <li><a href="#"><img src="./Public/temp/5934d43b9feca.jpg" alt=""><p>筒灯</p></a></li>
+            <li><a href="#"><img src="./Public/temp/5934d43b9feca.jpg" alt=""><p>射灯</p></a></li>
+            <li><a href="#"><img src="./Public/temp/5934d43b9feca.jpg" alt=""><p>落地灯</p></a></li>
+            <li><a href="#"><img src="./Public/temp/5934d43b9feca.jpg" alt=""><p>壁灯</p></a></li>
+            <li><a href="#"><img src="./Public/temp/5934d43b9feca.jpg" alt=""><p>台灯</p></a></li>
+            <li><a href="#"><img src="./Public/temp/5934d43b9feca.jpg" alt=""><p>光源</p></a></li>
+            <li><a href="#"><img src="./Public/temp/5934d43b9feca.jpg" alt=""><p>面板灯</p></a></li>
+        </ul>
+    </div>
+</section>
+
+<nav>
+    <div class="mb80"></div>
+    <ul class="footer pf_bottom">
+        <li data-href="index" class=""><i class="iconfont icon-shouye"></i><span>首页</span></li>
+        <li data-href="bespeak" class=""><i class="iconfont icon-sheji"></i><span>免费设计</span></li>
+        <li data-href="mallindex" class="center-icon cur"><i class="iconfont icon-shangcheng"></i><span>家装商城</span></li>
+        <li data-href="" class=""><i class="iconfont icon-gongsi1"></i><span>样板间</span></li>
+        <li data-href="member" class=""><i class="iconfont icon-ren2"></i><span>我的</span></li>
+    </ul>
+</nav>
+<script>
+    $(document).ready(function(){
+        $('[data-href]').live("click",function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+    });
+</script>
+</body>
+</html>

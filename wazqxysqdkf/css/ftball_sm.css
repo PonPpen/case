@@ -1,0 +1,114 @@
+body { font-size: 13px; line-height: 1.5; }
+header { width: 100%; height: 65px; background: #fff; border-bottom: 1px solid #f2f3f3; box-shadow: 1px 0 5px #9c9c9c; position: relative; z-index: 9; }
+.headerBar {padding-top: 6px; }
+.header-logo { display: block; background: url("../images/logo.png")/*tpa=http://www.qkhtml.com/Case/wazqxysqdkf/images/logo.png*/ no-repeat; background-size: 100% 100%; margin: 0px auto; width: 164px; height: 50px;}
+.login-container { display: none; }
+#lrkfwarp { display: none; }
+.bannerBox { width: 100%; height: 440px; clear: both; position: relative; background: #242424; overflow: hidden; }
+a.arrL, a.arrR { display: none; z-index: -1; height: 0; }
+.bannerBox .focusL { height: 300px!important; width: 100%; position: absolute; z-index: 9; top: 0px; left: -500px; margin-left: 360px; position: relative; z-index: 8;}
+.bannerBox .focusR { width: 100%; height: 440px!important; position: absolute; z-index: 999; left: -500px; margin-left: 490px; }
+.focusL img { position: absolute; top: 0;  }
+#page-1 img { height: 276px; }
+.bannerBox li { width: 100%; clear: both; height: 300px !important; display: none; position: absolute; background-size: auto 300px; }
+.page-bottom { width: 100%; height: 80px; background: #fff; bottom: 25px; position: absolute; z-index: 99; }
+.bannerBox { width: 100%; height: 380px !important; clear: both; position: relative; background: #242424; overflow: hidden; }
+#page-1 { position: relative; }
+#page-1-img { display: block; width: 100%; margin: 0 auto; }
+#page-1-img img:last-child { position: absolute; top: 0; z-index: 999; }
+.jiao-title { position: relative; font-size: 2rem; -webkit-font-smoothing: auto; }
+.phone-download-wrap img { display: none; }
+.phone-download { width: 100%; text-align: center; }
+.download-container { position: relative; top: 0; left: 35px; width: 100%; color: #fff; }
+.download-p-1 { display: none; }
+.download-p-2 { display: block!important; position: absolute; top: -240px; left: 170px; font-size: 1.4rem; }
+.download-p-3 { display: none }
+.download-btn { display: inline-block; background: #dbdbdb; width: 150px; height: 45px; border-radius: 5px; overflow: hidden; margin: 0 0 20px 20px; overflow: hidden;}
+.android-download ,.ios-download { display: inline-block;}
+.download-btn:hover { color: #fff; }
+.download-btn i { float: left; width: 30px; height: 35px; background: url("../images/ico-adr-ios.png")/*tpa=http://www.qkhtml.com/Case/wazqxysqdkf/images/ico-adr-ios.png*/ no-repeat; background-size: 100%; margin: 3px 6px;}
+.download-btn i.icon-android { background-position: 0 0;}
+.download-btn i.icon-ios { background-position: 0 -65px;}
+.download-btn span {float: left; line-height: 45px; color: #ed8516; font-size: 14px;}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+	.download-p-1 { display: block; position: absolute; top: -255px; right: 6%; text-align: center; font-size: 20px; }
+	.download-container >span { position: absolute; top: -210px; right: 6%; color: #fff; width: 40%; text-align: left; font-size: 14px; line-height: 30px;}
+}
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+	.download-p-1 { display: block; position: absolute; top: -225px; right: 6%; text-align: center; font-size: 18px; }
+	.download-container >span { position: absolute; top: -200px; right:6%; color: #fff; width: 40%; text-align: left; font-size: 12px; line-height: 28px;}
+	
+}
+@media (max-width: 500px) {
+	.bannerBox .focusL { height: 250px!important; width: 100%; position: absolute; z-index: 9; top: 0px; left: -500px; margin-left: 380px; position: relative; z-index: 8;}
+	.bannerBox .focusR { width: 100%; height: 330px!important; position: absolute; z-index: 999; left: -500px; margin-left: 490px; }
+	.focusL img { position: absolute; top: 0;  }
+	#page-1 img { height: 226px; }
+	.bannerBox li { width: 100%; clear: both; height: 250px !important; display: none; position: absolute; background-size: auto 250px; }
+	.page-bottom { width: 100%; height: 80px; background: #fff; bottom: 25px; position: absolute; z-index: 99; }
+	.bannerBox { width: 100%; height: 330px !important; clear: both; position: relative; background: #242424; overflow: hidden; }
+	.download-container { left: 0;}
+	.download-p-1 { display: block; position: absolute; top: -205px; right: 0%; text-align: center; font-size: 1.5rem; width: 50%;}
+	.download-container >span { position: absolute; top: -150px; right: 0%; color: #fff; width: 40%; text-align: left; font-size: 12px;}
+	.download-btn { display: inline-block; background: #dbdbdb; width: 120px; height: 35px; border-radius: 5px; overflow: hidden; margin: 0 0 10px 10px; overflow: hidden;}
+	.download-btn i { float: left; width: 20px; height: 25px; background: url("../images/ico-adr-ios.png")/*tpa=http://www.qkhtml.com/Case/wazqxysqdkf/images/ico-adr-ios.png*/ no-repeat; background-size: 100%; margin: 5px 6px;}
+	.download-btn i.icon-android { background-position: 0 0;}
+	.download-btn i.icon-ios { background-position: 0 -45px;}
+	.download-btn span {float: left; line-height: 35px; color: #ed8516; font-size: 12px;}
+	
+}
+
+#page-2 {position: relative; z-index: 3; }
+.response-container { width: 100%; margin: 0 auto; text-align: center; overflow: hidden;}
+.response-container2 { padding: 10px 0 20px;}
+.zixun-tit { font-size: 14px; color: #464646; margin: 0 10px;}
+.zixun-tit h2 { font-weight: normal; font-size: 14px;}
+.zixun-tit h2 span { color: #e00000;}
+.zixun-tit p { font-size: 12px; }
+.zx-display { float: left; width: 33%; text-align: center; margin: 20px auto 0;}
+.zx-display img { width: 76%;}
+.zx-bottom-bg { background: url("../images/football_zixun_bottom.jpg")/*tpa=http://www.qkhtml.com/Case/wazqxysqdkf/images/football_zixun_bottom.jpg*/ center 0; background-size: auto 40px; height: 40px;}
+
+#page-3 { background: url("../images/gd_bg.jpg")/*tpa=http://www.qkhtml.com/Case/wazqxysqdkf/images/gd_bg.jpg*/ center 0 no-repeat; padding:40px 0 55px; position: relative; z-index: 4;}
+.page-3-container .gd-title { color: #fff; margin: 0 10px;}
+.page-3-container .gd-title h2 { font-weight: normal; font-size: 14px; font-weight: normal;}
+.page-3-container .gd-title h2 span { color: #ffff00;}
+.page-3-container .gd-title p { font-size: 12px; line-height: 30px;}
+.gd-display { float: left; width: 33%; text-align: center; margin:40px auto 0;}
+.gd-display img { width: 75%;}
+
+#page-4 { background: #fff; position: relative; z-index: 5;}
+.foot-action {position: absolute; top: 0; right: 0; width: 20%;}
+.foot-action img { width: 100%;}
+.xt-content { padding: 48px 0;} 
+.xt-content .xt-title { margin: 0 10px;}
+.xt-content .xt-title h2 { font-weight: normal; font-size: 14px;}
+.xt-content .xt-title h2 span { color: #e00000;}
+.xt-content .xt-title p {line-height: 30px; font-size: 12px;}
+.xt-img { margin: 40px auto 0; width: 90%;}
+.xt-img img { width: 80%;}
+
+#page-5 { padding: 25px 0 35px; background:url("../images/pt_bg.png")/*tpa=http://www.qkhtml.com/Case/wazqxysqdkf/images/pt_bg.png*/ no-repeat center 0; position: relative; z-index: 6; }
+.pt-title { margin: 0 10px;}
+.pt-title h2 { font-weight: normal; color: #464646; font-size: 14px;}
+.pt-title h2 span { color: #e00000;}
+.pt-title p { line-height: 30px; font-size: 12px;}
+.pt-box { margin: 34px auto 0;}
+.pt-display { float: left; width: 25%; }
+.pt-display img { width: 76%;}
+
+#page-6 { padding: 20px 0; background:url("../images/jf_bg.jpg")/*tpa=http://www.qkhtml.com/Case/wazqxysqdkf/images/jf_bg.jpg*/ center 0 no-repeat; background-size: auto 280px; position: relative; z-index: 7; }
+.jf-hongbao { position: absolute; top: 0; left: 0;}
+.jf-hongbao img { width: 100%;}
+.jf-title h2 { font-weight: normal; font-size: 14px;}
+.jf-title p { font-size: 12px; line-height: 30px;}
+.jf-box { margin: 30px auto 0; text-align: left; width:300px;}
+.jf-box img { width:60%; margin-left: 20px;}
+@media (max-width: 500px){
+	.pt-title p ,.xt-content .xt-title p ,.page-3-container .gd-title p ,.zixun-tit p { display: none;}
+}
+footer { width: 100%; padding: 10px 0 5px; background: rgb(49, 49, 49); }
+#footer { margin: 0 auto; color: #fff !important; }
+#footer div p { text-align: center; margin: 0 10px 5px; }
+#footer div p a { color: #fff; }

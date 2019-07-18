@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>steam排行榜</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/steam.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animations.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
+	
+</head>
+<body class="st-bg2">
+	<div class="pt-perspective">
+		<!--nav-->
+		<div class="steam-nav clearfix">
+			<div class="logo"><a href="#"><img src="images/steam/steam_logo.png"/></a></div>
+			<div class="menu">
+				<ul class="clearfix">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="steam-game.html">steam游戏</a></li>
+					<li class="cur"><a href="steam-paihangb.html">排行榜</a></li>
+				</ul>
+			</div>
+			<div class="userinfo clearfix">
+				<span class="name">尼古拉斯..Zhao4</span>
+				<span class="uerung"><img src="images/steam/steam_nav_user.png"/></span>
+			</div>
+		</div>
+		<!--steam排行榜-->
+		<div class="steam-location"><a href="#">首页</a>  >  排行</div>
+		<div class="ld-main">
+			<div class="hd-top clearfix">
+				<span class="l">STEAM TOP:100</span>
+				<div class="rw"><span>总人数: 2234</span><span>第324位</span></div>
+			</div>
+			<div class="cont">
+				<div class="scrwrap">
+					<ul>
+						<li><span class="number"><em class="num1"></em></span>
+							<span class="img"><img src="images/steam/steam_nav_user.png"/></span>
+							<span class="name">王男</span>
+							<span class="total">总得分<b>12238分</b></span>
+						</li>
+						<li><span class="number"><em class="num2"></em></span>
+							<span class="img"><img src="images/steam/steam_nav_user.png"/></span>
+							<span class="name">王男</span>
+							<span class="total">总得分<b>12238分</b></span>
+						</li>
+						<li><span class="number"><em class="num3"></em></span>
+							<span class="img"><img src="images/steam/steam_nav_user.png"/></span>
+							<span class="name">王男</span>
+							<span class="total">总得分<b>12238分</b></span>
+						</li>
+						<li><span class="number">4</span>
+							<span class="img"><img src="images/steam/steam_nav_user.png"/></span>
+							<span class="name">王男</span>
+							<span class="total">总得分<b>12238分</b></span>
+						</li>
+						<li><span class="number">5</span>
+							<span class="img"><img src="images/steam/steam_nav_user.png"/></span>
+							<span class="name">王男</span>
+							<span class="total">总得分<b>12238分</b></span>
+						</li>
+						<li><span class="number">6</span>
+							<span class="img"><img src="images/steam/steam_nav_user.png"/></span>
+							<span class="name">王男</span>
+							<span class="total">总得分<b>12238分</b></span>
+						</li>
+						<li><span class="number">7</span>
+							<span class="img"><img src="images/steam/steam_nav_user.png"/></span>
+							<span class="name">王男</span>
+							<span class="total">总得分<b>12238分</b></span>
+						</li>
+						<li><span class="number">8</span>
+							<span class="img"><img src="images/steam/steam_nav_user.png"/></span>
+							<span class="name">王男</span>
+							<span class="total">总得分<b>12238分</b></span>
+						</li>
+						<li><span class="number">9</span>
+							<span class="img"><img src="images/steam/steam_nav_user.png"/></span>
+							<span class="name">王男</span>
+							<span class="total">总得分<b>12238分</b></span>
+						</li>
+						<li><span class="number">10</span>
+							<span class="img"><img src="images/steam/steam_nav_user.png"/></span>
+							<span class="name">王男</span>
+							<span class="total">总得分<b>12238分</b></span>
+						</li>
+						<li><span class="number">11</span>
+							<span class="img"><img src="images/steam/steam_nav_user.png"/></span>
+							<span class="name">王男</span>
+							<span class="total">总得分<b>12238分</b></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<div class="footer"></div>
+		<div class="duoyu" style="height: 35px;"></div>
+	</div>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(function(){
+		$(window).load(function(){
+			$(".scrwrap").mCustomScrollbar({
+				autoHideScrollbar:false,
+				theme:"light-thin"
+			});
+		});
+	
+	})
+	</script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>4.14 答题结果</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/jzs.css1.0.css"/>
+	
+	
+</head>
+<body class="bg-2">
+	<!--top S-->
+	<div class="header">
+		<div class="wrap">
+			<a href="1.0index.html" class="logo"><img src="images/index_logo.png"/></a>
+			<ul class="menu clearfix">
+				<li><a href="#" class="cur"><span class="k-left"></span><span class="k-right"></span>首页</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>学科练习</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>STEAM游戏</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>星球部落</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>错题本</a></li>
+			</ul>
+			<div class="user-box">
+				<a href="#" class="dropbtn" class="clearfix">
+					<div class="user-img"><img src="images/user.jpg"/></div>
+					<span class="name">昵   称</span>
+					<i class="ico"></i>
+				</a>
+				<div class="dropbox">
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">我的消息</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--top E-->
+	<!--知识点详情-->
+	<div class="localtion"><a href="#">学科练习</a> > 答题结果</div>
+	<div class="Kdgepoints">
+		<div class="kp-tit kp-tit2 clearfix">
+			<a href="#" class="kledgecardBtn">知识卡</a>
+		</div>
+		<div class="kpcont2 clearfix">
+			<div class="items">
+				<div class="title">正确率</div>
+				<div class="ct">
+					<!--正确率-->
+					<div class="circlewrap">
+						<div id="circle-container" class="circlein"><div class="line"></div><div class="progressbar-text2">正确率</div></div>
+					</div>
+				</div>
+			</div><!--items-->
+			<div class="items">
+				<div class="title">答案结果</div>
+				<div class="ct">
+					<ul class="answerItems clearfix">
+						<li class="correct">01</li>
+						<li class="error">02</li>
+						<li class="correct">03</li>
+						<li class="error">04</li>
+						<li class="correct">05</li>
+						<li class="error">06</li>
+						<li class="correct">07</li>
+						<li class="error">08</li>
+						<li class="correct">09</li>
+						<li class="error">10</li>
+					</ul>
+				</div>
+			</div><!--items-->
+			<div class="items">
+				<div class="title">本节掌握率</div>
+				<div class="ct">
+					<div class="progressbar" data-perc="50">
+						<div class="bar"><span></span></div>
+						<div class="label"><span></span><i class="ico"></i></div>
+					</div>
+				</div>
+			</div><!--items-->
+			<div class="items">
+				<div class="title">本节学习阶段</div>
+				<div class="ct">
+					<ul class="jieduanMian">
+						<li><i class="ico-1"></i><span>基础</span></li>
+						<li><i class="ico-1"></i><span>巩固</span></li>
+						<li><i class="ico-2"></i><span>提升</span></li>
+						<li><i class="ico-3"></i><span class="bagao">拔高</span></li>
+					</ul>
+				</div>
+			</div><!--items-->
+		</div>
+		<div class="kp-btn clearfix">
+			<a href="#">查看解析</a>
+			<a href="#">再次练习</a>
+		</div>
+	</div>
+		
+	<!--知识点详情-->
+	
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mjzs.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Counter Up  -->
+	<script src="js/jquery.waypoints.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.counterup.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!--完成度-->
+	<script src="js/progressbar.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			
+			//正确率
+			var circle = new ProgressBar.Circle('#circle-container', {
+				strokeWidth: 8,
+			    from: { color: '#cafcfc' },
+				to: { color: '#63d9fa' },		    
+			    text: {
+				    autoStyleContainer: true
+				},
+			    step: function(state, circle, attachment) {
+			        circle.path.setAttribute('stroke', state.color);
+			        var value = Math.round(circle.value() * 100);
+				    if (value === 0) {
+				      circle.setText('');
+				    } else {
+				      circle.setText(value+'%');
+				    }
+			    }
+			});
+			circle.animate(0, function() {
+			    circle.animate(0.70);
+			});
+			//进度条
+		   	$('.progressbar').each(function(){
+				var t = $(this),
+				dataperc = t.attr('data-perc'),
+				barperc = Math.round(dataperc*3.58);
+				t.find('.bar').animate({width:barperc}, dataperc*25);
+				t.find('.label').append('<div class="perc"></div>');
+				
+				function perc(){
+					var length = t.find('.bar').css('width'),
+					perc = Math.round(parseInt(length)/3.58),
+					labelpos = (parseInt(length)-2);
+					t.find('.perc').text(perc+'%');
+				}
+				perc();
+				setInterval(perc, 0); 
+			});
+		})
+	</script>
+</body>
+</html>

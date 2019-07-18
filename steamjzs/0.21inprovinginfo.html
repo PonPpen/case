@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>0.21 完善信息</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/jzs.css1.0.css"/>
+	
+	
+</head>
+<body class="bg-1">
+	<!--Move element S-->
+	<div class="left-display bgMarquee-top">
+		<div class="triangle-left"></div>
+		<div class="biaochi-left ">
+			<ul class="bd">
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="right-display bgMarquee-top">
+		<div class="triangle-right"></div>
+		<div class="biaochi-right">
+			<ul class="bd">
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<!--Move element E-->
+	<div class="login-box register-main inpinfo-main">
+		<div class="login-main">
+			<div class="wrap">
+				<div class="reg-title2">完善信息</div>
+				<form action="" method="post">
+					<div class="ipt-form">
+						<ul>
+							<li class="taitou">昵称</li>
+							<li>
+								<div class="k">
+									<span class="k-left"></span><span class="k-right"></span><input type="text" placeholder="输入您昵称"/>
+								</div>
+							</li>
+							<li class="taitou">选择年级</li>
+							<li>
+								<div class="grade-select clearfix">
+									<a href="javascript:;" class="active"><span class="k-left"></span><span class="k-right"></span>七年级</a>
+									<a href="javascript:;"><span class="k-left"></span><span class="k-right"></span>八年级</a>
+									<a href="javascript:;" class="mrrn"><span class="k-left"></span><span class="k-right"></span>九年级</a>
+									<a href="javascript:;"><span class="k-left"></span><span class="k-right"></span>高一</a>
+									<a href="javascript:;"><span class="k-left"></span><span class="k-right"></span>高二</a>
+									<a href="javascript:;" class="mrrn"><span class="k-left"></span><span class="k-right"></span>高三</a>
+								</div>
+							</li>
+							
+							<li class="taitou">身份证ID（选填）</li>
+							<li>
+								<div class="k">
+									<span class="k-left"></span><span class="k-right"></span><input type="password" placeholder="输入您的身份ID"/>
+								</div>
+								<div class="formtip">密码输入错误!</div>
+							</li>
+						</ul>
+						
+					</div>
+					<a href="#" class="logbtn regbtn"><span>注册</span></a>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(".bgMarquee-top").slide({mainCell:".bd",autoPlay:true,effect:"topMarquee",opp:true,vis:1,interTime:50,mouseOverStop:false});
+	$(function(){
+		$('.grade-select a').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+	});
+	</script>
+</body>
+</html>

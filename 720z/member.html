@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="MobileOptimized" content="320">
+    <title>会员中心</title>
+    <link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+    <script src="./Public/js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body  class="bg_gray">
+<header>
+    <dl class="header dis-box">
+        <dt class="flex_box_1"><a href="../index/index.html"><i class="iconfont icon-llmainpageback"></i></a></dt>
+        <dd class="logo_title flex_box_4">我的</dd>
+        <dd class="flex_box_1 text"><em class="placeholder"></em></dd>
+    </dl>
+</header>
+<section>
+    <div class="user_top">
+        <img width="80" height="80" src="./Public/temp/58da056dea082.jpg_300x300.jpg">
+        <div class="user_name">seewp88</div>
+        <div class="user_account">
+            <ul class="dis-box">
+                <li class="flex_box_1" data-href="/zb"><span>0</span><i>装币</i></li>
+                <li class="flex_box_1" data-href="/account"><span>¥0.00</span><i>账户余额</i></li>
+                <li class="flex_box_1" data-href="/coupon"><span>0</span><i>优惠券</i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="user_menu">
+        <ul>
+            <li><a href="../order/index.html"><i class="fl u_icon u_icon01"></i>我的商城订单<i class="fr icon icon_arrow_r"></i></a></li>
+            <li><a href="../cart/index.html"><i class="fl u_icon u_icon02"></i>我的购物车<i class="fr icon icon_arrow_r"></i></a></li>
+            <li><a href="../member/my_collect.html"><i class="fl u_icon u_icon03"></i>我收藏的商品<i class="fr icon icon_arrow_r"></i></a></li>
+            <div class="hd5"></div>
+            <li><i class="fl u_icon u_icon04"></i>我预约的<i class="fr icon icon_arrow_r"></i></li>
+            <li><i class="fl u_icon u_icon05"></i>我关注的<i class="fr icon icon_arrow_r"></i></li>
+            <li><i class="fl u_icon u_icon06"></i>我的装修<i class="fr icon icon_arrow_r"></i></li>
+            <div class="hd5"></div>
+            <li><i class="fl u_icon u_icon07"></i>我的消息<i class="fr icon icon_arrow_r"></i></li>
+            <div class="hd5"></div>
+            <li><i class="fl u_icon u_icon08"></i>设置<i class="fr icon icon_arrow_r"></i></li>
+        </ul>
+    </div>
+</section>
+
+<nav>
+    <div class="mb80"></div>
+    <ul class="footer pf_bottom">
+        <li data-href="index" class=""><i class="iconfont icon-shouye"></i><span>首页</span></li>
+        <li data-href="bespeak" class=""><i class="iconfont icon-sheji"></i><span>免费设计</span></li>
+        <li data-href="mallindex" class="center-icon cur"><i class="iconfont icon-shangcheng"></i><span>家装商城</span></li>
+        <li data-href="" class=""><i class="iconfont icon-gongsi1"></i><span>样板间</span></li>
+        <li data-href="member" class=""><i class="iconfont icon-ren2"></i><span>我的</span></li>
+    </ul>
+</nav>
+<script>
+    $(document).ready(function(){
+        $('[data-href]').live("click",function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

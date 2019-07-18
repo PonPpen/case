@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="MobileOptimized" content="320">
+	<title>乐装网</title>
+	<link rel="shortcut apple-touch-icon-precomposed icon" href="/favicon.ico"  />
+	<link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+	<script src="./Public/js/jquery-1.8.3.min.js"></script>
+</head>
+
+</head>
+<body style="background-color:#31a2e6">
+<header>
+	<dl class="header dis-box">
+		<!--首页-->
+		<!--<dt class="flex_box_1" onclick="window.location.href='/';"><i class="iconfont icon-shouye"></i></dt>-->
+		<dt class="flex_box_1" onclick="history.back();"><i class="iconfont icon-llmainpageback i-back"></i></dt>
+		<dd class="logo_title flex_box_4">我的装币</dd>
+		<dd class="flex_box_1 text"></dd>
+	</dl>
+</header>
+
+<section>
+	<div class="zb_top dis-box">
+		<div class="flex_box_1 tc p10">
+			<div class="attr">
+				<img width="80" height="80" src="./Public/temp/58da056dea082.jpg_300x300.jpg">
+				<i></i>
+			</div>
+		</div>
+		<div class="flex_box_1 pt25">
+			<h2>可用装币</h2>
+			<h3>0</h3>
+		</div>
+		<div class="flex_box_1 tc p10 pt25">
+			<a href="javascript:;" class="useZb" data-href="/mall">马上用装币</a>
+			<p class="pt5" onclick="zbshuoming()"><i class="iconfont icon-xinxi"></i>装币使用规则</p>
+		</div>
+	</div>
+	<div class="zb_list">
+		<div class="zb_list-top tc" id="nav-tab-top">
+			<ul class="dis-box">
+				<li class="flex_box_1 cur" data-code="all"><a href="javascript:void(0);">全部</a></li>
+				<li class="flex_box_1" data-code="income"><a href="javascript:void(0);">收入</a></li>
+				<li class="flex_box_1" data-code="expenditure"><a href="javascript:void(0);">支出</a></li>
+			</ul>
+		</div>
+		<div class="zb_list mt5">
+			<div class="zb_list-mess pb15">
+				<div class="equal list-tit">
+					<ul class="row">
+						<li class="cell">日期</li>
+						<li class="cell">来源/用途</li>
+						<li class="cell">数量</li>
+						<li class="cell">备注</li>
+					</ul>
+				</div>
+				<div class="equal list-mess scroller_noinfo" id="scroller-content">没有更多了</div>
+			</div>
+		</div>
+		<div id="scroller-pullUp" style="display:none;">
+			<!--<span id="up-icon" class="icon-double-angle-up pull-up-icon"></span>
+        <span id="pullUp-msg" class="pull-up-msg"><img src="/Public/mytools/images/loading.gif" class="loading" />上拉加载更多</span>-->
+		</div>
+	</div>
+	<div class="zb-shuoming none">
+		<div class="layer_close mb20"><i onclick="layer.closeAll();" class="pl15 pt15 pb15 iconfont icon-guanbi"></i></div>
+		<h3 class="pb20">装币使用规则</h3>
+		<h4 class="pb10"><i class="iconfont icon-wenhao pr5"></i>如何获取装币？</h4>
+		<p class="pb20">平台商城购物：每个订单确认收货后，系统自动按照1:1的比例将装币发放到账户中。例如交易金额100元，确认收货后发放100装币。</p>
+		<h4 class="pb10"><i class="iconfont icon-wenhao pr5"></i>如何花装币？</h4>
+		<p>在平台商城购物使用装币可按1：1000享受购物抵扣。既1装币=0.01元。</p>
+	</div>
+</section>
+
+</body>
+</html>
+

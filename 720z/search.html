@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商城-商品搜索</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+    <script src="./Public/js/jquery-1.8.3.min.js"></script>
+
+</head>
+
+<body>
+<header>
+    <dl class="header dis-box">
+        <dt class="flex_box_1"><i class="iconfont icon-llmainpageback"></i></dt>
+        <dd class="search-top flex_box_4">
+            <input type="text" value="" placeholder="搜索 商品/店铺">
+        </dd>
+        <dd class="text flex_box_1"><a href="../index/index.html">取消</a></dd>
+    </dl>
+</header>
+
+<section>
+<div class="shop_search">
+    <ul class="shop_search_box">	
+        <div class="hot">热搜</div>
+        <li>瓷砖11</li><li class="zyjg">瓷砖22</li><li>瓷砖333</li>
+        <li>瓷砖11</li><li class="zyjg">瓷砖22</li><li>瓷砖333</li>
+        <li>瓷砖11</li><li class="zyjg">瓷砖22</li><li>瓷砖333</li>
+    </ul>
+    <ul class="shop_search_box">	
+        <div class="history">历史</div>
+        <li>瓷砖11</li><li class="zyjg">瓷砖22</li><li>瓷砖333</li>
+        <li>瓷砖11</li><li class="zyjg">瓷砖22</li><li>瓷砖333</li>
+        <li>瓷砖11</li><li class="zyjg">瓷砖22</li><li>瓷砖333</li>
+    </ul>
+    </div>
+</section>
+
+<nav>
+    <div class="mb80"></div>
+    <ul class="footer pf_bottom">
+        <li data-href="index" class=""><i class="iconfont icon-shouye"></i><span>首页</span></li>
+        <li data-href="bespeak" class=""><i class="iconfont icon-sheji"></i><span>免费设计</span></li>
+        <li data-href="mallindex" class="center-icon cur"><i class="iconfont icon-shangcheng"></i><span>家装商城</span></li>
+        <li data-href="" class=""><i class="iconfont icon-gongsi1"></i><span>样板间</span></li>
+        <li data-href="member" class=""><i class="iconfont icon-ren2"></i><span>我的</span></li>
+    </ul>
+</nav>
+<script>
+    $(document).ready(function(){
+        $('[data-href]').live("click",function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

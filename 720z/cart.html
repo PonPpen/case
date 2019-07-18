@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="MobileOptimized" content="320">
+	<title>乐装网</title>
+	<link rel="shortcut apple-touch-icon-precomposed icon" href="/favicon.ico"  />
+	<link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+	<script src="./Public/js/jquery-1.8.3.min.js"></script>
+</head>
+
+</head>
+<body class="bg_gray">
+<header>
+	<dl class="header dis-box">
+		<!--首页-->
+		<dt class="flex_box_1" onclick="history.go(-1);"><i class="iconfont icon-llmainpageback"></i></dt>
+		<dd class="logo_title flex_box_4">购物车</dd>
+		<dd class="flex_box_1 text"><a href="javascript:void(0);">编辑</a></dd>
+	</dl>
+</header>
+
+<section>
+	<div class="hd5"></div>
+	<div class="cart_list">
+		<div class="cart_goods-box bg_white">
+			<div class="cart_shop-name"><input type="checkbox">美都电器</div>
+			<ul>
+				<li>
+					<dl>
+						<dt>
+							<input type="checkbox">
+							<img width="80px" src="./Public/temp/57b67cba8383c.jpg">
+						</dt>
+						<dd>
+							<h1 class="f_8 pb5">Midea/美的 F80-30W7(HD)遥控电热水器80升 储水式大容量速热</h1>
+							<h2 class="f_6 pb5 c_gray">商品编号：JC-XP-JF-XP455</h2>
+							<div>
+								<span class="fl pr5 f1 c_red">￥2599.00</span>
+								<div class="fl gw_num">
+									<em class="jian">-</em>
+									<input type="text" value="1" class="num"/>
+									<em class="add">+</em>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+		<div class="hd5"></div>
+		<div class="cart_goods-box bg_white">
+			<div class="cart_shop-name"><input type="checkbox" />星星电器</div>
+			<ul>
+				<li>
+					<dl>
+						<dt>
+							<input type="checkbox">
+							<img width="80px" src="./Public/temp/57b67cba8383c.jpg">
+						</dt>
+						<dd>
+							<h1 class="f_8 pb5">Midea/美的 F80-30W7(HD)遥控电热水器80升 储水式大容量速热</h1>
+							<h2 class="f_6 pb5 c_gray">商品编号：JC-XP-JF-XP455</h2>
+							<div>
+								<span class="fl pr5 f1 c_red">￥2599.00</span>
+								<div class="fl gw_num">
+									<em class="jian">-</em>
+									<input type="text" value="1" class="num"/>
+									<em class="add">+</em>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<nav>
+	<div class="mb80"></div>
+	<div class="cart_commit pf_bottom">
+		<ul class="dis-box">
+			<li class="flex_box_1 tc br c_deep-gray"><div class="check_option"><label><input type="checkbox">全选</label><i>删除</i></div></li>
+			<li class="flex_box_1 tr c_deep-gray"><div class="total_price">总计（不含运费）<p class="c_red">￥2653.00</p></div></li>
+			<li class="flex_box_8 btn_red tc"><a href="../cart/submit.html">结算</a></li>
+		</ul>
+	</div>
+</nav>
+<script>
+	//加的效果
+	$(".add").click(function(){
+		var n=$(this).prev().val();
+		var num=parseInt(n)+1;
+		if(num==0){ return;}
+		$(this).prev().val(num);
+	});
+	//减的效果
+	$(".jian").click(function(){
+		var n=$(this).next().val();
+		var num=parseInt(n)-1;
+		if(num==0){ return;}
+		$(this).next().val(num);
+	});
+</script>
+</body>
+</html>
+

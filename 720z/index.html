@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="MobileOptimized" content="320">
+	<title>乐装网</title>
+	<link rel="shortcut apple-touch-icon-precomposed icon" href="/favicon.ico"  />
+	<link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+	<link rel="stylesheet" media="screen" href="./Public/css/base.css" />
+	<link rel="stylesheet" media="screen" href="./Public/css/mstyle.css" />
+	<script src="./Public/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+	<script src="./Public/js/TouchSlide.1.1.js" type="text/javascript"></script>
+</head>
+
+<body>
+<header>
+<dl class="header dis-box">
+	<dt class="logo_title flex_box_1">乐装</dt>
+	<dd class="search-top flex_box_4">
+		<input class="icon_search" type="text" value="" placeholder="搜索 商品/帖子/户型">
+	</dd>
+</dl>
+</header>
+<section>
+	<div id="focus" class="focus">
+		<div class="hd"><ul></ul></div>
+		<div class="bd">
+			<ul>
+				<li><a href="#"><img _src="./Public/temp/57b6d23d52546.jpg" src="./Public/temp/57b6d23d52546.jpg"/></a></li>
+				<li><a href="#"><img _src="./Public/temp/57b6d2a24f1c7.jpg" src="./Public/temp/57b6d2a24f1c7.jpg"/></a></li>
+				<li><a href="#"><img _src="./Public/temp/57b6d23d52546.jpg" src="./Public/temp/57b6d23d52546.jpg"/></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="s_tit">推荐方案</div>
+	<div class="plan_box">
+		<ul>
+			<li>
+				<a href="#">
+					<img src="./Public/temp/577399bf576bd.jpg">
+					<span class="text_ellipsis">125平米田园风格</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="./Public/temp/577399bf576bd.jpg">
+					<span class="text_ellipsis">125平米田园风格</span>
+				</a>
+			</li>
+			<li class="more_plan"><a href="#"><i class="icon icon_more"></i>更多方案</a></li>
+		</ul>
+	</div>
+	<div class="s_tit">用户交流</div>
+	<div class="communion_box">
+		<ul>
+			<li class="c_icon01"><a href="#"><i class="c_icon"></i>户型改造</a></li>
+			<li class="c_icon02"><a href="#"><i class="c_icon"></i>装修学院</a></li>
+			<li class="c_icon03"><a href="#"><i class="c_icon"></i>装修日记</a></li>
+			<li class="c_icon04"><a href="#"><i class="c_icon"></i>装修答疑</a></li>
+		</ul>
+	</div>
+	<div class="s_tit">风格专题</div>
+	<div class="special_box">
+		<a href="#"><img src="./Public/temp/577399bf576bd.jpg"></a>
+		<a href="#"><img src="./Public/temp/577399bf576bd.jpg"></a>
+	</div>
+</section>
+
+<nav>
+	<div class="mb80"></div>
+	<ul class="footer pf_bottom">
+		<li data-href="index" class=""><i class="iconfont icon-shouye"></i><span>首页</span></li>
+		<li data-href="bespeak" class=""><i class="iconfont icon-sheji"></i><span>免费设计</span></li>
+		<li data-href="mallindex" class="center-icon cur"><i class="iconfont icon-shangcheng"></i><span>家装商城</span></li>
+		<li data-href="" class=""><i class="iconfont icon-gongsi1"></i><span>样板间</span></li>
+		<li data-href="member" class=""><i class="iconfont icon-ren2"></i><span>我的</span></li>
+	</ul>
+</nav>
+<script>
+	$(document).ready(function(){
+		$('[data-href]').live("click",function(){
+			if($(this).data('href')){
+				location.href= $(this).data('href');
+			}
+		});
+	});
+</script>
+<script type="text/javascript">
+	TouchSlide({
+		slideCell:"#focus",
+		titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+		mainCell:".bd ul",
+		effect:"left",
+		autoPlay:true, //自动播放
+		autoPage:true, //自动分页
+		switchLoad:"_src"  //切换加载，真实图片路径为"_src"
+	});
+</script>
+</body>
+</html>

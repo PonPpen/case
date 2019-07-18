@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="MobileOptimized" content="320">
+    <title>商城页</title>
+    <link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+    <script src="./Public/js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body  class="bg_gray">
+<header>
+    <dl class="header dis-box">
+        <dt class="flex_box_1"><a href="#"><i class="iconfont icon-llmainpageback"></i></a></dt>
+        <dd class="logo_title flex_box_1">我的商城订单</dd>
+        <dd class="flex_box_1 text"><em class="placeholder"></em></dd>
+    </dl>
+</header>
+<section>
+    <div class="nav-tab-top" id="nav-tab-top">
+        <ul>
+            <li class="cur" data-code="all"><a href="javascript:void(0);">全部</a></li>
+            <li class="" data-code="waitPay"><a href="javascript:void(0);">待付款</a></li>
+            <li class="" data-code="waitSend"><a href="javascript:void(0);">待发货</a></li>
+            <li class="" data-code="waitConfirm"><a href="javascript:void(0);">待收货</a></li>
+            <li class="" data-code="waitRate"><a href="javascript:void(0);">待评价</a></li>
+        </ul>
+    </div>
+    <div class="my_order">
+        <div class="order_list bg_white mb5">
+            <div class="tit oh">
+                <div class="m10">
+                    <span class="fl"><i class="fl mr5 iconfont icon-shangdian"></i>红三维</span>
+                    <span class="fr c_orange"><span class="red">等待付款</span></span>
+                    <span class="clear"></span>
+                </div>
+            </div>
+            <a href="#">
+                <ul>
+                    <li class="dis-box">
+                        <div class="flex_box_1"><img src="./Public/temp/59422509219a2.jpg" alt="东鹏瓷砖 纳福娜直纹 抛光砖 平整 质感 抗压 环保 耐磨 吸水 室内墙地面砖 4片/箱 YG603003"></div>
+                        <div class="flex_box_2 text"><p class="pb10">东鹏瓷砖 纳福娜直纹 抛光砖 平整 质感 抗压 环保 耐磨 吸水 室内墙地面砖 4片/箱 YG603003</p><p class="c_blue oh pb10"><span class="fl"><em class="skutit">颜色:</em><span class="skucon">单片</span><em class="skutit">尺寸:</em><span class="skucon">600*600</span></span></p><p class="pb10">¥31.00 <span class="fr"> x 1</span></p></div>
+                    </li>
+                </ul>
+            </a>
+            <div class="p10">
+                <div class="tr pb10">共1件商品 合计:¥31.00(含运费¥0.00)</div>
+                <div class="tr">
+                    <a href="#" class="mr15 ord_button">订单详情</a>
+                    <a href="#" class="mr15 ord_button">立即支付</a>
+                    <a href="javascript:void(0);" class="mr15 ord_button cancel_ord" data-id="994">取消订单</a>
+                    <a href="javascript:void(0);" class="ord_button delete_ord" data-id="994">删除订单</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav>
+    <div class="mb80"></div>
+    <ul class="footer pf_bottom">
+        <li data-href="index" class=""><i class="iconfont icon-shouye"></i><span>首页</span></li>
+        <li data-href="bespeak" class=""><i class="iconfont icon-sheji"></i><span>免费设计</span></li>
+        <li data-href="mallindex" class="center-icon cur"><i class="iconfont icon-shangcheng"></i><span>家装商城</span></li>
+        <li data-href="" class=""><i class="iconfont icon-gongsi1"></i><span>样板间</span></li>
+        <li data-href="member" class=""><i class="iconfont icon-ren2"></i><span>我的</span></li>
+    </ul>
+</nav>
+<script>
+    $(document).ready(function(){
+        $('[data-href]').live("click",function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

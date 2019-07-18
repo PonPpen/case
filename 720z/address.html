@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商城-购物车-提交订单</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+    <script src="./Public/js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body class="bg_gray">
+<header>
+    <dl class="header dis-box">
+        <!--首页-->
+        <dt class="flex_box_1" onclick="window.history.back();"><i class="iconfont icon-llmainpageback"></i></dt>
+        <dd class="logo_title flex_box_4">确认收货地址</dd>
+        <dd class="flex_box_1 text"></dd>
+    </dl>
+</header>
+<section>
+    <div class="hd5"></div>
+    <!----默认地址---->
+    <div class="shop_car_add dis-box">
+    	<div class="shop_car_con flex_box_3">
+        	<p><span>吴罗罗</span><span>130****22685</span><span class="ico_mr btn_red">默认</span></p>
+            <p class="point">海南省海口市龙昆南路星河广场603</p>
+        </div>
+        <div class="shop_car_edit flex_box_1"><i class="icon icon_arrow_r"></i></div>
+    </div>
+    <!----订单详情----->
+    <div class="shop_car_order">
+		<div class="car_order_t dis-box">
+            <div class="flex_box_1"><img src="./Public/images/129-129.png" width="100"  alt=""/></div>
+            <div class="text flex_box_3">
+            	<div class="text_1">Midea/美的 F80-30W7(HD)遥控电热水器80升 储水式大容量速热</div>
+                <div class="text_2">￥2900.00</div>
+                <div class="text_3">x 1</div>
+            </div>
+        </div>
+        <ul>
+        	<li>商品总额：  ￥2599.00</li>
+            <li>运费：  包邮</li>
+            <li>使用优惠劵：  -0.00</li>
+        </ul>
+    </div>	
+    <!----备注----->
+    <div class="shop_car_remark">
+		<div class="title">备注信息：<span>（选填）</span></div>
+        <textarea rows="10">cgdfgfd</textarea>
+    </div>
+</section>
+
+<nav>
+    <div class="mb80"></div>
+    <!--<div class="shop_car_submit">
+        <div class="sum">应付金额：<span>￥2599.00</span></div>
+        <div class="submit">提交订单</div>
+    </div>-->
+    <div class="cart_commit pf_bottom">
+		<ul class="dis-box">
+			<li class="sum flex_box_3">应付金额：<span>￥2599.00</span></li>
+			<li class="flex_box_2 btn_red tc"><a href="#">提交订单</a></li>
+		</ul>
+	</div>
+</nav>
+</body>
+</html>

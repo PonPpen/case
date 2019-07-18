@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>0.3  找回密码</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/jzs.css1.0.css"/>
+	
+	
+</head>
+<body class="bg-1">
+	<!--Move element S-->
+	<div class="left-display bgMarquee-top">
+		<div class="triangle-left"></div>
+		<div class="biaochi-left ">
+			<ul class="bd">
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="right-display bgMarquee-top">
+		<div class="triangle-right"></div>
+		<div class="biaochi-right">
+			<ul class="bd">
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<!--Move element E-->
+	<div class="login-box register-main">
+		<div class="login-main">
+			<div class="wrap">
+				<div class="reg-logo"><img src="images/logo_bottom_reg.png"/></div>
+				<a href="#" class="backup">返回</a>
+				<div class="reg-title">找回密码</div>
+				<form action="" method="post">
+					<div class="ipt-form">
+						<ul>
+							<li>
+								<div class="k">
+									<span class="k-left"></span><span class="k-right"></span><input type="text" placeholder="输入您的手机号"/>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="k k-yz">
+									<span class="k-left"></span><span class="k-right"></span><input type="text" placeholder="输入验证码"/>
+								</div>
+								<div class="k-hq">
+									<span class="k-left"></span><span class="k-right"></span>
+									<a href="javascript:;" class="huoqu">获取验证码</a>
+								</div>
+							</li>
+							<li>
+								<div class="k">
+									<span class="k-left"></span><span class="k-right"></span><input type="password" placeholder="输入您的密码"/>
+								</div>
+							</li>
+							<li>
+								<div class="k">
+									<span class="k-left"></span><span class="k-right"></span><input type="password" placeholder="确认您的密码"/>
+								</div>
+								<div class="formtip">密码输入错误!</div>
+							</li>
+						</ul>
+						
+					</div>
+					<a href="#" class="logbtn regbtn"><span>注册</span></a>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--滚动信息-->
+	<div class="scrollmsg">
+		<div class="scrollinner txtScroll-top clearfix">
+			<span class="t">tips：</span>
+			<ul class="bd">
+				<li>多学科齐头并进学习效果才会最好哦！</li>
+				<li>多学科齐头并进学习效果才会最好哦！</li>
+				<li>多学科齐头并进学习效果才会最好哦！</li>
+			</ul>
+		</div>
+	</div>
+	
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(".txtScroll-top").slide({mainCell:".bd",autoPage:true,effect:"topLoop",autoPlay:true,vis:1});
+	$(".bgMarquee-top").slide({mainCell:".bd",autoPlay:true,effect:"topMarquee",opp:true,vis:1,interTime:50,mouseOverStop:false});
+	</script>
+</body>
+</html>

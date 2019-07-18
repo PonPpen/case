@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="MobileOptimized" content="320">
+    <title>商城页</title>
+    <link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+    <script src="./Public/js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body  class="bg_gray">
+<header>
+    <dl class="header dis-box">
+        <dt class="flex_box_1"><a href="../Order/index.html"><i class="iconfont icon-llmainpageback"></i></a></dt>
+        <dd class="logo_title flex_box_4">订单详情</dd>
+        <dd class="flex_box_1 text"></dd>
+    </dl>
+</header>
+<section>
+    <div class="my_order">
+        <div class="shop_car_add dis-box">
+            <div class="flex_box_2 sign">收件地址</div>
+            <div class="shop_car_con flex_box_3" style="width: 70%;">
+                <p><span>吴罗罗</span><span>130****22685</span></p>
+                <p class="f_8">海南省海口市龙昆南路星河广场603</p>
+            </div>
+
+        </div>
+        <div class="order_list bg_white mb5">
+            <div class="tit oh tit1" style="line-height:41px;">
+                <span class="fl"><i class="fl mr5 icon iconfont iconfont-dianpu3"></i>红三维</span>
+                <span class="fr c_orange"><span class="red">等待付款</span></span>
+            </div>
+            <ul>
+                <li class="dis-box">
+                    <div class="flex_box_1"><img width="70" src="http://pic1.720zhuang.com/Public/Uploads/propic/201609/57c93bc449bd7.jpg_500.jpg" /></div>
+                    <div class="flex_box_2 text">
+                        <p class="pb10">粤道电线电缆六类网线 六类千兆网线非屏蔽双绞线</p>
+                        <p class="c_blue"><span class="fl">颜色：白</span> <span class="fr">x1</span></p>
+                    </div>
+                </li>
+                <li class="dis-box">
+                    <div class="flex_box_1"><img width="70" src="http://pic1.720zhuang.com/Public/Uploads/propic/201609/57c93bc449bd7.jpg_500.jpg" /></div>
+                    <div class="flex_box_2 text">
+                        <p class="pb10">粤道电线电缆六类网线 六类千兆网线非屏蔽双绞线</p>
+                        <p class="c_blue"><span class="fl">颜色：白</span> <span class="fr">x1</span></p>
+                    </div>
+                </li>
+            </ul>
+            <div class="price tr p10">
+                <p class="c_gray pb5">商品总金额：￥1000.00</p>
+                <p class="c_gray pb5">运费：￥10</p>
+                <p class="pb15 f14">实付金额：<span class="c_red">￥1010.00</span></p>
+            </div>
+        </div>
+        <div class="order_time bg_white">
+            <p><span class="c_gray pr5">订单编号</span>  202265646</p>
+            <p><span class="c_gray pr5">创建时间</span>  2016-10-27  11:34:00</p>
+            <p><span class="c_gray pr5">付款时间</span>  2016-10-27  11:34:00</p>
+            <p><span class="c_gray pr5">发货时间</span>  2016-10-27  11:34:00</p>
+        </div>
+    </div>
+</section>
+
+<nav>
+    <div class="mb80"></div>
+    <ul class="footer pf_bottom">
+        <li data-href="index" class=""><i class="iconfont icon-shouye"></i><span>首页</span></li>
+        <li data-href="bespeak" class=""><i class="iconfont icon-sheji"></i><span>免费设计</span></li>
+        <li data-href="mallindex" class="center-icon cur"><i class="iconfont icon-shangcheng"></i><span>家装商城</span></li>
+        <li data-href="" class=""><i class="iconfont icon-gongsi1"></i><span>样板间</span></li>
+        <li data-href="member" class=""><i class="iconfont icon-ren2"></i><span>我的</span></li>
+    </ul>
+</nav>
+<script>
+    $(document).ready(function(){
+        $('[data-href]').live("click",function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

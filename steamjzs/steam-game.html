@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>steam游戏列表</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/steam.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animations.css"/>
+	
+</head>
+<body class="st-bg2">
+	<div class="pt-perspective">
+		<!--nav-->
+		<div class="steam-nav clearfix">
+			<div class="logo"><a href="#"><img src="images/steam/steam_logo.png"/></a></div>
+			<div class="menu">
+				<ul class="clearfix">
+					<li><a href="index.html">首页</a></li>
+					<li class="cur"><a href="steam-game.html">steam游戏</a></li>
+					<li><a href="steam-paihangb.html">排行榜</a></li>
+				</ul>
+			</div>
+			<div class="userinfo clearfix">
+				<span class="name">尼古拉斯..Zhao4</span>
+				<span class="uerung"><img src="images/steam/steam_nav_user.png"/></span>
+			</div>
+		</div>
+		<!--steam游戏-->
+		<div class="steam-location"><a href="#">首页</a>  >  steam游戏</div>
+		<div class="steam-gamebox">
+			<div class="title">游戏</div>
+			<div class="cont">
+				<ul class="clearfix">
+					<li>
+						<div class="sort-t clearfix"><em class="before"></em><span>记忆力</span><em class="after"></em></div>
+						<div class="item clearfix">
+							<div class="img"><img src="images/list_img_1.png"/></div>
+							<div class="info">
+								<div class="sort-ct">强力记忆</div>
+								<div class="bg"></div>
+							</div>
+							<span class="hover-bg"></span>
+							<a href="#" class="jinruBtn">进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="sort-t clearfix"><em class="before"></em><span>专注力</span><em class="after"></em></div>
+						<div class="item clearfix">
+							<div class="img"><img src="images/list_img_2.png"/></div>
+							<div class="info">
+								<div class="sort-ct">滚球</div>
+								<div class="bg"></div>
+								
+							</div>
+							<span class="hover-bg"></span>
+							<a href="#" class="jinruBtn">限免</a>
+						</div>
+					</li>
+					<li>
+						<div class="sort-t clearfix"><em class="before"></em><span>反应力</span><em class="after"></em></div>
+						<div class="item clearfix">
+							<div class="img"><img src="images/list_img_1.png"/></div>
+							<div class="info">
+								<div class="sort-ct">强力记忆</div>
+								<div class="bg"></div>
+								
+							</div>
+							<span class="hover-bg"></span>
+							<a href="#" class="jinruBtn">进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="sort-t clearfix"><em class="before"></em><span>问题解决能力</span><em class="after"></em></div>
+						<div class="item clearfix">
+							<div class="img"><img src="images/list_img_2.png"/></div>
+							<div class="info">
+								<div class="sort-ct">滚球</div>
+								<div class="bg"></div>
+								
+							</div>
+							<span class="hover-bg"></span>
+							<a href="#" class="jinruBtn">限免</a>
+						</div>
+					</li>
+					<li>
+						<div class="sort-t clearfix"><em class="before"></em><span>空间想象能力</span><em class="after"></em></div>
+						<div class="item clearfix">
+							<div class="img"><img src="images/list_img_1.png"/></div>
+							<div class="info">
+								<div class="sort-ct">强力记忆</div>
+								<div class="bg"></div>
+								
+							</div>
+							<span class="hover-bg"></span>
+							<a href="#" class="jinruBtn">进入</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer"></div>
+		<div class="duoyu" style="height: 35px;"></div>
+	</div>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('.steam-gamebox ul .item').hover(function(){
+			$(this).addClass('active');
+		},function(){
+			$(this).removeClass('active');
+		});
+	})
+	</script>
+</body>
+</html>

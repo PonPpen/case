@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+    <link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+    <script src="./Public/js/jquery-1.8.3.min.js"></script>
+
+</head>
+
+<body>
+<header>
+    <div class="head_login">
+        <p onclick="history.go(-1);"><i class="iconfont icon-guanbi"></i></p>
+        <h4>登录</h4>
+    </div>
+</header>
+<section>
+    <div class="log">
+        <form method="post" action="" name="myform" id="myform">
+            <p> <a class="fr" href="/member/forget.html"><span class=" c_blue">忘记密码？</span></a></p>
+            <input type="hidden" value="aHR0cDovL20uNzIwemh1YW5nLmNvbS9pbmRleC5waHA_cz0vbWVtYmVy" name="ref" id="ref"/>
+            <input type="hidden" value="" name="skuid" id="skuid"/>
+            <input type="hidden" value="" name="quantity" id="quantity"/>
+            <input type="hidden" value="" name="sku" id="sku"/>
+            <input type="text" class="log_input" name="mobile" id="mobile" placeholder="请输入用户名/手机号">
+            <input type="password" class="log_input" name="password" id="password" placeholder="请输入密码">
+            <div class="log_submit reg_btn">登录</div>
+        </form>
+    </div>
+    <div class="kjBox">
+        <div class="hr">
+            <hr><span>OR</span><hr>
+        </div>
+        <div class="kj">
+            <p class="pb10 c_gray"> 没注册帐号？</p>
+            <a class="c_blue" href="#">快捷注册</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

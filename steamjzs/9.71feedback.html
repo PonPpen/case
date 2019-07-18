@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>9.71 用户反馈</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/jzs.css1.0.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animations.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
+	
+	
+</head>
+<body class="bg-2">
+	<!--top S-->
+	<div class="header">
+		<div class="wrap">
+			<a href="1.0index.html" class="logo"><img src="images/index_logo.png"/></a>
+			<ul class="menu clearfix">
+				<li><a href="#" class="cur"><span class="k-left"></span><span class="k-right"></span>首页</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>学科练习</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>STEAM游戏</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>星球部落</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>错题本</a></li>
+			</ul>
+			<div class="user-box">
+				<a href="#" class="dropbtn" class="clearfix">
+					<div class="user-img"><img src="images/user.jpg"/></div>
+					<span class="name">昵   称</span>
+					<i class="ico"></i>
+				</a>
+				<div class="dropbox">
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">我的消息</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--top E-->
+	<!--9.0 个人中心-->
+	<div class="localtion"></div>
+	<div class="pr-vcenter clearfix">
+		<div class="pr-vcenter-left">
+			<ul>
+				<li><a href="#">基本信息</a></li>
+				<li><a href="#">我的年级</a></li>
+				<li><a href="#">我的教材</a></li>
+				<li><a href="#">成长之路</a></li>
+				<li><a href="#">修改密码</a></li>
+				<li><a href="#" class="cur">用户反馈</a></li>
+			</ul>
+		</div>
+		<div class="pr-vcenter-right">
+			<div class="feedbackbox">
+				<form action="" method="post">
+					<textarea name="" rows="" placeholder="请输入您的建议。"></textarea>
+					<input type="submit" value="提交" class="submitBtn"/>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--弹窗-->
+	<div class="layer-bg"></div>
+	<div class="layer-box layer-box-jiaocai">
+		<div class="box-top">
+			<h3>修改教材</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<div class="tc-jiaocai">
+				<ul class="clearfix">
+					<li class="active">
+						<div class="banben"><em>人教</em></div>
+						<h4>人教版</h4>
+					</li>
+					<li>
+						<div class="banben"><em>北师大</em></div>
+						<h4>北师大版</h4>
+					</li>
+					<li>
+						<div class="banben"><em>北师大</em></div>
+						<h4>北师大版</h4>
+					</li>
+					<li>
+						<div class="banben"><em>北师大</em></div>
+						<h4>北师大版</h4>
+					</li>
+					<li>
+						<div class="banben"><em>北师大</em></div>
+						<h4>北师大版</h4>
+					</li>
+					<li>
+						<div class="banben"><em>北师大</em></div>
+						<h4>北师大版</h4>
+					</li>
+					<li>
+						<div class="banben"><em>北师大</em></div>
+						<h4>北师大版</h4>
+					</li>
+				</ul>
+			</div>
+		
+			<input type="button" value="确定" class="btn-enter btn-enter2"/>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	<!--9.0 个人中心-->
+	
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mjzs.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	$(function(){
+		$(window).load(function(){
+			$(".tc-jiaocai").mCustomScrollbar({
+				autoHideScrollbar:false,
+				theme:"light-thin"
+			});
+		});
+	})
+	</script>
+	
+</body>
+</html>

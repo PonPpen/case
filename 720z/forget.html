@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>忘记密码</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+    <link rel="stylesheet" media="screen" href="./Public/css/base.css" />
+    <link rel="stylesheet" media="screen" href="./Public/css/style.css" />
+    <link rel="stylesheet" media="screen" href="./Public/css/mstyle.css">
+</head>
+
+<body>
+<header>
+    <dl class="header white_bg dis-box">
+        <dt class="flex_box_1" onclick="history.go(-1);"><i class="iconfont icon-llmainpageback"></i></dt>
+        <dd class="logo_title flex_box_4">忘记密码</dd>
+        <dd class="text flex_box_1"><em class="placeholder"></em></dd>
+    </dl>
+</header>
+
+<section>
+    <div class="log">
+        <form method="post" action="" name="myform" id="myform">
+            <input type="hidden" value="/success/forget.html" name="ref" id="ref"  />
+            <input type="hidden" value="" name="sku" id="sku"  />
+            <input type="text" class="log_input" name="mobile" id="mobile" value="" placeholder="请输入手机号">
+
+            <div class="sendmsg_input">
+                <input type="text" class="log_input" name="mobilecode" id="mobilecode" value="" placeholder="请输入获取的验证码">
+                <button type="button" class="sendmsg" id="sendmsg">获取校验码</button>
+            </div>
+
+            <input type="password" class="log_input" name="password" id="password" value="" placeholder="新密码">
+            <div class="log_submit reg_btn submitbutton" id="reg_submit">设置新密码</div>
+
+        </form>
+    </div>
+</section>
+
+
+</body>
+</html>

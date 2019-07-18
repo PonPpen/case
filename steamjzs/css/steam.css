@@ -1,0 +1,407 @@
+body { background: linear-gradient(left, #13053a, #370c49 100%); background: -o-linear-gradient(left, #13053a, #370c49 100%); background: -ms-linear-gradient(left, #13053a, #370c49 100%); background: -moz-linear-gradient(left, #13053a, #370c49 100%); background: -webkit-linear-gradient(left, #13053a, #370c49 100%); }
+
+.pt-perspective { position: relative; width: 100%; height: 100%; -webkit-perspective: 1200px; -moz-perspective: 1200px; perspective: 1200px; overflow-y: auto; overflow-x: hidden; }
+
+.slideInleft { -webkit-animation: slideInleft .6s; animation: slideInleft .6s; }
+
+@-webkit-keyframes slideInleft { from { -webkit-transform: translate3d(100%, 0, 0); transform: translate3d(100%, 0, 0); }
+  to { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
+@keyframes slideInleft { from { -webkit-transform: translate3d(100%, 0, 0); transform: translate3d(100%, 0, 0); }
+  to { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } }
+.steambg { background: url(../images/steam/steam_bg.jpg) center 0 no-repeat #13053b; padding-top: 1px; width: 100%; }
+
+.spacesky { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+.spacesky .star { display: block; width: 0; height: 0; top: 10px; left: 50%; position: relative; transform-origin: 100% 0; animation: star-ani 6s infinite ease-out; opacity: 0; z-index: 2; }
+.spacesky .star:after { content: ''; display: block; top: 0px; left: 4px; border: 0px solid #fff; border-width: 0px 90px 2px 90px; border-color: transparent transparent transparent rgba(171, 241, 255, 0.8); transform: rotate(-60deg) translate3d(1px, 1px, 0); box-shadow: 0 0 1px 0 rgba(171, 241, 255, 0.1); transform-origin: 0% 100%; animation: shooting-ani 3s infinite ease-out; }
+.spacesky .blue1 { top: 30px; left: 50%; background: #abf1ff; animation-delay: 5s; -webkit-animation-delay: 5s; -moz-animation-delay: 5s; }
+.spacesky .blue1:after { border-color: transparent transparent transparent #abf1ff; animation-delay: 5s; -webkit-animation-delay: 5s; -moz-animation-delay: 5s; }
+.spacesky .blue2 { top: 35px; left: 60%; background: cyan; animation-delay: 7s; -webkit-animation-delay: 7s; -moz-animation-delay: 7s; }
+.spacesky .blue2:after { -webkit-animation-delay: 7s; -moz-animation-delay: 7s; animation-delay: 7s; }
+.spacesky .blue3 { top: 50px; left: 70%; background: #abf1ff; animation-delay: 5.8s; }
+.spacesky .blue3:after { border-color: transparent transparent transparent #abf1ff; animation-delay: 5.8s; }
+
+@keyframes star-ani { 0% { opacity: 0; transform: scale(0) rotate(0) translate3d(0, 0, 0); -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0); -moz-transform: scale(0) rotate(0) translate3d(0, 0, 0); }
+  50% { opacity: 1; }
+  100% { opacity: 0; transform: scale(1) rotate(0) translate3d(-300px, 500px, 0); -webkit-transform: scale(1) rotate(0) translate3d(-300px, 500px, 0); -moz-transform: scale(1) rotate(0) translate3d(-300px, 500px, 0); } }
+.steam-word { width: 411px; height: 113px; margin: 51px auto 0; }
+
+.steam-flower { width: 543px; height: 169px; background: url(../images/steam/top_flower.png) center bottom no-repeat; margin: 0 auto; position: relative; margin-top: -30px; left: 10px; z-index: 2; }
+.steam-flower .steam-flower-bg { width: 543px; height: 169px; background: url(../images/steam/top_flower.png) center bottom no-repeat; position: relative; z-index: 3; }
+.steam-flower ul { width: 140px; position: absolute; bottom: 260px; left: 50%; margin-left: -70px; z-index: 1; }
+.steam-flower ul li { width: 140px; height: 160px; }
+.steam-flower ul li.light-1 { background: url(../images/steam/light/flower_1.png) no-repeat; }
+.steam-flower ul li.light-2 { background: url(../images/steam/light/flower_2.png) no-repeat; }
+.steam-flower ul li.light-3 { background: url(../images/steam/light/flower_3.png) no-repeat; }
+.steam-flower ul li.light-4 { background: url(../images/steam/light/flower_4.png) no-repeat; }
+.steam-flower ul li.light-5 { background: url(../images/steam/light/flower_5.png) no-repeat; }
+.steam-flower ul li.light-6 { background: url(../images/steam/light/flower_6.png) no-repeat; }
+.steam-flower ul li.light-7 { background: url(../images/steam/light/flower_7.png) no-repeat; }
+.steam-flower ul li.light-8 { background: url(../images/steam/light/flower_8.png) no-repeat; }
+.steam-flower ul li.light-9 { background: url(../images/steam/light/flower_9.png) no-repeat; }
+.steam-flower ul li.light-10 { background: url(../images/steam/light/flower_10.png) no-repeat; }
+.steam-flower ul li.light-11 { background: url(../images/steam/light/flower_11.png) no-repeat; }
+.steam-flower ul li.light-12 { background: url(../images/steam/light/flower_12.png) no-repeat; }
+.steam-flower ul li.light-13 { background: url(../images/steam/light/flower_13.png) no-repeat; }
+.steam-flower ul li.light-14 { background: url(../images/steam/light/flower_14.png) no-repeat; }
+.steam-flower ul li.light-15 { background: url(../images/steam/light/flower_15.png) no-repeat; }
+.steam-flower ul li.light-16 { background: url(../images/steam/light/flower_16.png) no-repeat; }
+.steam-flower ul li.light-17 { background: url(../images/steam/light/flower_17.png) no-repeat; }
+.steam-flower ul li.light-18 { background: url(../images/steam/light/flower_18.png) no-repeat; }
+.steam-flower ul li.light-19 { background: url(../images/steam/light/flower_19.png) no-repeat; }
+.steam-flower ul li.light-20 { background: url(../images/steam/light/flower_20.png) no-repeat; }
+.steam-flower ul li.light-21 { background: url(../images/steam/light/flower_21.png) no-repeat; }
+.steam-flower ul li.light-22 { background: url(../images/steam/light/flower_22.png) no-repeat; }
+
+@keyframes bounceInDown { 0% { opacity: 0; -webkit-transform: translateY(-30px) scale(1.2); -ms-transform: translateY(-30px) scale(1.2); transform: translateY(-30px) scale(1.2); }
+  50% { opacity: 0.5; -webkit-transform: translateY(-15px) scale(1.1); -ms-transform: translateY(-15px) scale(1.1); transform: translateY(-15px) scale(1.1); }
+  100% { opacity: 1; -webkit-transform: translateY(0px) scale(1); -ms-transform: translateY(0px) scale(1); transform: translateY(0px) scale(1); } }
+.whatsteam { width: 102px; height: 56px; margin: 20px auto 0; position: relative; z-index: 3; }
+
+.formMain { width: 350px; margin: 20px auto; position: relative; z-index: 4; }
+.formMain li { margin-bottom: 10px; position: relative; }
+.formMain li label { float: left; display: block; width: 50px; height: 60px; line-height: 60px; color: #fff; text-shadow: 0 0 4px #f078f1; font-size: 16px; }
+.formMain li input[type=text], .formMain li input[type=password] { float: left; height: 60px; width: 300px; background: url(../images/steam/steam_line.png) left bottom no-repeat; text-indent: 20px; color: #fff; font-size: 16px; text-shadow: 0 0 4px #2170e7; }
+.formMain li span.error { color: #ffed23; text-align: right; text-shadow: 0 0 4px #f078f1; text-shadow: 0 0 4px #ffea00; position: absolute; right: 0; bottom: -20px; }
+.formMain .btn-login { display: block; width: 350px; height: 54px; background: url(../images/steam/bg_login.png) no-repeat; margin: 0 auto; margin-top: 40px; cursor: pointer; }
+.formMain .btn-login:hover { background: url(../images/steam/bg_login_hover.png) no-repeat; }
+.formMain .reg-forget { padding-top: 15px; }
+.formMain .reg-forget a { font-size: 16px; color: #ffea00; text-shadow: 0 0 4px #ffea00; }
+.formMain .reg-forget a.reg { float: left; }
+.formMain .reg-forget a.forget { float: right; }
+.formMain .reg-forget a:hover { text-shadow: none; }
+
+.footer { width: 100%; height: 129px; background: url(../images/steam/steam_foot.png) center 0 no-repeat; position: relative; }
+.footer .baidonghua { width: 323px; height: 52px; background: url(../images/steam/zw.png) no-repeat; position: absolute; bottom: -10px; left: 50%; margin-left: -161px; }
+.footer .fenjie { height: 2px; width: 100%; position: absolute; bottom: 0; left: 0; background: linear-gradient(left, #ad38ff 20%, #ff00d8 50%, #ab35ff 80%); background: -o-linear-gradient(left, #ad38ff 20%, #ff00d8 50%, #ab35ff 80%); background: -ms-linear-gradient(left, #ad38ff 20%, #ff00d8 50%, #ab35ff 80%); background: -moz-linear-gradient(left, #ad38ff 20%, #ff00d8 50%, #ab35ff 80%); background: -webkit-linear-gradient(left, #ad38ff 20%, #ff00d8 50%, #ab35ff 80%); }
+
+.duoyu { height: 377px; width: 100%; background: linear-gradient(left, #13053a, #370c49 100%); background: -o-linear-gradient(left, #13053a, #370c49 100%); background: -ms-linear-gradient(left, #13053a, #370c49 100%); background: -moz-linear-gradient(left, #13053a, #370c49 100%); background: -webkit-linear-gradient(left, #13053a, #370c49 100%); }
+
+.registerwrap .footer { margin-top: -20px; }
+
+.registerwrap .formMain .htitle { font-size: 24px; text-align: center; color: #fff; margin-bottom: 10px; text-shadow: 0 0 5px #f579f1; }
+.registerwrap .formMain li input[type="text"].verifytxt { width: 157px; background: url(../images/steam/yanzhengtext.png) no-repeat 3px bottom; }
+.registerwrap .formMain span.verification { display: block; float: left; text-align: center; width: 133px; height: 30px; line-height: 30px; font-size: 14px; border: 1px solid #fff; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; color: #fff; text-shadow: 0 0 4px #ff7bf4; margin-top: 10px; cursor: pointer; }
+.registerwrap .formMain span.verification:hover { background: rgba(0, 0, 0, 0.2); box-shadow: 0 0 5px #7e51ca; box-shadow: 0 0 8px #7e51ca; }
+.registerwrap .formMain .btn-reg { background: url(../images/steam/bn_register.png) no-repeat; }
+.registerwrap .formMain .btn-reg:hover { background: url(../images/steam/bn_register_hover.png) no-repeat; }
+
+.findpswwrap .footer { margin-top: -70px; }
+.findpswwrap .formMain { width: 430px; }
+.findpswwrap .formMain li { margin-bottom: 20px; }
+.findpswwrap .formMain li label { width: 80px; text-align: right; }
+.findpswwrap .formMain .htitle { font-size: 24px; text-align: center; color: #fff; margin-bottom: 10px; text-shadow: 0 0 5px #f579f1; }
+.findpswwrap .formMain li input[type="text"].verifytxt { width: 157px; background: url(../images/steam/yanzhengtext.png) no-repeat 3px bottom; }
+.findpswwrap .formMain span.verification { display: block; float: left; text-align: center; width: 133px; height: 30px; line-height: 30px; font-size: 14px; border: 1px solid #fff; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; color: #fff; text-shadow: 0 0 4px #ff7bf4; margin-top: 10px; cursor: pointer; }
+.findpswwrap .formMain span.verification:hover { box-shadow: 0 0 5px #7e51ca ,0 0 10px #8051cb inset; }
+.findpswwrap .formMain .btn-enter { background: url(../images/steam/bn_enter.png) no-repeat; }
+.findpswwrap .formMain .btn-enter:hover { background: url(../images/steam/bn_enter_hover.png) no-repeat; }
+
+/*personal center*/
+.st-bg { background: url(../images/steam/steam_bg.jpg) center 0 no-repeat #13053b; width: 100%; }
+
+.steam-nav { width: 1050px; height: 116px; background: url(../images/steam/steam_nav_bg.png) center 0 no-repeat; margin: 0 auto; position: relative; z-index: 9; }
+.steam-nav .logo { float: left; margin-top: 16px; }
+.steam-nav .menu { float: left; margin-left: 40px; }
+.steam-nav .menu li { float: left; width: 123px; height: 34px; font-size: 16px; color: #fff; text-align: center; line-height: 34px; margin: 35px 7px 0 0; }
+.steam-nav .menu li a { color: #fff; display: block; background: url(../images/steam/steam_nav.png) no-repeat; }
+.steam-nav .menu li.cur a, .steam-nav .menu li a:hover { background: url(../images/steam/steam_nav_hover.png) no-repeat; }
+.steam-nav .userinfo { float: right; margin-top: 30px; }
+.steam-nav .userinfo span.name { float: left; display: block; width: 170px; height: 31px; background: url(../images/steam/steam_nav_right.png) no-repeat; color: #fff; font-size: 16px; text-align: center; line-height: 31px; margin-top: 10px; }
+.steam-nav .userinfo span.name a { color: #fff; }
+.steam-nav .userinfo span.uerung { float: left; display: block; margin-left: -5px; }
+
+.switchbox { position: relative; width: 490px; height: 520px; margin: 0 auto; margin-top: -94px; overflow: hidden; }
+.switchbox a.backlogbtn { display: block; color: #fff; font-size: 14px; text-shadow: 0 0 4px #ff7bf4; line-height: 31px; }
+.switchbox a.backlogbtn i.ico { float: left; display: block; width: 24px; height: 31px; background: url(../images/steam/ico_back.png) no-repeat; }
+.switchbox .loginwrap, .switchbox .registerwrap, .switchbox .findpswwrap { position: absolute; top: 0; left: 0; width: 100%; z-index: 9; }
+
+.footerindex { margin-top: -80px; }
+
+.per-center { height: 432px; }
+
+.per-center-main { background: rgba(0, 0, 0, 0.22); -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; height: 429px; -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#77000000', endColorstr='#77000000')"; margin: 0 auto; width: 550px; }
+.per-center-main .title { color: #fff; font-size: 20px; text-shadow: 0 0 5px #f579f1; text-align: center; padding-top: 15px; }
+.per-center-main .line { width: 269px; height: 21px; background: url(../images/steam/steam_tc_line.png) no-repeat; margin: 0 auto; }
+.per-center-main .shengyu { margin: 0 25px; text-align: right; font-size: 14px; color: #fff; }
+.per-center-main .duihuanma { margin: 0 25px; padding: 10px 0; text-align: right; font-size: 16px; text-shadow: 0 0 5px #f579f1; }
+.per-center-main .duihuanma a { color: #ffea00; }
+.per-center-main .item { width: 504px; height: 47px; margin: 0 auto; font-size: 14px; margin-bottom: 10px; }
+.per-center-main .item span.t { float: left; display: block; width: 77px; text-align: right; color: #fff; font-size: 16px; text-shadow: 0 0 10px #db6fe2; line-height: 47px; }
+.per-center-main .item span.ct { display: block; float: left; width: 262px; line-height: 47px; margin-left: 57px; color: #fff; }
+.per-center-main .item a.Bn-revise { display: none; float: right; width: 74px; height: 25px; border: 1px solid #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; box-shadow: 0 0 10px #f579f1 inset; text-align: center; line-height: 25px; color: #fff; text-shadow: 0 0 5px #f579f1; margin: 10px 17px 0 0; }
+.per-center-main .item.active { background: url(../images/steam/steam_pers_hover.png) no-repeat; }
+.per-center-main .item.active a.Bn-revise { display: block; }
+.per-center-main input.quitBtn { display: block; width: 85px; height: 26px; border: 1px solid #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin: 26px auto; cursor: pointer; background: none; font-size: 14px; color: #fff; text-shadow: 0 0 5px #f579f1; box-shadow: 0 0 5px #f579f1 inset; }
+.per-center-main input.quitBtn:hover { box-shadow: 0 0 2px #f579f1, 0 0 20px rgba(245, 121, 241, 0.3) inset; }
+
+.layer-ui { background: rgba(0, 0, 0, 0.22); -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; height: 429px; -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#77000000', endColorstr='#77000000')"; margin: 0 auto; width: 550px; position: relative; border: 1px solid rgba(255, 255, 255, 0.1); }
+.layer-ui .title { color: #fff; font-size: 20px; text-shadow: 0 0 5px #f579f1; text-align: center; padding-top: 15px; }
+.layer-ui .line { width: 269px; height: 21px; background: url(../images/steam/steam_tc_line.png) no-repeat; margin: 0 auto; }
+.layer-ui span.close { display: block; width: 32px; height: 32px; background: url(../images/steam/steam_close.png) no-repeat center center; position: absolute; top: 6px; right: 6px; cursor: pointer; }
+.layer-ui span.close:hover { background-image: url(../images/steam/steam_close_hover.png); }
+.layer-ui .layer-main ul.formul { height: 220px; }
+.layer-ui .layer-main ul.formul li { margin-bottom: 12px; position: relative; }
+.layer-ui .layer-main ul.formul span.label { display: block; float: left; width: 68px; color: #fff; font-size: 16px; text-shadow: 0 0 5px #f579f1; line-height: 48px; text-align: right; margin-right: 20px; }
+.layer-ui .layer-main ul.formul .txt { display: block; float: left; width: 270px; height: 48px; color: #fff; text-indent: 10px; background: url(../images/steam/line_txt.png) left bottom no-repeat; font-size: 14px; }
+.layer-ui .layer-main.reviseMain ul.formul { width: 428px; margin: 0 auto; margin-top: 56px; }
+.layer-ui .layer-main .line-reserve { border-top: 1px solid rgba(255, 255, 255, 0.1); height: 1px; margin: 0 60px; }
+.layer-ui .layer-main input.reserveBtn { display: block; width: 85px; height: 26px; border: 1px solid #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; margin: 26px auto; cursor: pointer; background: none; font-size: 14px; color: #fff; text-shadow: 0 0 5px #f579f1; box-shadow: 0 0 5px #f579f1 inset; }
+.layer-ui .layer-main input.reserveBtn:hover { box-shadow: 0 0 2px #f579f1, 0 0 20px rgba(245, 121, 241, 0.3) inset; }
+
+.layer-username, .layer-password, .layer-xueduan, .layer-bangding, .layer-duihuan { display: none; }
+
+.layer-password .layer-main.reviseMain ul.formul { height: auto; margin-top: 14px; margin-bottom: 40px; }
+
+.layer-main.reviseMain ul.formul span.vertifblock { display: block; float: left; text-align: center; width: 133px; height: 30px; line-height: 30px; font-size: 14px; border: 1px solid #fff; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; color: #fff; text-shadow: 0 0 4px #ff7bf4; position: absolute; right: 80px; top: 5px; cursor: pointer; }
+.layer-main.reviseMain ul.formul span.vertifblock:hover { background: rgba(0, 0, 0, 0.2); box-shadow: 0 0 5px #7e51ca; box-shadow: 0 0 8px #7e51ca; }
+.layer-main.reviseMain ul.formul .txt { width: 193px; }
+.layer-main.reviseMain ul.formul .txt.yz-txt { width: 165px; background-image: url(../images/steam/steam_tc_line2.png); }
+.layer-main.reviseMain ul.formul a.seeyesno { display: block; float: left; width: 29px; height: 15px; background: url(../images/steam/see_no.png) no-repeat; margin-top: 15px; }
+.layer-main.reviseMain ul.formul a.seeyesno.off { background-image: url(../images/steam/see.png); }
+.layer-main.reviseMain ul.formul .sectionbox { float: left; margin-top: 12px; }
+.layer-main.reviseMain ul.formul .sectionbox span { float: left; display: block; width: 62px; height: 26px; line-height: 26px; text-align: center; border: 1px solid transparent; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; font-size: 14px; color: #fff; margin-right: 40px; cursor: pointer; }
+.layer-main.reviseMain ul.formul .sectionbox span.on { border: 1px solid #936cdf; box-shadow: 0 0 6px rgba(226, 88, 255, 0.26), 0 0 20px rgba(226, 88, 255, 0.26) inset; }
+.layer-main.reviseMain ul.formul span.error { position: absolute; top: 56px; left: 92px; color: #ffeb66; text-shadow: 0 0 5px #ff7bf4; }
+
+/*Leaderboard*/
+.st-bg2 { background: url(../images/steam/steam_bg2.jpg) center 0 no-repeat; }
+
+.steam-location { width: 1050px; margin: 0 auto; color: #fff; font-size: 16px; }
+.steam-location a { color: #fff; }
+.steam-location a:hover { color: #f579f1; }
+
+.ld-main { width: 986px; height: 806px; background: url(../images/steam/leaderboard_bg.png) no-repeat; margin: 10px auto 0; }
+.ld-main .hd-top { width: 940px; height: 59px; line-height: 59px; margin: 0 auto; padding-top: 23px; color: #fff; }
+.ld-main .hd-top span.l { float: left; font-size: 30px; font-style: italic; margin-left: 25px; }
+.ld-main .hd-top .rw { float: right; margin-right: 30px; font-size: 16px; }
+.ld-main .hd-top .rw span { margin-left: 34px; font-style: italic; }
+.ld-main .cont { width: 956px; margin: 0 auto; }
+.ld-main .cont .scrwrap { padding: 10px 8px; height: 690px; overflow-y: auto; }
+.ld-main .cont .scrwrap .mCSB_scrollTools .mCSB_draggerRail { background: none; }
+.ld-main .cont .scrwrap .mCS-light-thin > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { width: 12px; border: 1px solid #fff; box-shadow: 0 0 5px #e258ff inset; background: transparent; border-radius: 0; }
+.ld-main .cont ul li { height: 58px; background: rgba(0, 0, 0, 0.2); border: 1px solid rgba(0, 0, 0, 0.2); margin-bottom: 10px; -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#77000000', endColorstr='#77000000')"; line-height: 58px; color: #fff; }
+.ld-main .cont ul li:hover { border: 1px solid transparent; }
+.ld-main .cont ul span.number { display: block; float: left; width: 122px; height: 58px; text-align: center; }
+.ld-main .cont ul span.number em { display: block; width: 44px; height: 45px; margin-left: 40px; }
+.ld-main .cont ul span.number em.num1 { background: url(../images/steam/leader_1.png) no-repeat; }
+.ld-main .cont ul span.number em.num2 { background: url(../images/steam/leader_2.png) no-repeat; }
+.ld-main .cont ul span.number em.num3 { background: url(../images/steam/leader_3.png) no-repeat; }
+.ld-main .cont ul span.img { display: block; float: left; width: 83px; text-align: center; }
+.ld-main .cont ul span.img img { margin-top: 3px; }
+.ld-main .cont ul span.name { display: block; float: left; width: 265px; text-align: center; font-size: 24px; }
+.ld-main .cont ul span.total { float: right; display: block; width: 176px; font-size: 16px; }
+.ld-main .cont ul span.total b { font-weight: normal; margin-left: 15px; }
+
+/*game*/
+.steam-gamebox { width: 1076px; height: 722px; background: url(../images/steam/game_bg.png) no-repeat; margin: 20px auto 0; }
+.steam-gamebox .title { height: 53px; padding-top: 15px; line-height: 53px; color: #fff; font-size: 18px; color: #00fefe; text-indent: 53px; }
+.steam-gamebox .cont { margin: 30px 15px 0; }
+.steam-gamebox .cont li { float: left; width: 462px; margin: 0 30px 44px; }
+.steam-gamebox .cont .sort-t { height: 22px; margin-bottom: 27px; }
+.steam-gamebox .cont .sort-t em { display: block; float: left; width: 28px; height: 19px; background: url(../images/ico_jzs.png) no-repeat -403px -156px; margin-top: 3px; }
+.steam-gamebox .cont .sort-t span { display: block; float: left; font-size: 18px; color: #d7f0ff; text-shadow: 0 0 5px rgba(91, 64, 255, 0.8); line-height: 22px; padding: 0 12px; }
+.steam-gamebox .cont .item { border: 2px solid #0c2550; position: relative; background: #091536; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.steam-gamebox .cont .item .img { float: left; width: 117px; height: 94px; overflow: hidden; border-right: 1px solid #0a3c74; }
+.steam-gamebox .cont .item .info { width: 329px; float: left; margin-left: 8px; position: relative; }
+.steam-gamebox .cont .item .info .sort-ct { font-size: 18px; color: #0fb2e1; margin-top: 35px; margin-left: 12px; }
+.steam-gamebox .cont .item .info .bg { width: 148px; height: 7px; background: url(../images/ico_jzs.png) no-repeat -404px -202px; margin-top: 10px; }
+.steam-gamebox .cont .item span.hover-bg { display: none; }
+.steam-gamebox .cont .item a.jinruBtn { display: block; position: absolute; width: 76px; height: 76px; background: url(../images/ico_jinru.png) no-repeat; right: 16px; top: 10px; text-align: center; line-height: 76px; color: #e3ddf4; text-shadow: 0 0 5px #590eb8; font-size: 18px; }
+.steam-gamebox .cont .item.active span.hover-bg { display: block; width: 461px; height: 96px; background: url(../images/list_select.png) no-repeat; position: absolute; top: -2px; left: -2px; }
+
+/*index*/
+.st-indx { position: relative; z-index: 6; width: 1050px; margin: 0 auto; }
+.st-indx .st-indxleft { float: left; width: 500px; height: 500px; position: relative; }
+.st-indx .st-indxright { float: right; margin: 100px 0 90px; }
+.st-indx .st-indxright .date { text-align: right; margin-right: 40px; }
+.st-indx .st-indxright .date em { font-size: 60px; color: #fff; text-shadow: 0 0 1px #ff6ef3, 0 0 10px #ff6ef3; }
+.st-indx .st-indxright .date i.ico { display: inline-block; width: 41px; height: 66px; position: relative; top: 15px; margin-left: 10px; }
+.st-indx .st-indxright .date i.ico.ico-up { background: url(../images/steam/ico_up.png) no-repeat; }
+.st-indx .st-indxright .date i.ico.ico-down { background: url(../images/steam/ico_down.png) no-repeat; }
+.st-indx .st-indxright .date i.ico.ico-chiping { background: url(../images/steam/ico_chiping.png) no-repeat; }
+.st-indx .st-indxright .tips { text-align: right; font-size: 24px; color: #fff; text-shadow: 0 0 1px #ff6ef3, 0 0 10px #ff6ef3; margin-right: 40px; }
+.st-indx .st-indxright .tips span { color: #fffc00; }
+.st-indx .st-indxright .moreico { width: 434px; margin-top: 20px; }
+.st-indx .st-indxright .moreico span { display: block; float: left; margin-left: -36px; }
+.st-indx .st-indxright .moreico span a { display: block; width: 148px; height: 128px; margin-left: -20px; }
+.st-indx .st-indxright .moreico span a:hover, .st-indx .st-indxright .moreico span a.cur { width: 148px; height: 128px; }
+.st-indx .st-indxright .moreico span a.ico-1 { background: url(../images/steam/ico_1.png) center center no-repeat; }
+.st-indx .st-indxright .moreico span a.ico-1:hover, .st-indx .st-indxright .moreico span a.ico-1.cur { background: url(../images/steam/ico_1_hover.png) no-repeat; }
+.st-indx .st-indxright .moreico span a.ico-2 { background: url(../images/steam/ico_2.png) center center no-repeat; }
+.st-indx .st-indxright .moreico span a.ico-2:hover { background: url(../images/steam/ico_2_hover.png) no-repeat; }
+.st-indx .st-indxright .moreico span a.ico-3 { background: url(../images/steam/ico_3.png) center center no-repeat; }
+.st-indx .st-indxright .moreico span a.ico-3:hover { background: url(../images/steam/ico_3_hover.png) no-repeat; }
+.st-indx .st-indxright .moreico span a.ico-4 { background: url(../images/steam/ico_4.png) center center no-repeat; }
+.st-indx .st-indxright .moreico span a.ico-4:hover { background: url(../images/steam/ico_4_hover.png) no-repeat; }
+
+.objectbox { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.objectbox span { position: absolute; display: block; width: 63px; }
+.objectbox span.obj-1 { left: 35%; top: 40px; -webkit-animation: stmove 2s ease infinite; -moz-animation: stmove 2s ease infinite; animation: stmove 2s ease infinite; }
+.objectbox span.obj-1 img { animation: shenSuo 1s ease-in-out infinite; }
+.objectbox span.obj-2 { left: 0%; top: 160px; -webkit-animation: stmove 1s ease infinite; -moz-animation: stmove 1s ease infinite; animation: stmove 1s ease infinite; }
+.objectbox span.obj-2 img { animation: shenSuo 1.4s ease-in-out infinite; }
+.objectbox span.obj-3 { left: 5%; top: 346px; -webkit-animation: stmove 2.5s ease infinite; -moz-animation: stmove 2.5s ease infinite; animation: stmove 2.5s ease infinite; }
+.objectbox span.obj-3 img { animation: shenSuo 1.5s ease-in-out infinite; }
+.objectbox span.obj-4 { right: 6%; top: 346px; -webkit-animation: stmove 3s ease infinite; -moz-animation: stmove 3s ease infinite; animation: stmove 3s ease infinite; }
+.objectbox span.obj-4 img { animation: shenSuo 2s ease-in-out infinite; }
+.objectbox span.obj-5 { right: 0%; top: 160px; -webkit-animation: stmove 3.2s ease infinite; -moz-animation: stmove 3.2s ease infinite; animation: stmove 3.2s ease infinite; }
+.objectbox span.obj-5 img { animation: shenSuo 1.2s ease-in-out infinite; }
+
+@-webkit-keyframes stmove { 0% { -webkit-transform: translateX(-1%) translateY(-1%); }
+  50% { -webkit-transform: translateX(1%) translateY(1%); }
+  100% { -webkit-transform: translateX(0%) translateY(0%); } }
+@-moz-keyframes stmove { 0% { -moz-transform: translateX(-1%) translateY(-1%); }
+  50% { -moz-transform: translateX(1%) translateY(1%); }
+  100% { -moz-transform: translateX(0%) translateY(0%); } }
+@keyframes stmove { 0% { transform: translateX(-1%) translateY(-1%); }
+  50% { transform: translateX(1%) translateY(1%); }
+  100% { transform: translateX(0%) translateY(0%); } }
+@keyframes shenSuo { 0% { width: 58px; height: 67px; }
+  50% { width: 63px; height: 57px; }
+  100% { width: 58px; height: 67px; } }
+.heibaofeng { width: 600px; height: 600px; background: url(../images/steam/heidong.png) no-repeat; position: absolute; left: -50px; top: -50px; z-index: 1; -webkit-animation: baoFeng 2s linear infinite; -moz-animation: baoFeng 2s linear infinite; animation: baoFeng 2s linear infinite; }
+
+.leidatu, .objectbox { position: absolute; left: 0; top: 0; z-index: 3; -webkit-animation: leiDatu 2s linear; -moz-animation: leiDatu 2s linear; animation: leiDatu 2s linear; }
+
+.leidatu { z-index: 4; }
+
+@-webkit-keyframes baoFeng { from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); } }
+@-moz-keyframes baoFeng { from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); } }
+@keyframes baoFeng { from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); } }
+@-webkit-keyframes leiDatu { from { -webkit-transform: scale(0); opacity: 0; }
+  to { -webkit-transform: scale(100); opacity: 0.25; } }
+@-moz-keyframes leiDatu { from { -moz-transform: scale(0); opacity: 0; }
+  to { -moz-transform: scale(100); opacity: 0.25; } }
+@keyframes leiDatu { from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 0.25; } }
+.index-foot { height: 476px; background: url(../images/steam/index_foot.png) center 44px no-repeat; margin-top: -50px; position: relative; z-index: 2; }
+.index-foot .numberline { width: 1041px; height: 14px; margin: 28px auto; overflow: hidden; position: relative; }
+.index-foot .numberline .numberlinein { position: absolute; top: 0; height: 14px; background: url(../images/steam/number.png) 16px 0 no-repeat; width: 0; overflow: hidden; }
+.index-foot .flowerbar { width: 1060px; height: 44px; margin: 0 auto; overflow: hidden; position: absolute; left: 50%; margin-left: -520px; }
+.index-foot .flowerbar .innerflower { position: absolute; left: 0; height: 44px; width: 0; overflow: hidden; }
+.index-foot .flowerbar ul { position: relative; left: 13px; }
+.index-foot .flowerbar li { float: left; width: 34px; height: 44px; position: relative; }
+.index-foot .flowerbar li span { position: absolute; bottom: 0; }
+.index-foot .flowerbar li span.wj-1 { width: 46px; height: 49px; left: -23px; bottom: -10px; }
+.index-foot .flowerbar li span.wj-1 img { -webkit-animation: dongQilai1 2s linear infinite; -moz-animation: dongQilai1 2s linear infinite; animation: dongQilai1 2s linear infinite; }
+.index-foot .flowerbar li span.wj-2 { width: 18px; height: 16px; left: -9px; bottom: 0px; }
+.index-foot .flowerbar li span.wj-3 { width: 41px; height: 39px; left: -20px; bottom: -6px; }
+.index-foot .flowerbar li span.wj-3 img { -webkit-animation: dongQilai1 2.2s linear infinite; -moz-animation: dongQilai1 2.2s linear infinite; animation: dongQilai1 2.2s linear infinite; }
+.index-foot .flowerbar li span.wj-4 { width: 29px; height: 28px; left: -15px; bottom: -6px; }
+.index-foot .flowerbar li span.wj-4 img { -webkit-animation: dongQilai4 1.8s linear infinite; -moz-animation: dongQilai4 1.8s linear infinite; animation: dongQilai4 1.8s linear infinite; }
+.index-foot .flowerbar li span.wj-5 { width: 56px; height: 67px; left: -28px; bottom: -6px; }
+.index-foot .flowerbar li span.wj-5 img { -webkit-animation: dongQilai5 2.5s linear infinite; -moz-animation: dongQilai5 2.5s linear infinite; animation: dongQilai5 2.5s linear infinite; }
+.index-foot .schedule { position: absolute; width: 100%; height: 3px; left: 0; top: 44px; }
+.index-foot .schedule .line-1 { height: 3px; position: absolute; left: 0; top: 0; background: #ba38ee; background: linear-gradient(left, #b23ef1, #c630e8 100%); background: -ms-linear-gradient(left, #b23ef1, #c630e8 100%); background: -moz-linear-gradient(left, #b23ef1, #c630e8 100%); background: -webkit-linear-gradient(left, #b23ef1, #c630e8 100%); }
+.index-foot .schedule .line-2 { height: 3px; position: absolute; top: 0; background: #ba38ee; background: linear-gradient(left, #e718d8, #c630e8 100%); background: -ms-linear-gradient(left, #e718d8, #c630e8 100%); background: -moz-linear-gradient(left, #e718d8, #c630e8 100%); background: -webkit-linear-gradient(left, #e718d8, #c630e8 100%); }
+.index-foot .schedule .line-login { height: 3px; position: absolute; left: 0; top: 0; width: 100%; background: #ba38ee; background: linear-gradient(left, #ae3bff 20%, #ff00d8 50%, #ae3bff 80%); background: -ms-linear-gradient(left, #ae3bff 20%, #ff00d8 50%, #ae3bff 80%); background: -moz-linear-gradient(left, #ae3bff 20%, #ff00d8 50%, #ae3bff 80%); background: -webkit-linear-gradient(left, #ae3bff 20%, #ff00d8 50%, #ae3bff 80%); }
+.index-foot .schedule .lineCnter { width: 1020px; height: 3px; margin: 0 auto; position: relative; }
+.index-foot .schedule .lineCnter span { display: block; height: 3px; position: absolute; left: 0; top: 0; background: linear-gradient(left, #c630e8, #e718d8 100%); background: -ms-linear-gradient(left, #c630e8, #e718d8 100%); background: -moz-linear-gradient(left, #c630e8, #e718d8 100%); background: -webkit-linear-gradient(left, #c630e8, #e718d8 100%); }
+.index-foot .schedule .lineCnter em.octopus { display: block; width: 44px; height: 56px; background: url(../images/steam/octopus.png) 0 0 no-repeat; position: absolute; bottom: 3px; z-index: 8; margin-left: -20px; }
+.index-foot .schedule .lineCnter i.ico { display: block; width: 27px; height: 27px; background: url(../images/steam/jd_dian.png) no-repeat; position: absolute; bottom: -12px; margin-left: -10px; z-index: 7; }
+
+@keyframes dongQilai1 { 0% { width: 38px; height: 49px; }
+  50% { width: 46px; height: 45px; }
+  100% { width: 38px; height: 49px; } }
+@keyframes dongQilai4 { 0% { width: 19px; height: 28px; }
+  50% { width: 29px; height: 22px; }
+  100% { width: 19px; height: 28px; } }
+@keyframes dongQilai5 { 0% { width: 46px; height: 67px; }
+  50% { width: 56px; height: 62px; }
+  100% { width: 46px; height: 67px; } }
+.xueduanbar span { display: inline-block; width: 62px; height: 26px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color: #fff; font-size: 14px; line-height: 26px; border: 1px solid transparent; text-align: center; margin: 16px 14px 0; cursor: pointer; }
+.xueduanbar span.active { background: #7f3cc3; box-shadow: 0 0 5px #7f3cc3; border: 1px solid #fff; }
+
+.registerwrap .formMain li { margin-bottom: 0; }
+
+.scorebao { position: relative; width: 1060px; height: 44px; margin: 0 auto; }
+.scorebao .flowerbar li { cursor: pointer; }
+.scorebao .flowerbar ul { height: 44px; }
+.scorebao .Score { position: absolute; bottom: 27px; left: -40px; width: 96px; height: 68px; background: url(../images/steam/defen.png) no-repeat; }
+
+body .Zebra_Tooltip_Arrow_Bottom { display: none; }
+
+.Zebra_Tooltip .Zebra_Tooltip_Message { padding: 0; width: 96px; height: 68px; box-shadow: none; background: url(../images/steam/defen.png) no-repeat !important; }
+.Zebra_Tooltip .Zebra_Tooltip_Message .Score .fen { text-align: center; padding-top: 12px; }
+.Zebra_Tooltip .Zebra_Tooltip_Message .Score .scorebar { width: 77px; height: 15px; margin: 5px auto; background: url(../images/steam/star_2.png) no-repeat; }
+.Zebra_Tooltip .Zebra_Tooltip_Message .Score .scorebar span { display: block; height: 15px; background: url(../images/steam/star_1.png) no-repeat 2px center; }
+
+body.st-bg3 { background: url(../images/steam/line_gra.jpg) center 0 repeat-y; }
+
+.mainintro { background: url(../images/steam/bg_intro.jpg) no-repeat center 0; }
+
+.steam-nav2 { background: url(../images/steam/team_intro_top.png) center bottom no-repeat; }
+.steam-nav2 .userlogreg { float: right; margin-top: 35px; }
+.steam-nav2 .userlogreg a { display: block; float: left; width: 113px; height: 34px; background: url(../images/steam/ico_team_intro.png) no-repeat; line-height: 34px; color: #fff; font-size: 16px; text-align: center; margin-left: 22px; transition: none; }
+.steam-nav2 .userlogreg a.loginbtn { background-position: 0 -35px; }
+.steam-nav2 .userlogreg a.loginbtn:hover { background-position: 0 0; }
+.steam-nav2 .userlogreg a.regbtn { background-position: 0 -116px; }
+.steam-nav2 .userlogreg a.regbtn:hover { background-position: 0 -80px; }
+
+.introfirst { width: 1050px; margin: 0 auto; }
+.introfirst .fis-left { float: left; margin: 52px 0 0 113px; }
+.introfirst .fis-right { float: right; width: 552px; margin-top: 92px; }
+.introfirst .fis-right h1 { display: block; font-weight: normal; text-shadow: 0 0 26px #ab5cf0; color: #fff; font-size: 40px; }
+.introfirst .fis-right p { color: #fff; font-size: 16px; line-height: 24px; padding: 20px 0; }
+.introfirst .fis-right a.nowstart { display: block; width: 274px; height: 44px; margin-top: 20px; background: #047ce1; border: 3px solid #148ff6; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; text-align: center; line-height: 44px; font-size: 24px; color: #fff; }
+.introfirst .fis-right a.nowstart:hover { background: #148ff6; }
+.introfirst .fis-right .flower { margin-top: 26px; }
+.introfirst .fis-right .flower li { float: left; height: 62px; width: 56px; margin: 0 4px; position: relative; overflow: hidden; }
+.introfirst .fis-right .flower li img { position: absolute; bottom: 0; left: 50%; margin-left: -28px; }
+.introfirst .fis-right .flower li.flw-1 img { bottom: -10px; -webkit-animation: dongQilai1 1.5s linear infinite; -moz-animation: dongQilai1 1.5s linear infinite; animation: dongQilai1 1.5s linear infinite; }
+.introfirst .fis-right .flower li.flw-2 img { -webkit-animation: dongQilai4 2s linear infinite; -moz-animation: dongQilai4 2s linear infinite; animation: dongQilai4 2s linear infinite; }
+.introfirst .fis-right .flower li.flw-3 img { -webkit-animation: dongQilai5 2s linear infinite; -moz-animation: dongQilai5 2s linear infinite; animation: dongQilai5 2s linear infinite; }
+.introfirst .fis-right .flower li.flw-4 img { bottom: -6px; -webkit-animation: dongQilai1 2s linear infinite; -moz-animation: dongQilai1 2s linear infinite; animation: dongQilai1 2s linear infinite; }
+.introfirst .fis-right .flower li.flw-5 img { bottom: 3px; -webkit-animation: dongQilai4 2.5s linear infinite; -moz-animation: dongQilai4 2.5s linear infinite; animation: dongQilai4 2.5s linear infinite; }
+
+.intro-middle { height: 1160px; }
+.intro-middle .hownao { width: 1050px; margin: 100px auto 0; position: relative; }
+.intro-middle .hownao .l { margin-left: 67px; }
+.intro-middle .hownao .title { margin-left: 130px; width: 343px; height: 88px; line-height: 88px; color: #fff; font-size: 36px; background: url(../images/steam/left_wod.png) no-repeat center bottom; }
+.intro-middle .hownao .title h2 { font-weight: normal; margin-left: 50px; }
+.intro-middle .hownao p { color: #d5cabc; font-size: 16px; line-height: 36px; width: 368px; margin-top: 20px; text-indent: 32px; }
+.intro-middle .hownao .r { position: absolute; right: 90px; top: -40px; }
+.intro-middle .hownao2 { width: 1050px; margin: 180px auto 0; position: relative; }
+.intro-middle .hownao2 .l { position: absolute; left: 52px; top: 20px; }
+.intro-middle .hownao2 .r { margin-left: 410px; }
+.intro-middle .hownao2 .r .title { margin-left: 0; width: 590px; height: 88px; line-height: 88px; color: #fff; font-size: 36px; background: url(../images/steam/left_wod_1.png) no-repeat left bottom; }
+.intro-middle .hownao2 .r .title h2 { font-weight: normal; margin-left: 50px; }
+.intro-middle .hownao2 .r p { margin-left: 60px; color: #d5cabc; font-size: 16px; line-height: 36px; width: 546px; margin-top: 20px; text-indent: 32px; }
+
+.intro-bottom { background: url(../images/steam/line_gra1.jpg) center 0 repeat-y; }
+.intro-bottom .intro-dtl-1 { width: 1050px; margin: 0 auto; padding-top: 30px; }
+.intro-bottom .intro-dtl-1 .top-img { width: 452px; height: 205px; background: url(../images/steam/intro_3.png) no-repeat; margin: 0 auto; }
+.intro-bottom .intro-dtl-1 h2 { font-weight: normal; display: block; text-align: center; font-size: 36px; text-shadow: 0 0 10px #fff; color: #fff; }
+.intro-bottom .intro-dtl-1 p { color: #fff; font-size: 16px; text-indent: 32px; line-height: 36px; padding: 30px 0; }
+.intro-bottom .intro-dtl { width: 1050px; margin: 40px auto 80px; }
+.intro-bottom .intro-dtl .top-img { width: 18px; height: 67px; background: url(../images/steam/intro_middle.png) no-repeat; margin: 0 auto 32px; }
+.intro-bottom .intro-dtl h2 { font-weight: normal; display: block; text-align: center; font-size: 24px; color: #fff; }
+.intro-bottom .intro-dtl .intro-box { padding-top: 50px; }
+.intro-bottom .intro-dtl .wordl1 { float: left; width: 530px; margin-left: 90px; color: #d5cabc; font-size: 16px; line-height: 36px; text-indent: 32px; margin-top: 30px; }
+.intro-bottom .intro-dtl .imgr1 { float: right; margin-right: 74px; }
+.intro-bottom .intro-dtl .imgl1 { float: left; margin-left: 62px; }
+.intro-bottom .intro-dtl .wordr1 { float: right; width: 600px; margin-right: 70px; color: #d5cabc; font-size: 16px; line-height: 36px; text-indent: 32px; margin-top: 30px; }
+
+.layer-bg0 { display: none; background: rgba(0, 0, 0, 0.5); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#77000000', endColorstr='#77000000')"; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100; }
+
+.layer-box.layer-tips { display: none; width: 585px; height: 485px; position: fixed; left: 50%; margin-left: -292px; top: 0; z-index: 101; background: url(../images/steam/layer_bg_1.png) no-repeat; top: 50%; margin-top: -242px; }
+.layer-box.layer-tips .box-top { width: 585px; height: 48px; padding-top: 11px; position: relative; }
+.layer-box.layer-tips .box-top h3 { display: block; font-size: 22px; color: #fff; text-align: center; line-height: 48px; font-weight: normal; }
+.layer-box.layer-tips .box-top span.close { display: block; width: 16px; height: 16px; background: url(../images/steam/close_tips.png) no-repeat; position: absolute; right: 31px; top: 31px; opacity: 0.8; cursor: pointer; }
+.layer-box.layer-tips .box-top span.close:hover { opacity: 1; }
+.layer-box.layer-tips .tips-box { width: 558px; margin: 0 auto; }
+.layer-box.layer-tips .tips-box .tips-word { padding: 116px 0 126px; text-align: center; color: #fff; font-size: 22px; }
+.layer-box.layer-tips .tips-box .tips-opr { text-align: center; }
+.layer-box.layer-tips .tips-box .tips-opr input { width: 134px; height: 40px; background: #d229d0; border: 2px solid #e950e7; color: #fff; font-size: 22px; text-align: center; margin: 10px 48px; cursor: pointer; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
+.layer-box.layer-tips .tips-box .tips-opr input:hover { box-shadow: 0 0 5px #E950E7; }
+
+.layer-box.layer-tips2 { display: none; width: 445px; height: 325px; position: fixed; left: 50%; margin-left: -222px; top: 0; z-index: 101; background: url(../images/steam/layer_bg_2.png) no-repeat; top: 50%; margin-top: -162px; }
+.layer-box.layer-tips2 .box-top { width: 445px; height: 48px; padding-top: 11px; position: relative; }
+.layer-box.layer-tips2 .box-top h3 { display: block; font-size: 22px; color: #fff; text-align: center; line-height: 48px; font-weight: normal; }
+.layer-box.layer-tips2 .box-top span.close { display: block; width: 16px; height: 16px; background: url(../images/steam/close_tips.png) no-repeat; position: absolute; right: 31px; top: 31px; opacity: 0.8; cursor: pointer; }
+.layer-box.layer-tips2 .box-top span.close:hover { opacity: 1; }
+.layer-box.layer-tips2 .tips-box { width: 414px; margin: 0 auto; }
+.layer-box.layer-tips2 .tips-box .tips-word { padding: 70px 0 70px; text-align: center; color: #fff; font-size: 22px; line-height: 44px; }

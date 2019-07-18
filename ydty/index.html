@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>深圳市易达通运国际货运代理有限公司</title>
+<link href="style/yd.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jQuery.textSlider.js"></script>
+<script language="javascript">
+	function getBg(num){
+		for(var id = 0;id<=20;id++)
+		{
+			if(id==num)
+			{
+				document.getElementById("mynav"+id).className="current";
+			}
+			else
+			{
+				document.getElementById("mynav"+id).className="";
+			}
+		}
+	}
+</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+	  $(function() {
+	  
+		//cache the ticker
+		var ticker = $("#ticker");
+		  
+		//wrap dt:dd pairs in divs
+		ticker.children().filter("dt").each(function() {
+		  
+		  var dt = $(this),
+		    container = $("<div>");
+		  
+		  dt.next().appendTo(container);
+		  dt.prependTo(container);
+		  
+		  container.appendTo(ticker);
+		});
+				
+		//hide the scrollbar
+		ticker.css("overflow", "hidden");
+		
+		//animator function
+		function animator(currentItem) {
+		    
+		  //work out new anim duration
+		  var distance = currentItem.height();
+			duration = (distance + parseInt(currentItem.css("marginTop"))) / 0.025;
+
+		  //animate the first child of the ticker
+		  currentItem.animate({ marginTop: -distance }, duration, "linear", function() {
+		    
+			//move current item to the bottom
+			currentItem.appendTo(currentItem.parent()).css("marginTop", 0);
+
+			//recurse
+			animator(currentItem.parent().children(":first"));
+		  }); 
+		};
+		
+		//start the ticker
+		animator(ticker.children(":first"));
+				
+		//set mouseenter
+		ticker.mouseenter(function() {
+		  
+		  //stop current animation
+		  ticker.children().stop();
+		  
+		});
+		
+		//set mouseleave
+		ticker.mouseleave(function() {
+		          
+          //resume animation
+		  animator(ticker.children(":first"));
+		  
+		});
+	  });
+    </script>
+
+</head>
+
+<body>
+<div class="top">
+ <dl class="center">
+   <dt>深圳市易达通运国际货运代理有限公司</dt>
+   <dd><a href="#">cuekan</a><a href="#"  style="display:none;">注册</a> | <a href="#">退出</a></dd>
+ </dl>
+</div>
+<div class="logo"><img src="img/logo.png" /></div>
+<div class="content">
+  <div id="nav_out">
+	<div id="nav_in">
+		<div id="nav">
+    		<ul>
+        		<li><a href="#" onclick="javascript:getBg(0)" id="mynav0" class="current"><span>日本</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(1)" id="mynav1"><span>马来西亚</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(2)" id="mynav2"><span>东马来西亚</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(3)" id="mynav3"><span>印尼</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(4)" id="mynav4"><span>菲律宾</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(5)" id="mynav5"><span>泰国</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(6)" id="mynav6"><span>越南</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(7)" id="mynav7"><span>缅甸柬埔寨</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(8)" id="mynav8"><span>中东</span></a></li>
+                <li><a href="#" onclick="javascript:getBg(9)" id="mynav9"><span>红海</span></a></li>
+                <li><a href="#" onclick="javascript:getBg(10)" id="mynav10"><span>印巴</span></a></li>
+                <li><a href="#" onclick="javascript:getBg(11)" id="mynav11"><span>南非</span></a></li>
+                <li><a href="#" onclick="javascript:getBg(12)" id="mynav12"><span>东非</span></a></li>
+                <li><a href="#" onclick="javascript:getBg(13)" id="mynav13"><span>西非</span></a></li>
+                <li><a href="#" onclick="javascript:getBg(14)" id="mynav14"><span>北非</span></a></li>
+                <li><a href="#" onclick="javascript:getBg(15)" id="mynav15"><span>地中海</span></a></li>
+                <li><a href="#" onclick="javascript:getBg(16)" id="mynav16"><span>澳洲</span></a></li>
+            	<div class="clear"></div>
+        	</ul>
+		</div>
+	</div>
+</div>
+<!--//nav_ou-->
+<div class="ad"><img src="img/ad.jpg" width="1018" /></div>
+
+<div class="emc">
+ <a href="#" target="_blank"><img src="img/emc01.png" rel="EMC货物追踪"/></a>
+ <a href="#" target="_blank"><img src="img/emc02.png" rel="EMC电放状态查询"/></a>
+ <a href="http://www.shipmentlink.com/tvs2/jsp/TVS2_InteractiveSchedule.jsp" target="_blank"><img src="img/emc03.png" rel="点对点查询"/></a>
+</div>
+
+<div class="emc_mess">
+ <div id="scrollDiv1">
+  <div class="scrollText">
+  <ul>
+    <li><dl><dt><span>1</span><a href="#">6月3号，西非线，南沙直航开通！深圳中转便宜些</a></dt>
+        <dd><span>2</span><a href="#">EMC南非线 5月19号盐田船来了</a></dd></dl></li>
+    <li><dl><dt><span>3</span><a href="#">接EMC通知，东马的KUCHING因严重东马的KUCHING因严重东马的KUCHING因严重塞港，短期内所有的订舱（包括深 圳和PRD)都放不了，其他港口目前还可以正常收。</a></dt>
+        <dd><span>4</span><a href="#">价格表还在不断完善，欢迎提供建议哈。</a></dd></dl></li>
+    <li><dl><dt><span>5</span><a href="#">价格表还在不断完善，欢迎提供建议哈。</a></dt>
+        <dd><span>6</span><a href="#">价格表还在不断完善，欢迎提供建议哈。</a></dd></dl></li>
+    <li><dl><dt><span>7</span><a href="#">这是公告标题的第23一行</a></dt>
+        <dd><span>8</span><a href="#">这是公告标题的第二行</a></dd></dl></li>
+    <li><dl><dt><span>9</span><a href="#">这是公告标题的第4一行</a></dt>
+        <dd><span>10</span><a href="#">这是公告标题的第二行</a></dd></dl></li>
+  </ul>
+ </div>
+</div>
+ </div>
+<!--//emc_mess-->
+<script type="text/javascript">
+$(document).ready(function(){
+        $("#scrollDiv1").textSlider({line:1,speed:900,timer:6000});
+});
+</script>
+ 
+
+
+<div class="country_info">
+  <dl class="info">
+   <dt><span>日本</span></dt>
+   <dd>
+    <div class="info_r_top"></div>
+    <div class="info_r_cen">
+      <p>TOKYO(东京)：USD140/280/280 +TDS+TLX+SCMC【SK 直航 二截三开 约5天 六截六开 约5天 五截六开 约7天】</p>
+      <p>YOKOHAMA(横滨)：USD140/280/280 +TDS+TLX+SCMC【SK直航 二截三开 约5天 六截六开 约6天 五截六开 约7天】</p>
+      <p>NAGOYA(名古屋)：USD140/280/280 +TDS+TLX+SCMC【SK直航 二截三开 约6天】【SK直航 六截七开 约7天】</p>
+      <p>YOKKAICHI(四日市)：USD140/280/280 +TDS+TLX+SCMC【SK直航 六截七开 约8天】</p>
+      <p>NAGOYA(名古屋)：USD140/280/280 +TDS+TLX+SCMC【SK直航 二截三开 约6天】【SK直航 六截七开 约7天】</p>
+      <p>YOKKAICHI(四日市)：USD140/280/280 +TDS+TLX+SCMC【SK直航 六截七开 约8天】</p>
+      <a href="#" class="xiangxi" rel="更详细"><img src="img/xiangxi.png" /></a>
+    </div>
+    <div class="info_r_bot"></div>
+   </dd>
+  </dl>
+  <dl class="info">
+   <dt><span>泰国</span></dt>
+   <dd>
+    <div class="info_r_top"></div>
+    <div class="info_r_cen">
+      <p>TOKYO(东京)：USD140/280/280 +TDS+TLX+SCMC【SK 直航 二截三开 约5天 六截六开 约5天 五截六开 约7天】TDS+TLX+SCMC【SK 直航 二截三开 约5天 六截六开 约5天 </p>
+      <p>YOKOHAMA(横滨)：USD140/280/280 +TDS+TLX+SCMC【SK直航 二截三开 约5天 六截六开 约6天 五截六开 约7天】</p>
+      <p>NAGOYA(名古屋)：USD140/280/280 +TDS+TLX+SCMC【SK直航 二截三开 约6天】【SK直航 六截七开 约7天】</p>
+      <p>YOKKAICHI(四日市)：USD140/280/280 +TDS+TLX+SCMC【SK直航 六截七开 约8天】</p>
+      <p>NAGOYA(名古屋)：USD140/280/280 +TDS+TLX+SCMC【SK直航 二截三开 约6天】【SK直航 六截七开 约7天】</p>
+      <p>YOKKAICHI(四日市)：USD140/280/280 +TDS+TLX+SCMC【SK直航 六截七开 约8天】</p>
+      <a href="#" class="xiangxi" rel="更详细"><img src="img/xiangxi.png" /></a>
+    </div>
+    <div class="info_r_bot"></div>
+   </dd>
+  </dl>
+  <dl class="info">
+   <dt><span>印尼</span></dt>
+   <dd>
+    <div class="info_r_top"></div>
+    <div class="info_r_cen">
+      <p>TOKYO(东京)：USD140/280/280 +TDS+TLX+SCMC【SK 直航 二截三开 约5天 六截六开 约5天 五截六开 约7天】</p>
+      <p>YOKOHAMA(横滨)：USD140/280/280 +TDS+TLX+SCMC【SK直航 二截三开 约5天 六截六开 约6天 五截六开 约7天】</p>
+      <p>NAGOYA(名古屋)：USD140/280/280 +TDS+TLX+SCMC【SK直航 二截三开 约6天】【SK直航 六截七开 约7天】</p>
+      <p>YOKKAICHI(四日市)：USD140/280/280 +TDS+TLX+SCMC【SK直航 六截七开 约8天】</p>
+      <p>NAGOYA(名古屋)：USD140/280/280 +TDS+TLX+SCMC【SK直航 二截三开 约6天】【SK直航 六截七开 约7天】</p>
+      <p>YOKKAICHI(四日市)：USD140/280/280 +TDS+TLX+SCMC【SK直航 六截七开 约8天】</p>
+      <a href="#" class="xiangxi"><img src="img/xiangxi.png" /></a>
+    </div>
+    <div class="info_r_bot"></div>
+   </dd>
+  </dl>
+</div>
+<!--//country_info-->
+</div>
+<!--//content-->
+<div class="foot">版权所有 <span style="font-family:Arial;">&copy;</span> 2014-2020 深圳市易达通运国际货运代理有限公司 </div>
+</body>
+</html>

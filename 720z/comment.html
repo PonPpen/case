@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="MobileOptimized" content="320">
+	<title>乐装网</title>
+	<link rel="shortcut apple-touch-icon-precomposed icon" href="/favicon.ico"  />
+	<link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/base.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/mstyle.css"/>
+	<link type="text/css" rel="stylesheet" href="./Public/css/member.css"/>
+
+	<script src="./Public/js/jquery-1.8.3.min.js"></script>
+</head>
+
+</head>
+<body>
+<section>
+	<div class="nav_tab dis-box">
+		<div class="flex_box_1"><a href="../Pro/index.html"><i class="icon icon_prev"></a></i></div>
+		<div class="flex_box_8">
+			<ul class="dis-box">
+				<li class="flex_box_1"><a href="view.html"> 商品</a></li>
+				<li class="flex_box_1"><a href="details.html">详情</a></li>
+				<li class="flex_box_1 cur"><a href="comment.html"> 评论</a></li>
+			</ul>
+		</div>
+		<div class="flex_box_1"><i class="icon icon_other"></i></div>
+	</div>
+	<div class="hd5"></div>
+	<div class="pro_comment">
+		<ul class="rated_option dis-box">
+			<li class="flex_box_1 cur">全部评价<br>18</li>
+			<li class="flex_box_1">好评<br>5</li>
+			<li class="flex_box_1">中评<br>4</li>
+			<li class="flex_box_1">差评<br>6</li>
+			<li class="flex_box_1">晒图<br>3</li>
+		</ul>
+		<ul class="rated_list">
+			<li>
+				<div class="rated_ct dis-box">
+					<div class="flex_box_1"> 好评
+						<div class="details_yzdp">
+							<i class="ystar_2"></i>
+							<i class="ystar_2"></i>
+							<i class="ystar_3"></i>
+							<i class="ystar_1"></i>
+							<i class="ystar_1"></i>
+							<span class="red_a">3分</span>
+						</div>
+					</div>
+					<div class="flex_box_1 c_gray tr"> 虾虾** 2016-10-26</div>
+				</div>
+				<div class="rated_con">好看 先用 过段时间来评价。好看 先用 过段时间来评价好看 先用 过段时间来评价好看 先用 过段时间来评价</div>
+				<div class="rated_img"><img width="80" src="http://pic1.720zhuang.com/Public/Uploads/propic/201608/57b67c3393fea.jpg_500.jpg"></div>
+			</li>
+			<li>
+				<div class="rated_ct dis-box">
+					<div class="flex_box_1"> 好评
+						<div class="details_yzdp">
+							<i class="ystar_2"></i>
+							<i class="ystar_2"></i>
+							<i class="ystar_3"></i>
+							<i class="ystar_1"></i>
+							<i class="ystar_1"></i>
+							<span class="red_a">4分</span>
+						</div>
+					</div>
+					<div class="flex_box_1 c_gray tr"> 虾虾**   2016-10-26</div>
+				</div>
+				<div class="rated_con">好看 先用 过段时间来评价。好看 先用 过段时间来评价好看 先用 过段时间来评价好看 先用 过段时间来评价</div>
+				<div class="rated_img"><img width="80" src="http://pic1.720zhuang.com/Public/Uploads/propic/201611/581c49e911369.jpg_500.jpg"></div>
+			</li>
+			<li>
+				<div class="rated_ct dis-box">
+					<div class="flex_box_1"> 好评
+						<div class="details_yzdp">
+							<i class="ystar_2"></i>
+							<i class="ystar_1"></i>
+							<i class="ystar_1"></i>
+							<i class="ystar_1"></i>
+							<i class="ystar_1"></i>
+							<span class="red_a">2分</span>
+						</div>
+					</div>
+					<div class="flex_box_1 c_gray tr"> 虾虾**   2016-10-26</div>
+				</div>
+				<div class="rated_con">好看 先用 过段时间来评价。好看 先用 过段时间来评价好看 先用 过段时间来评价好看 先用 过段时间来评价</div>
+				<div class="rated_img"><img width="80" src="http://pic1.720zhuang.com/Public/Uploads/propic/201611/581c4485ce8d9.jpg_500.jpg"></div>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<nav>
+	<div class="mb80"></div>
+	<ul class="footer pf_bottom">
+		<li data-href="index" class=""><i class="iconfont icon-shouye"></i><span>首页</span></li>
+		<li data-href="bespeak" class=""><i class="iconfont icon-sheji"></i><span>免费设计</span></li>
+		<li data-href="mallindex" class="center-icon cur"><i class="iconfont icon-shangcheng"></i><span>家装商城</span></li>
+		<li data-href="" class=""><i class="iconfont icon-gongsi1"></i><span>样板间</span></li>
+		<li data-href="member" class=""><i class="iconfont icon-ren2"></i><span>我的</span></li>
+	</ul>
+</nav>
+<script>
+	$(document).ready(function(){
+		$('[data-href]').live("click",function(){
+			if($(this).data('href')){
+				location.href= $(this).data('href');
+			}
+		});
+	});
+</script>
+</body>
+</html>
+

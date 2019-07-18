@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>案例预览</title>
+	<link rel="stylesheet" href="public/css/public.css" />
+	<link rel="stylesheet" href="public/css/style.css" />
+	<link rel="stylesheet" href="public/css/b_style.css" />
+	<script type="text/javascript" src="public/js/jquery-1.8.0.min.js" ></script>
+	<script type="text/javascript" src="public/js/jquery.SuperSlide.2.1.1.js" ></script>
+	<script type="text/javascript" src="public/js/index.js" ></script>
+	<!--[if IE]><script type="text/javascript" src="public/js/html5.js"></script><![endif]-->
+	<script type="text/javascript" src="public/js/TweenMax.min.js" ></script>
+	<script type="text/javascript">
+		var theme_list_open = false;
+		var iframeurl;
+		$(document).ready(function () {
+			function fixHeight() {
+				var headerHeight = $("#switcher").height();
+				$("#iframe").attr("height", $(window).height()-headerHeight + "px");
+			}
+
+			$(window).resize(function () {
+				fixHeight();
+			}).resize();
+
+			$("#Device div.on-click").live('click', function(){
+				var othis = $(this).parent().parent(), index = othis.index();
+				switch (index){
+					case 0:
+						$('#iframe-wrap').removeClass().addClass('full-width');
+						break;
+					case 1:
+						$('#iframe-wrap').removeClass().addClass('tablet-width');
+						break;
+					case 2:
+						$('#iframe-wrap').removeClass().addClass('mobile-width');
+						break;
+					case 3:
+						$('#iframe-wrap').removeClass().addClass('mobile-width-2');
+						break;
+					case 4:
+						$('#iframe-wrap').removeClass().addClass('mobile-width-3');
+						break;
+				}
+				$("#by").css("overflow-y", "hidden");
+				$("#Device div").removeClass('active');
+				$(this).addClass('active');
+				return false;
+			});
+
+			//iframeurl=decodeURIComponent(get_cookie('iframeurl'));
+			iframeurl=$(".cateMenu a").eq(0).attr("datatype");
+			$('#iframe').attr('src',iframeurl+'/index.html');
+
+			$(".cateMenu a").click(function () {
+				var tit_name = $(this).find("em").html();
+				var cp_name = $(this).attr("datatype");
+				$("#cp_name").html(tit_name);
+				$('#iframe').attr('src',cp_name+'/index.html');
+				$(".cateMenu  a").removeClass("cur");
+				$(this).addClass("cur");
+				return false;
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		function get_cookie(name) {
+			var start = document.cookie.indexOf(name + "=");
+			var len = start + name.length + 1;
+			if ((!start) && (name != document.cookie.substring(0, name.length )))
+			{
+				return null;
+			}
+			if (start == -1) return null;
+			var end = document.cookie.indexOf(";", len);
+			if (end == -1) end = document.cookie.length;
+			return (document.cookie.substring(len, end));
+		}
+		function Responsive($a) {
+			if ($a == true) $("#Device").css("opacity", "100");
+			if ($a == false) $("#Device").css("opacity", "0");
+			$('#iframe-wrap').removeClass().addClass('full-width');
+			$('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+			$(this).addClass('active');
+			return false;
+		}
+		function noRight(doc){
+			var fs = doc.frames;
+			for(var i=0;i<fs.length;i++){
+				var f = fs[i];
+				var d = f.document;
+				var b = d.body;
+				b.oncontextmenu=bodyNoRight;
+				noRight(d);
+			}
+		}
+		function fixDev(feed) {
+			var feed = $(this).attr("data-feed");
+			var reg = new RegExp("\\[([^\\[\\]]*?)\\]", 'igm'); //i g m是指分别用于指定区分大小写的匹配、全局匹配和多行匹配。
+			var html = document.getElementById("Device1").innerHTML;
+			var source = html.replace(reg);
+			$("#Device").html(source);
+		}
+	</script>
+</head>
+<body>
+<div id="switcher" class="switcher">
+	<div class="center">
+		<div class="muen_top">
+			<div class="navCon-cate fl navCon_on">
+				<div class="navCon-cate-title"><a href="#"><i class="ico"><img src="public/images/ico21.png"/></i>所有案例<i class="ico2"></i></a></div>
+				<div class="cateMenu">
+					<ul>
+						<li class="clearfix"><a href="javascript:void(0);" data-feed="wap" datatype="/douban/" class="cur"><i class="ico3"></i><em>豆瓣</em></a></li>
+						<li class="clearfix"><a href="javascript:void(0);" data-feed="pc" datatype="hqgw"><i class="ico3"></i><em>提拉米蘇</em></a></li>
+						<li class="clearfix"><a href="javascript:void(0);" data-feed="wap" datatype="720z"><i class="ico3"></i><em>乐装网wap</em></a></li>
+						<li class="clearfix"><a href="javascript:void(0);" data-feed="pc" datatype="steamjzs"><i class="ico3"></i><em>steam尖子生PC</em></a></li>
+						<li class="clearfix"><a href="javascript:void(0);" data-feed="wap" datatype="mingxiaowuyou"><i class="ico3"></i><em>名校无忧Wap</em></a></li>
+						<li class="clearfix"><a href="javascript:void(0);" data-feed="wap" datatype="ozyyjd"><i class="ico3"></i><em>欧洲语言基地wap</em></a></li>
+						<li class="clearfix"><a href="javascript:void(0);" data-feed="wap" datatype="tbszwap"><i class="ico3"></i><em>踢遍神州wap</em></a></li>
+						<li class="clearfix"><a href="javascript:void(0);" data-feed="wap" datatype="mall"><i class="ico3"></i><em>商城系统wap</em></a></li>
+						<li class="clearfix"><a href="javascript:void(0);" data-feed="pc" datatype="wazqxysqdkf"><i class="ico3"></i><em>我爱足球</em></a></li>
+						<li class="clearfix"><a href="javascript:void(0);" data-feed="pc" datatype="mfw"><i class="ico3"></i><em>买房网</em></a></li>
+						<li class="clearfix"><a href="javascript:void(0);" data-feed="PC" datatype="sych"><i class="ico3"></i><em>三友车行</em></a></li>
+						<li class="clearfix"><a href="javascript:void(0);" data-feed="PC" datatype="tyyz"><i class="ico3"></i><em>天涯驿站</em></a></li>					
+					</ul>
+				</div>
+			</div>
+			<span>案例名称：<em id="cp_name">豆瓣</em></span>
+		</div>
+		<ul class="de_ul" id="Device">
+			<li class="device-monitor"><a href="javascript:"><div class="icon-monitor active"></div></a></li>
+			<li class="device-mobile"><a href="javascript:"><div class="icon-tablet"></div></a></li>
+			<li class="device-mobile"><a href="javascript:"><div class="icon-mobile-1"></div></a></li>
+			<li class="device-mobile-2"><a href="javascript:"><div class="on-click icon-mobile-2"></div></a></li>
+			<li class="device-mobile-3"><a href="javascript:"><div class="on-click icon-mobile-3"></div></a></li>
+		</ul>
+	</div>
+</div>
+<div class="clearfix"></div>
+
+<div id="iframe-wrap" class="full-width">
+	<div> <iframe id="iframe" src="" frameborder="0"   width="100%"> </iframe></div>
+</div>
+
+</body>
+</html>

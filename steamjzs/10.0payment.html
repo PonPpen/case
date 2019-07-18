@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<title>10.0 支付</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/jzs.css1.0.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animations.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
+	
+	
+</head>
+<body class="bg-2">
+	<!--top S-->
+	<div class="header">
+		<div class="wrap">
+			<a href="1.0index.html" class="logo"><img src="images/index_logo.png"/></a>
+			<ul class="menu clearfix">
+				<li><a href="#" class="cur"><span class="k-left"></span><span class="k-right"></span>首页</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>学科练习</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>STEAM游戏</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>星球部落</a></li>
+				<li><a href="#"><span class="k-left"></span><span class="k-right"></span>错题本</a></li>
+			</ul>
+			<div class="user-box">
+				<a href="#" class="dropbtn" class="clearfix">
+					<div class="user-img"><img src="images/user.jpg"/></div>
+					<span class="name">昵   称</span>
+					<i class="ico"></i>
+				</a>
+				<div class="dropbox">
+					<ul>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">我的消息</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--top E-->
+	<!--9.0 个人中心-->
+	<div class="paymentbanner">
+		<div class="bd">
+			<ul>
+				<li><a href="#"><img src="images/dati/banner1.png"/></a></li>
+				<li><a href="#"><img src="images/dati/banner1.png"/></a></li>
+			</ul>
+		</div>
+		<div class="hd"><ul></ul></div>
+	</div>
+	<div class="paymentBox clearfix">
+		<div class="pm-left">
+			
+			<div class="pmsort">
+				<div class="title">学科</div>
+				<div class="ct">
+					<ul>
+						<li><a href="javascript:;" class="btn-one-one">
+							<div class="info"><h3>一年</h3><h4>开启单科</h4></div>
+							<div class="price"><span>￥<b>128</b></span></div>
+						</a></li>
+						<li><a href="javascript:;" class="btn-one-all">
+							<div class="info"><h3>一年</h3><h4>开启所有学科</h4></div>
+							<div class="price"><span>￥<b>308</b></span></div>
+						</a></li>
+						<li><a href="javascript:;">
+							<div class="info"><h3>三年</h3><h4>开启所有学科</h4></div>
+							<div class="price"><span>￥<b>806</b></span></div>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="pmsort">
+				<div class="title">兑换码解锁所有项目</div>
+				<div class="ct">
+					<ul>
+						<li class="duihuan"><a href="javascript:;" class="btn-Exchange">
+							<div class="info"><h4>从第三方获取的兑换码<br />开启所有项目</h4></div>
+							<div class="price"><span class="kaiqi">开启</span></div>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="pm-right">
+			
+			<div class="pmsort">
+				<div class="title">steam课程</div>
+				<div class="ct">
+					<ul>
+						<li><a href="javascript:;" class="btn-one-course">
+							<div class="info"><h3>一年</h3><h4>解锁一个课程</h4></div>
+							<div class="price"><span>￥<b>30</b></span></div>
+						</a></li>
+						<li><a href="javascript:;" class="btn-st-course">
+							<div class="info"><h3>一年</h3><h4>解锁所有steam课程</h4></div>
+							<div class="price"><span>￥<b>240</b></span></div>
+						</a></li>
+						<li><a href="javascript:;">
+							<div class="info"><h3>三年</h3><h4>一次购买一年共240元</h4></div>
+							<div class="price"><span>￥<b>675</b></span></div>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			
+		</div>
+	
+	</div>
+		
+	<!--弹窗-->
+	<div class="layer-bg"></div>
+	<div class="layer-box box-payment layer-box-one-all">
+		<div class="box-top">
+			<h3>支付</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<div class="tcpayment">
+				<ul>
+					<li><a href="javascript:;">
+						<div class="info"><h3>一年</h3><h4>开启所有学科</h4></div>
+						<div class="price"><span>￥<b>308</b></span></div>
+					</a></li>
+				</ul>
+			</div>
+			<input type="button" value="支付" class="btn-enter btn-enter2 payBtns"/>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	
+	<div class="layer-box box-payment layer-box-one-one">
+		<div class="box-top">
+			<h3>支付</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<div class="tcpayment">
+				<ul>
+					<li><a href="javascript:;">
+						<div class="info"><h3>一年</h3><h4>开启所有学科</h4></div>
+						<div class="price"><span>￥<b>308</b></span></div>
+					</a></li>
+				</ul>
+				<dl class="xueke clearfix"><dd class="active">数学</dd><dd>物理</dd><dd>化学</dd></dl>
+			</div>
+			<input type="button" value="支付" class="btn-enter btn-enter2 payBtns"/>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	
+	<div class="layer-box box-payment layer-box-one-course">
+		<div class="box-top">
+			<h3>支付</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<div class="tcpayment">
+				<ul>
+					<li><a href="javascript:;">
+						<div class="info"><h3>一年</h3><h4>开启一个STEAM课程</h4></div>
+						<div class="price"><span>￥<b>308</b></span></div>
+					</a></li>
+				</ul>
+				<dl class="xueke clearfix"><dd class="active">强力记忆</dd><dd>滚球</dd><dd>颜色混淆</dd><dd>清除方块</dd><dd>旋转方块</dd><dd>堆叠圆盘</dd>
+				</dl>
+			</div>
+			<input type="button" value="支付" class="btn-enter btn-enter2 payBtns"/>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	
+	<div class="layer-box box-payment layer-box-st-all">
+		<div class="box-top">
+			<h3>支付</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<div class="tcpayment">
+				<ul>
+					<li><a href="javascript:;">
+						<div class="info"><h3>一年</h3><h4>开启所有STEAM课程</h4></div>
+						<div class="price"><span>￥<b>98</b></span></div>
+					</a></li>
+				</ul>
+			</div>
+			<input type="button" value="支付" class="btn-enter btn-enter2 payBtns"/>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	
+	<div class="layer-box box-payment layer-box-st-all">
+		<div class="box-top">
+			<h3>支付</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<div class="tcpayment">
+				<ul>
+					<li><a href="javascript:;">
+						<div class="info"><h3>一年</h3><h4>开启所有STEAM课程</h4></div>
+						<div class="price"><span>￥<b>98</b></span></div>
+					</a></li>
+				</ul>
+			</div>
+			<input type="button" value="支付" class="btn-enter btn-enter2 payBtns"/>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	<!--兑换码-->
+	<div class="layer-box layer-Exchange-ma">
+		<div class="box-top">
+			<h3>输入兑换码</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<form action="" method="post">
+			<ul class="modifybox">
+				<li><input type="text" class="txt" placeholder="输入您的兑换码" /><span class="k-left"></span><span class="k-right"></span></li>
+			</ul>
+			<input type="button" value="确定" class="btn-enter btn-enter2 suihuamaEnter"/>
+			</form>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	
+	<div class="layer-box box-payment layer-Exchange">
+		<div class="box-top">
+			<h3>兑换码</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<div class="duihuanmaBox">
+				<h1>1234567890abcdef</h1>
+				<div class="maibox">
+					<dl class="clearfix"><dt>开启项目：</dt><dd>数学，003steam课程</dd></dl>
+					<dl class="clearfix"><dt>时长：</dt><dd>3个月</dd></dl>
+				</div>
+			</div>
+			<input type="button" value="激活" class="btn-enter btn-enter2"/>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	<!--选择支付方式-->
+	<div class="layer-box layer-payfs">
+		<div class="box-top">
+			<h3>选择支付方式</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<div class="duihuanmaBox payfsBox">
+				<ul class="clearfix">
+					<li class="on"><img src="images/dati/zhifu_zhifubao.png"/></li>
+					<li><img src="images/dati/zhifu_weixin.png"/></li>
+				</ul>
+			</div>
+			<input type="button" value="支付" class="btn-enter btn-enter2"/>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	
+	
+	<!--飞往未知星球-->
+	<div class="layer-bg2" style="display: block;"></div>
+	<div class="layer-box box-payment layer-fashe" style="display: block;">
+		<div class="box-top">
+			<h3>发射</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<div class="duihuanmaBox">
+				<h1>恭喜你！</h1>
+				<div class="maibox">
+					<p class="fas-p">现在可以发射火箭，去探索飞往未知星球了。</p>
+				</div>
+			</div>
+			<div class="fsbtn clearfix">
+				<input type="button" value="发射" class="bn-orange"/>
+				<input type="button" value="取消" class="bn-blue"/>
+			</div>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	<!--欢迎1-->
+	<div class="layer-box box-payment layer-welcome1" style="display: block;">
+		<div class="box-top">
+			<h3>欢迎</h3>
+			<span class="close"></span>
+		</div>
+		<div class="box-middle">
+			<div class="duihuanmaBox">
+				<h1>欢迎来到尖子生-星际旅行！</h1>
+				<div class="maibox">
+					<p class="welc">星际旅行的游戏简短介绍，现在可以发射火箭，去探索飞往 未知星球了。</p>
+					<div class="fxy"></div>
+				</div>
+			</div>
+			<div class="fsbtn clearfix">
+				<input type="button" value="确定" class="bn-blue"/>
+			</div>
+		</div>
+		<div class="box-bottom"></div>
+	</div>
+	<!--欢迎2-->
+	<div class="fixbottom" style="display: block;">
+		<div class="wlmain">
+			<div class="title">欢迎</div>
+			<h2>欢迎来到尖子生-星际旅行！</h2>
+			<p>星际旅行的游戏简短介绍，现在可以发射火箭，去探索飞往 未知星球了。<a href="#"><i class="ico"></i></a></p>
+		</div>
+	</div>
+	<!--9.0 个人中心-->
+	
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mjzs.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		jQuery(".paymentbanner").slide({mainCell:".bd ul",titCell:".hd ul",autoPage:true, effect:"fold",autoPlay:true});
+	</script>
+	
+</body>
+</html>

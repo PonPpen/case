@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>预约</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="./Public/iconfont/iconfont.css"/>
+	<link rel="stylesheet" media="screen" href="./Public/css/base.css" />
+	<link rel="stylesheet" media="screen" href="./Public/css/mstyle.css" />
+	<link rel="stylesheet" media="screen" href="./Public/css/member.css" />
+</head>
+
+<body>
+	<header>
+		<dl class="header white_bg dis-box">
+			<dt class="flex_box_1" onclick="history.go(-1);"><i class="iconfont icon-llmainpageback"></i></dt>
+			<dd class="logo_title flex_box_4">装修预约</dd>
+			<dd class="text flex_box_1"><em class="placeholder"></em></dd>
+		</dl>
+	</header>
+	<section>
+		<h4 class="tc c_gray pt25">已有<span class="c_red">196</span>人预约</h4>
+		<div class="log">
+			<form method="post" action="" name="myform" id="myform">
+				<input type="hidden" value="" name="ref"   />
+				<input type="hidden" value="" name="sku"   />
+				<input type="text" class="log_input"  value="" placeholder="您的称呼" name="custom" id="custom">
+				<input type="text" class="log_input"  value="" placeholder="您的手机号码" id="mobile" name="mobile">
+				<div class="sendmsg_input">
+					<input type="text" class="log_input" name="mobilecode" id="mobilecode" value="" placeholder="输入验证码">
+					<button type="button" class="sendmsg" id="sendmsg">获取校验码</button>
+				</div>
+				<div class="log_submit reg_btn"  id="freeBook">免费预约</div>
+			</form>
+			<p class="c_gray">* 您的信息将被严格保密，资料提交后客服将24小时内联系您。</p>
+		</div>
+	</section>
+</body>
+</html>
