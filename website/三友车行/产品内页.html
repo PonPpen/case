@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>三友车行</title>
+<link href="style/sanystyle.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript" src="js/tm.js" ></script>
+<![endif]-->
+<script type="text/javascript" src="js/addfavorite_home.js"></script><!--设为首页and加入收藏-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+
+<!--选项卡-->
+<script src="js/jquery-1.7.min.js"></script>
+<script>
+$(function(){
+		    $(".info p").each(function(){
+					var txt = $(this).parent().siblings().attr("src");
+					$(this).html(txt);
+			})
+			
+		   $(".way li").click(function(){
+				var index = $(this).index();
+			   $(this).addClass("current").siblings().removeClass("current");
+		       $(".product_qua li").eq(index).show().siblings().hide();
+		    })
+		    
+})
+</script>	
+<!--产品展示-->
+<SCRIPT src="js/proshow.base.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="js/proshow.lib.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="js/proshow.js" type="text/javascript"></SCRIPT>
+<SCRIPT type="text/javascript">
+	$(function(){			
+	   $(".jqzoom").jqueryzoom({
+			xzoom:400,
+			yzoom:400,
+			offset:10,
+			position:"right",
+			preload:1,
+			lens:1
+		});
+		$("#spec-list").jdMarquee({
+			deriction:"left",
+			width:350,
+			height:56,
+			step:2,
+			speed:4,
+			delay:10,
+			control:true,
+			_front:"#spec-right",
+			_back:"#spec-left"
+		});
+		$("#spec-list img").bind("mouseover",function(){
+			var src=$(this).attr("src");
+			$("#spec-n1 img").eq(0).attr({
+				src:src.replace("\/n5\/","\/n1\/"),
+				jqimg:src.replace("\/n5\/","\/n0\/")
+			});
+			$(this).css({
+				"border":"2px solid #ff6600",
+				"padding":"1px"
+			});
+		}).bind("mouseout",function(){
+			$(this).css({
+				"border":"1px solid #ccc",
+				"padding":"2px"
+			});
+		});				
+	})
+	</SCRIPT>
+<script>
+//物品数量的加减
+$(function(){
+	//获得文本框对象
+	var t = $("#text_box");	
+	//数量增加操作
+	$("#add").click(function(){		
+		t.val(parseInt(t.val())+1)
+		if (parseInt(t.val())!=1){
+			$('#min').attr('disabled',false);
+		}
+		setTotal();
+	})	
+	//数量减少操作
+	$("#min").click(function(){
+		t.val(parseInt(t.val())-1);
+		if (parseInt(t.val())==1){
+			$('#min').attr('disabled',true);
+		}
+		setTotal();
+	})
+	//计算操作
+	function setTotal(){
+		$("#total").html((parseInt(t.val())*3000).toFixed(1));//toFixed()是保留小数点的函数很实用哦
+	}	
+	//初始化
+	setTotal();
+})
+
+</script>
+
+<script src="Js/showList.js" type="text/javascript"></script><!--可收缩导航菜单-->
+</head>
+
+<body>
+
+<div class="head">
+ <div class="top">
+  <div class="center">
+   <h4>您好!欢迎来到三友车行网购商城!</h4>
+   <ul class="login">
+    <li><span class="icon1"></span><a href="#">登录</a></li>
+    <li><span class="icon2"></span><a href="#">免费注册</a></li>
+    <li><span class="icon3"></span><a href="#">我的订单</a></li>
+    <li><span class="icon4"></span><a href="#">售后中心</a></li>
+   </ul>
+   <ol class="sc">
+    <li><a href="javascript:;" onclick="SetHome(this,window.location)" >设为首页</a>></li>
+    <li><a href="javascript:;" onclick="AddFavorite(window.location,document.title)">收藏我们</a>></li>
+    <li><a href="#">返回首页</a></li>
+   </ol>
+  </div>
+ </div>
+ <!--top-->
+ <div class="logo">
+ <dl>
+    <dt><img src="images/logo.png"/></dt>
+    <dd>
+    <form name="cscsearch" action="#" method="get" id="cscsearch" target="_blank">
+    <input name="" type="text" class="tex" value="" onfocus="glb_searchTextOnfocus(this);" onblur="glb_searchTextOnBlur(this);"/>
+    </form>
+     <form><input name="" class="but" type="button" /></form>
+     </dd>
+    <dd class="right"><img src="images/phonezz.png" /></dd>
+ </dl>
+</div>
+<!--logo-->
+<div class="menu">
+  <div id="nav">
+    <ul >
+      <li ><a href="index.asp">首页</a></li>
+      <li class="current"><a href="产品内页.asp">台铃电动车</a></li>
+      <li><a href="#">速派奇电动车</a></li>
+      <li><a href="#">奥娃电动车</a></li>
+      <li><a href="#">售后配件</a></li>
+      <li><a href="#">最新团购</a></li>
+      <li><a href="#">商城资讯</a></li>
+    </ul>
+  </div>
+</div>
+<!--//menu-->
+</div>
+<!--head-->
+
+
+
+
+
+<div class="container">
+ <div class="pro_left">
+  <div class="prol_mess">
+  <div class="prol_bt"></div>
+  <div class="prol_bc">
+   <div class="pro_tit"><h3>产品导航</h3></div>
+   <!--#include file="public/leftnav.asp"-->
+  </div>
+  <div class="prol_bb"></div>
+  </div>
+  <!--prol_mess-->
+  <div class="prol_mess">
+  <div class="prol_bt"></div>
+  <div class="prol_bc">
+   <div class="recom_tit"><h3>同类商品推荐</h3></div>
+   <ul class="recom">
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+   </ul>
+  </div>
+  <div class="prol_bb"></div>
+  </div>
+  <!--prol_mess-->
+  <!--prol_mess-->
+  <div class="prol_mess">
+  <div class="prol_bt"></div>
+  <div class="prol_bc">
+   <div class="recom_tit"><h3>收藏排行榜</h3></div>
+   <ul class="recom">
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+   </ul>
+  </div>
+  <div class="prol_bb"></div>
+  </div>
+  <!--prol_mess-->
+ </div>
+ <!--pro_left-->
+ <div class="pro_right">
+  <div id="preview">
+	<div class="jqzoom" id="spec-n1" ><IMG height=350 src="images/012.jpg" jqimg="images/012.jpg" width=350></div>
+	<div id="spec-n5">
+		<div class="control" id="spec-left"><img src="images/left.gif" /></div>
+		<div id="spec-list">
+			<ul class="list-h">
+				<li><img src="images/012.jpg"> </li>
+				<li><img src="images/poduct01.jpg"> </li>
+				<li><img src="images/014.jpg"> </li>
+				<li><img src="images/012.jpg"> </li>
+				<li><img src="images/poduct01.jpg"> </li>
+				<li><img src="images/014.jpg"> </li>
+				<li><img src="images/012.jpg"> </li>
+				<li><img src="images/poduct01.jpg"> </li>
+				<li><img src="images/014.jpg"> </li>
+				<li><img src="images/012.jpg"> </li>
+				<li><img src="images/poduct01.jpg"> </li>
+				<li><img src="images/014.jpg"> </li>
+			</ul>
+		</div>
+		<div class="control" id="spec-right"><img src="images/right.gif" /></div>
+    </div>
+    <ul class="pre_class">
+    <li><a href="#">随车配</a></li>
+    <li><a href="#">雨衣</a></li>
+    <li><a href="#">保修本</a></li>
+    <li><a href="#">发票</a></li>
+    </ul>
+    <script type="text/javascript">
+$(function(){
+	$("ul.pre_class li").click(function(){
+		$(this).addClass("color").siblings().removeClass();
+	});	
+})
+</script>
+ </div>
+ <!--preview-->
+ <div class="prenews">
+  <ul class="price">
+  <li><h3>品牌:台玲</h3></li>
+  <li><h4>产品名称:小太子F系列</h4><!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6783158" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END --></li>
+  <li><p>市场价:￥5000.0</p></li>
+  <li><p>网购价:￥<strong><label id="total"></label></strong></p></li>
+  </ul>
+  <div class="colour">
+    <p>外表颜色:</p>
+  <ul class="colour_class">
+    <li><a href="#">红色</a></li>
+    <li><a href="#">蓝色</a></li>
+    <li><a href="#">黑色</a></li>
+    <li><a href="#">白色</a></li>
+    <li><a href="#">白色</a></li>
+    <li><a href="#">白色</a></li>
+    <li><a href="#">白色</a></li>
+    <li><a href="#">其他颜色</a></li>
+   </ul>
+<script type="text/javascript">
+$(function(){
+	$("ul.colour_class li").click(function(){
+		$(this).addClass("color").siblings().removeClass();
+	});	
+})
+</script>
+   <em>数量:<input id="min" name="" type="button" value="-" />
+      <input id="text_box" name=""size="4" type="text" value="1" />
+      <input id="add" name="" type="button" value="+" /></em>
+   <i>付款方式:货到付款（现金）</i>
+   <i><form><input name="" type="button" class="order" /></form></i>
+   </div>
+ </div>
+ <!--prenews-->
+  <div class="buy_way">
+      <div class="way">
+        <ul>
+        <li class="current"><span>商品详情</span></li>
+        <li><span>技术性能</span></li>
+        <li><span>用户评价</span></li></ul> 
+</div>
+            <div class="product_qua">
+             <ul class="product_info">
+               <li><img src="images/011.jpg"><p>
+               引擎形式  水SUZUKI GSX-R1000在2005推出的K5版，各项性能数据显示GSX-R1000 K5绝对堪称速度之王。               2006改版的K6，延续K5诸多精进性能，搭载一具998.6c.c.四行程程水冷并列4汽缸DOHC引擎，压缩比同样為12.5:1，最高马力為178ps/10,800rpm，
+ 最大扭力可达11.3kgm/8,400rpm。搭配44mm电子燃油喷射系统，动力输出依然惊人！轻量且高刚性的铝合金框式车架，加入抗纵、横性及抗扭性的考量， 使得K5在弯道上的表现更加稳定且车身尺寸更紧实。配以可全方位调校的前43mm倒立套管前叉、全方位调校的后单筒连桿式油压避震、310mm双钻孔浮动碟配4活塞对向卡钳以及220mm钻孔碟配双活塞卡钳，稳定性及制动效能不可言喻。 </p></li>
+               <li style="display:none">技术性能</li>
+               <li style="display:none">
+ <div class="name_eva">
+   <span><p>总之还是挺满意的，购入的时候正值几家大型电商的活动，对比了一下还是松立电器的性价比高。...</p><em>yoyo 在2013年7月11日发表<img src="images/evai01.png"></em></span>
+   <span><p>总之还是挺满意的，购入的时候正值几家大型电商的活动，对</p><em>yoyo 在2013年7月11日发表<img src="images/evai03.png"></em></span>
+   <span><p>总之还是挺满意的，购入的时候正值几家大型电商的活动，对比了一下还是松立电器的性价比高。...</p><em>yoyo 在2013年7月11日发表<img src="images/evai02.png"></em></span>
+   <span><p>总之还是挺满意的，购入的时候正值几家大型电商的活动，对</p><em>yoyo 在2013年7月11日发表<img src="images/evai05.png"></em></span>
+   <span><p>总之还是挺满意的，购入的时候正值几家大型电商的活动，对</p><em>yoyo 在2013年7月11日发表<img src="images/evai04.png"></em></span>
+ </div>              
+<table width="756"  class="evaluate">
+  <tr>
+    <td class="eva_tit">用户名:</td>
+    <td><input name="" type="text"></td>
+  </tr>
+  <tr>
+    <td class="eva_tit">密码:</td>
+    <td><input name=""  type="password"/></td>
+  </tr>
+  <tr>
+    <td class="eva_tit">评价等级:</td>
+    <td><form id="form1" name="form1" method="post" action="">
+        <label><input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_0" /><img src="images/evai01.png"></label>
+        <label><input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_1" /><img src="images/evai02.png"></label>
+        <label><input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_2" /><img src="images/evai03.png"></label>
+        <label><input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_3" /><img src="images/evai04.png"></label>
+        <label><input type="radio" name="RadioGroup1" value="单选" id="RadioGroup1_4" /><img src="images/evai05.png"></label>
+    </form></td>
+  </tr>
+  <tr>
+    <td class="eva_tit">评价内容:</td>
+    <td><textarea name="" cols="72" rows="8"></textarea></td>
+  </tr>
+  <tr>
+    <td class="eva_tit">验证码</td>
+    <td><span class="yzm"><input name="" type="text" /></span><span class="eva_bt"><a href="#"><img src="images/eva_button.png"></a></span></td>
+  </tr>
+</table>
+</li>
+             </ul>
+            </div>
+      </div>
+ <!--buy_way-->
+ <div class="buy_see">
+ <div class="see_tit"><span>看了又看</span></div>
+ <div class="see_pro">
+  <ul class="see_shop">
+   <li><img src="images/012.jpg" width="137" height="106" />
+   <strong>女皇</strong>
+   <del>市场价:￥2400元</del>
+   <p>商城价:<b>￥2400元</b></p></li>
+   <li><img src="images/012.jpg" width="137" height="106" />
+   <strong>女皇</strong>
+   <del>市场价:￥2400元</del>
+   <p>商城价:<b>￥2400元</b></p></li>
+   <li><img src="images/012.jpg" width="137" height="106" />
+   <strong>女皇</strong>
+   <del>市场价:￥2400元</del>
+   <p>商城价:<b>￥2400元</b></p></li>
+  <li>
+  <img src="images/012.jpg" width="137" height="106" />
+   <strong>女皇</strong>
+   <del>市场价:￥2400元</del>
+   <p>商城价:<b>￥2400元</b></p></li></ul>
+ </div>
+ <!--see_pro-->
+ </div>
+ <!--buy_see-->
+ </div>
+ <!--pro_right-->
+</div>
+<!--container-->
+
+<div class="footer">
+<div class="foot_title"><img src="images/foot_logo.png" /></div>
+<div class="correlation">
+	<ul class="cor1">
+    	<li><a href="#">公司简介</a></li>
+        <li><a href="#">企业文化</a></li>
+        <li><a href="#">资质荣誉</a></li>
+    </ul>
+    <ul class="cor2">
+    	<li><a href="#">上门自提</a></li>
+        <li><a href="#">送货上门</a></li>
+        <li><a href="#">配送时间</a></li>
+        <li><a href="#">配送范围 </a></li>
+    </ul>
+    <ul class="cor3">
+    	<li><a href="#">退换货原则</a></li>
+        <li><a href="#">退换货流程</a></li>
+        <li><a href="#">退款流程</a></li>
+        <li><a href="#">电动车保养</a></li>
+    </ul>
+    <ul class="cor4">
+    	<li><a href="#">会员注册</a></li>
+        <li><a href="#">会员登陆</a></li>
+        <li><a href="#">会员积分</a></li>
+    </ul>  
+    <ul class="cor5">
+    	<li><a href="#">地理位置</a></li>
+        <li><a href="#">在线 Q Q</a></li>
+        <li><a href="#">联系方式 </a></li>
+    </ul>
+</div>
+
+<div class="foot_message">
+	<p>版权所有<span style="font-family:Arial;">&copy;</span>2010-2011 海南三友车行 中企在线 提供网络技术支持 琼ICP备201006090010号</p>
+    <p>海口总部：海南省海口市东湖路49号  电话：0898-66117033 传真：0898-66246183 </p>
+</div>
+</div>
+</body>
+</html>

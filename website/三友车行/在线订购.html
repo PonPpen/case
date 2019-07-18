@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>三友车行</title>
+<link href="style/sanystyle.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="style/lhgcalendar.css" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript" src="js/tm.js" ></script>
+<![endif]-->
+<script type="text/javascript" src="js/addfavorite_home.js"></script><!--设为首页and加入收藏-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/lhgcalendar.min.js"></script>
+<script type="text/javascript">
+//导航栏特效
+(function($){
+$(document).ready(function(){   //等待dom加载完毕
+var $div_li =$("#nav ul li");    //定义div_li元素
+$div_li.hover(function(){     //定义hover
+		$(this).addClass("current")   //给当前元素添加current类
+			.siblings().removeClass("current");    //移除同级别兄弟元素的类
+});
+});
+		  })(jQuery)
+</script>
+<script type="text/javascript">
+//控制日历控件代码
+$(function(){
+    $('#demo_i').calendar();
+	$('#img').calendar({ id:'#cal3' });
+});
+</script>
+
+</head>
+
+<body>
+
+<div class="head">
+ <div class="top">
+  <div class="center">
+   <h4>您好!欢迎来到三友车行网购商城!</h4>
+   <ul class="login">
+    <li><span class="icon1"></span><a href="#">登录</a></li>
+    <li><span class="icon2"></span><a href="#">免费注册</a></li>
+    <li><span class="icon3"></span><a href="#">我的订单</a></li>
+    <li><span class="icon4"></span><a href="#">售后中心</a></li>
+   </ul>
+   <ol class="sc">
+    <li><a href="javascript:;" onclick="SetHome(this,window.location)" >设为首页</a>></li>
+    <li><a href="javascript:;" onclick="AddFavorite(window.location,document.title)">收藏我们</a>></li>
+    <li><a href="#">返回首页</a></li>
+   </ol>
+  </div>
+ </div>
+ <!--top-->
+ <div class="logo">
+ <dl>
+    <dt><img src="images/logo.png"/></dt>
+    <dd>
+    <form name="cscsearch" action="#" method="get" id="cscsearch" target="_blank">
+    <input name="" type="text" class="tex" value="" onfocus="glb_searchTextOnfocus(this);" onblur="glb_searchTextOnBlur(this);"/>
+    </form>
+     <form><input name="" class="but" type="button" /></form>
+     </dd>
+    <dd class="right"><img src="images/phonezz.png" /></dd>
+ </dl>
+</div>
+<!--logo-->
+<div class="menu">
+  <div id="nav">
+    <ul >
+      <li class="current"><a href="#">首页</a></li>
+      <li><a href="#">台铃电动车</a></li>
+      <li><a href="#">速派奇电动车</a></li>
+      <li><a href="#">奥娃电动车</a></li>
+      <li><a href="#">售后配件</a></li>
+      <li><a href="#">最新团购</a></li>
+      <li><a href="#">商城资讯</a></li>
+    </ul>
+  </div>
+</div>
+<!--//menu-->
+</div>
+<!--head-->
+<div class="container">
+<div class="order_cont">
+<div class="order_mess">
+<dl class="ord">
+<dt>图片</dt>
+<dd><img src="images/poduct01.jpg"/></dd>
+<dt>订单日期</dt>
+<dd><input class="runcode" id="demo_i"/></dd>
+<dt>产品名称</dt>
+<dd><input name="text" type="text" value=""/></dd>
+<dt>颜色</dt>
+<dd><input name="text" type="text" value="红色" size="10"  /></dd>
+<dt>购买数量</dt>
+<dd><input name="text" type="text" value="" size="10" /></dd>
+<dt>产品单价</dt>
+<dd><input name="text" type="text" value=""  size="14" /></dd>
+<dt>金额合计</dt>
+<dd><input name="text" type="text" value=""  size="14" /></dd>
+<dt>收货人姓名</dt>
+<dd><input name="text" type="text" value="" size="14"/></dd>
+<dt>联系方式</dt>
+<dd><input name="text" type="text" value="" size="25"/></dd>
+<dt>配送地址</dt>
+<dd><input name="text" type="text" value=""  size="35"/></dd>
+<dt>电子邮箱</dt>
+<dd><input name="text" type="text" value="" size="25"/></dd>
+<dt>随车配</dt>
+<dd><input name="text" type="text" value="" size="35" /></dd>
+<dt>付款方式</dt>
+<dd>
+<select name="select">
+<option>货到付款</option>
+<option>网上付款</option>
+</select>
+</dd>
+</dl> 
+</div> 
+<div class="order_buto">
+<input name="" type="button" class="but01" /><input name="" type="button" class="but02" />
+<img src="images/tis.png" width="662" height="71" />
+</div>
+</div>
+<!--order-->
+</div>
+
+<div class="footer">
+<div class="foot_title"><img src="images/foot_logo.png" /></div>
+<div class="correlation">
+	<ul class="cor1">
+    	<li><a href="#">公司简介</a></li>
+        <li><a href="#">企业文化</a></li>
+        <li><a href="#">资质荣誉</a></li>
+    </ul>
+    <ul class="cor2">
+    	<li><a href="#">上门自提</a></li>
+        <li><a href="#">送货上门</a></li>
+        <li><a href="#">配送时间</a></li>
+        <li><a href="#">配送范围 </a></li>
+    </ul>
+    <ul class="cor3">
+    	<li><a href="#">退换货原则</a></li>
+        <li><a href="#">退换货流程</a></li>
+        <li><a href="#">退款流程</a></li>
+        <li><a href="#">电动车保养</a></li>
+    </ul>
+    <ul class="cor4">
+    	<li><a href="#">会员注册</a></li>
+        <li><a href="#">会员登陆</a></li>
+        <li><a href="#">会员积分</a></li>
+    </ul>  
+    <ul class="cor5">
+    	<li><a href="#">地理位置</a></li>
+        <li><a href="#">在线 Q Q</a></li>
+        <li><a href="#">联系方式 </a></li>
+    </ul>
+</div>
+
+<div class="foot_message">
+	<p>版权所有<span style="font-family:Arial;">&copy;</span>2010-2011 海南三友车行 中企在线 提供网络技术支持 琼ICP备201006090010号</p>
+    <p>海口总部：海南省海口市东湖路49号  电话：0898-66117033 传真：0898-66246183 </p>
+</div>
+</div>
+</body>
+</html>

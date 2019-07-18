@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link href="style/cmstyle.css" rel="stylesheet" type="text/css" />
+<title>成美慈善基金会</title>
+<script type='text/javascript' src='js/jquery.min.js'></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript" src="js/tm.js" ></script>
+<![endif]-->
+<script type="text/javascript" src="js/addfavorite_home.js"></script><!--设为首页and加入收藏--> 
+<script type="text/javascript" src="js/textSlider.js"></script><!--文字无缝向上滚动-->  
+<!--导航栏-->  
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/lrtk.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){   //等待dom加载完毕
+var $div_li =$("#nav ul li");    //定义div_li元素
+$div_li.hover(function(){     //定义hover
+		$(this).addId("current")   //给当前元素添加current类
+			.siblings().removeId(this);    //移除同级别兄弟元素的类
+});
+});
+</script>
+<script language="javascript" type="text/javascript">
+//搜索栏
+function glb_searchTextOnfocus(obj) {
+	if (obj.value == '请输入关键词...')
+		obj.value = '';
+	obj.style.color = '#3e3a39';
+}
+function glb_searchTextOnBlur(obj) {
+	if (obj.value == '') {
+		obj.value = '请输入关键词...';
+		obj.style.color = '#c2c2c2';
+	} else {
+		obj.style.color = '#3e3a39';
+	}
+}
+</script>
+
+<script type="text/javascript">
+//焦点图
+$(document).ready(function() {
+
+	//Set Default State of each portfolio piece
+	$(".paging").show();
+	$(".paging a:first").addClass("active");
+		
+	//Get size of images, how many there are, then determin the size of the image reel.
+	var imageWidth = $(".window1").width();
+	var imageSum = $(".image_reel img").size();
+	var imageReelWidth = imageWidth * imageSum;
+	
+	//Adjust the image reel to its new size
+	$(".image_reel").css({'width' : imageReelWidth});
+	
+	//Paging + Slider Function
+	rotate = function(){	
+		var triggerID = $active.attr("rel") - 1; //Get number of times to slide
+		var image_reelPosition = triggerID * imageWidth; //Determines the distance the image reel needs to slide
+
+		$(".paging a").removeClass('active'); //Remove all active class
+		$active.addClass('active'); //Add active class (the $active is declared in the rotateSwitch function)
+		
+		//Slider Animation
+		$(".image_reel").animate({ 
+			left: -image_reelPosition
+		}, 500 );
+		
+	}; 
+	
+	//Rotation + Timing Event
+	rotateSwitch = function(){		
+		play = setInterval(function(){ //Set timer - this will repeat itself every 3 seconds
+			$active = $('.paging a.active').next();
+			if ( $active.length === 0) { //If paging reaches the end...
+				$active = $('.paging a:first'); //go back to first
+			}
+			rotate(); //Trigger the paging and slider function
+		}, 7000); //Timer speed in milliseconds (3 seconds)
+	};
+	
+	rotateSwitch(); //Run function on launch
+	
+	//On Hover
+	$(".image_reel a").hover(function() {
+		clearInterval(play); //Stop the rotation
+	}, function() {
+		rotateSwitch(); //Resume rotation
+	});	
+	
+	//On Click
+	$(".paging a").click(function() {	
+		$active = $(this); //Activate the clicked paging
+		//Reset Timer
+		clearInterval(play); //Stop the rotation
+		rotate(); //Trigger rotation immediately
+		rotateSwitch(); // Resume rotation
+		return false; //Prevent browser jump to link anchor
+	});	
+	
+});
+</script>
+<link type="text/css" href="style/adstyle.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js" language="javascript"></script>
+<script type="text/javascript" src="js/jsctrlc.js" language="javascript"></script>
+<SCRIPT src="js/swfobject.js" type=text/javascript></SCRIPT>
+</head>
+
+<body>
+
+
+
+<div class="main">
+<div class="head">
+ <div class="logo"><img src="images/logo.png" /></div>
+ <div class="search">
+    <ul class="collect">
+      <li><a href="#">English</a></li>
+      <li><a href="#">联系我们</a><span>></span></li>
+      <li><a href="#" onclick="AddFavorite(window.location,document.title)" >加入收藏</a><span>></span></li>
+      <li><a href="#" onclick="SetHome(this,window.location)" >设为首页</a><span>></span></li>
+    </ul>
+   <i><p>分享至:</p><!-- Baidu Button BEGIN -->
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+<a class="bds_douban">豆瓣网</a>
+<a class="bds_tsina">新浪微博</a>
+<a class="bds_qzone">QQ空间</a>
+<a class="bds_renren">人人网</a>
+<a class="bds_tqq">腾讯微博</a>
+<span class="bds_more"></span>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6783158" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END --></i>
+   <em><span class="zx"><p>了解成美最新资讯</p><a href="#"><img src="images/zxbutton.png"/></a></span>
+   <span class="s">
+                <input name="search" type="text" class="intext" maxlength="14" value="请输入关键词..."
+                    onfocus="glb_searchTextOnfocus(this);" onblur="glb_searchTextOnBlur(this);" />
+                <input type="image" name="head2$ImageButton1" id="head2_ImageButton1" src="images/sbutton.png" style="border-width:0px;" /></span></em>
+ </div> 
+</div>
+<!--end head-->
+
+<div class="box" id="nav">
+	<div class="menu" id="current"><p><a href="#">首页</a></p></div>
+	<div class="menu">
+		<p><a href="#">关于我们</a></p>
+		<ul>
+			<li class="c1"><a href="#">基金会简介</a></li>
+			<li class="c2"><a href="#">理事会介绍</a></li>
+			<li class="c3"><a href="#">秘书处介绍</a></li>
+			<li class="c4"><a href="#">成美大事记</a></li>
+            <li class="c10"></li>
+		</ul>
+	</div>
+	<div class="menu">
+		<p><a href="#">项目展示</a></p>
+		<ul>
+			<li class="c1"><a href="#">慈善救助</a></li>
+            <li class="c2"><a href="#">可持续发展</a></li>
+            <li class="c3"><a href="#">社会创新</a></li>
+            <li class="c4"><a href="#">研究与倡导</a></li>
+			<li class="c10"></li>
+		</ul>
+	</div>
+	<div class="menu">
+        <p><a href="#">项目申请</a></p>
+        <ul>
+			<li class="c1"><a href="#">申请指南</a></li>
+			<li class="c2"><a href="#">在线申请</a></li>
+            <li class="c2"><a href="#">申请通报</a></li>
+			<li class="c10"></li>
+		</ul>
+    </div>
+	<div class="menu">
+		<p><a href="#">信息公开</a></p>
+		<ul>
+			<li class="c1"><a href="#">机构动态</a></li>
+			<li class="c2"><a href="#">活动公告</a></li>
+            <li class="c3"><a href="#">行业资讯</a></li>
+            <li class="c4"><a href="#">工作报告</a></li>
+            <li class="c5"><a href="#">审计报告</a></li>
+            <li class="c6"><a href="#">管理文件</a></li>
+            <li class="c7"><a href="#">宣传刊物</a></li>
+            <li class="c8"><a href="#">影像视频</a></li>
+			<li class="c10"></li>
+		</ul>
+	</div>
+    <div class="menu">
+		<p><a href="#">支持我们</a></p>
+		<ul>
+			<li class="c1"><a href="#">捐款指南</a></li>
+            <li class="c1"><a href="#">在线捐款</a></li>
+            <li class="c1"><a href="#">爱心名录</a></li>
+            <li class="c1"><a href="#">爱心留言</a></li>
+			<li class="c10"></li>
+		</ul>
+	</div>
+    <div class="menu">
+		<p><a href="#">合作伙伴</a></p>
+		<ul>
+			<li class="c1"><a href="#">爱心企业</a></li>
+            <li class="c1"><a href="#">爱心人士</a></li>
+            <li class="c1"><a href="#">公益伙伴</a></li>
+            <li class="c1"><a href="#">品牌伙伴</a></li>
+			<li class="c10"></li>
+		</ul>
+	</div>
+    <div class="menu">
+		<p><a href="#">招贤纳士</a></p>
+		<ul>
+			<li class="c1"><a href="#">人才招聘</a></li>
+            <li class="c1"><a href="#">志愿者申请</a></li>
+            <li class="c1"><a href="#">实习生申请</a></li>
+			<li class="c10"></li>
+		</ul>
+	</div>
+    <div class="menu">
+		<p>联系我们</p>
+		<ul>
+			<li class="c1"><a href="#">联系方式</a></li>
+			<li class="c10"></li>
+		</ul>
+	</div>
+</div>
+<!--end nav-->
+
+<div class="focus">
+<!-- 特效 -->
+<div class="container1">
+    <div class="folio_block">
+        <div class="main_view">
+            <div class="window1">	
+                <div class="image_reel">
+                    <img src="images/slider1.jpg" width="1000" height="350" alt="" />
+                    <img src="images/slider1.jpg" width="1000" height="350" alt="" />
+                    <img src="images/slider1.jpg" width="1000" height="350" alt="" />
+                    <img src="images/slider1.jpg" width="1000" height="350" alt="" />
+                </div>
+            </div>
+            <div class="paging">
+                <a href="#" rel="1"></a>
+                <a href="#" rel="2"></a>
+                <a href="#" rel="3"></a>
+                <a href="#" rel="4"></a>
+            </div>
+        </div>
+    </div>	
+</div>
+ <!-- end 特效 -->
+</div>
+<!--end focus-->
+<div class="content">
+  <div class="cont">
+    <div class="topic">
+      <div class="contitle"><span><img src="images/contitle1.png" /></span><i><a href="#"><img src="images/more.png" /></a></i></div>
+      <img src="images/pic1.png"/>
+      <ul class="trends">
+        <li><span class="icon1"></span><a href="#" target="_blank";>2013年四川雅安地震灾区捐款人名单</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>2013年四川雅安地震灾区捐款人名单</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>2013年四川雅安地震灾区捐款人名单</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>2013年四川雅安地震灾区捐款人名单</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>2013年四川雅安地震灾区捐款人名单</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>2013年四川雅安地震灾区捐款人名单</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>2013年四川雅安地震灾区捐款人名单</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>2013年四川雅安地震灾区捐款人名单</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>2013年四川雅安地震灾区捐款人名单</a></li>
+      </ul>
+      </div>
+    <div class="topic">
+      <div class="contitle"><span><img src="images/contitle2.png" /></span><i><a href="#"><img src="images/more.png" /></a></i></div>
+      <img src="images/pic2.png" />
+      <ul class="information">
+        <li><span class="icon1"></span><a href="#" target="_blank";>中国慈善资金会海南举办传递爱心公益活动</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>中国慈善资金会海南举办传递爱心公益活动</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>中国慈善资金会海南举办传递爱心公益活动</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>中国慈善资金会海南举办传递爱心公益活动</a></li>
+      </ul>
+      <div class="video"><span><img src="images/contitle4.png" /></span><i><a href="#"><img src="images/more.png" /></a></i></div>
+      <ul class="video_list">
+        <li><span class="icon1"></span><a href="#" target="_blank";>(央视网)评价指标透视公益透明度</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>(央视网)评价指标透视公益透明度</a></li>
+        <li><span class="icon1"></span><a href="#" target="_blank";>(央视网)评价指标透视公益透明度</a></li>
+
+      </ul>
+    </div>
+    <div class="topic1">
+      <div class="contitle"><span><img src="images/contitle3.png" /></span><i><a href="#"><img src="images/more.png" /></a></i></div>
+      <div class="announ">
+       <ul class="announ_list">
+        <li><h3>成美慈善爱心交流</h3></li>
+        <li><span>内容:</span>爱心捐款,慈善义演拍卖会,同一片蓝天下,你我更亲近，把爱传递下去。</li>
+        <li><span>时间:</span>2013年6月1日15:00-1700</li>
+        <li><span>地点:</span>海南省国兴大道博物馆</li>
+       </ul>
+      </div>
+      <div class="dtitle"><span><img src="images/contitle5.png" /></span><i><a href="#"><img src="images/more.png" /></a></i></div>
+      <div class="direct">
+       <span class="d_title"><h3>捐款人</h3><h3>捐款金额</h3><h3>捐款时间</h3></span>
+       <ul id="ticker" class="direct_list">
+         <li><em>水晶花晶花</em><em>100000</em><em>2013-01-29</em></li>
+         <li><em>水晶花</em><em>100000</em><em>2013-01-29</em></li>
+         <li><em>水晶花</em><em>100000</em><em>2013-01-29</em></li>
+         <li><em>水晶花</em><em>100000</em><em>2013-01-29</em></li>
+         <li><em>水晶花</em><em>100000</em><em>2013-01-29</em></li>
+         <li><em>水晶花</em><em>100000</em><em>2013-01-29</em></li>
+         <li><em>水晶花</em><em>100000</em><em>2013-01-29</em></li>
+       </ul>
+      </div>
+      <div class="picture"><a href="#"><img src="images/piture1.png" /></a><a href="#"><img src="images/picture2.png" /></a></div>
+    </div>
+  </div>
+  <!--end cont-->
+  <script type="text/javascript" src="js/indexNav.js"></script>
+    <div id="indexMainBox">
+        <ul class="indexNav">
+        	<li><a href="#" class="index_nav1"><span>慈善救助</span></a></li>
+        	<li><a href="#" class="index_nav2"><span>可持续发展</span></a></li>
+        	<li><a href="#" class="index_nav3"><span>社会创新</span></a></li>
+        	<li><a href="#" class="index_nav4"><span>研究与倡导</span></a></li>
+        </ul>
+    </div>
+    
+   <div class="imglist">
+     <div id="demo">
+      <div id="indemo">
+       <div id="demo1">
+        <a href="#"><img src="images/img1.jpg" border="0" /></a><a href="#"><img src="images/img2.jpg" border="0" /></a>
+        <a href="#"><img src="images/img3.jpg" border="0" /></a><a href="#"><img src="images/img1.jpg" border="0" /></a>
+        <a href="#"><img src="images/img2.jpg" border="0" /></a><a href="#"><img src="images/img3.jpg" border="0" /></a>
+       </div>
+        <div id="demo2"></div></div></div></div>
+        <script>
+(function($){
+var speed=10;
+var tab=document.getElementById("demo");
+var tab1=document.getElementById("demo1");
+var tab2=document.getElementById("demo2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+})(jQuery)
+</script> 
+<div class="foot"><p><span style="font-family:Arial;">&copy;</span> 2013 Copyright 成美慈善基金会 琼ICP备11001299号-1</p></div>      
+</div>
+<!--end content-->
+</div>
+<!--end main-->
+</body>
+</html>

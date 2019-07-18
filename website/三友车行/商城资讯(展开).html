@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>三友车行</title>
+<link href="style/sanystyle.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" ></script>
+<script type="text/javascript" src="js/tm.js" ></script>
+<![endif]-->
+<script type="text/javascript" src="js/addfavorite_home.js"></script><!--设为首页and加入收藏-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+<script type="text/javascript">
+//导航栏特效
+(function($){
+$(document).ready(function(){   //等待dom加载完毕
+var $div_li =$("#nav ul li");    //定义div_li元素
+$div_li.hover(function(){     //定义hover
+		$(this).addClass("current")   //给当前元素添加current类
+			.siblings().removeClass("current");    //移除同级别兄弟元素的类
+});
+});
+		  })(jQuery)
+</script>
+<script src="Js/showList.js" type="text/javascript"></script><!--可收缩导航菜单-->
+</head>
+
+<body>
+
+<div class="head">
+ <div class="top">
+  <div class="center">
+   <h4>您好!欢迎来到三友车行网购商城!</h4>
+   <ul class="login">
+    <li><span class="icon1"></span><a href="#">登录</a></li>
+    <li><span class="icon2"></span><a href="#">免费注册</a></li>
+    <li><span class="icon3"></span><a href="#">我的订单</a></li>
+    <li><span class="icon4"></span><a href="#">售后中心</a></li>
+   </ul>
+   <ol class="sc">
+    <li><a href="javascript:;" onclick="SetHome(this,window.location)" >设为首页</a>></li>
+    <li><a href="javascript:;" onclick="AddFavorite(window.location,document.title)">收藏我们</a>></li>
+    <li><a href="#">返回首页</a></li>
+   </ol>
+  </div>
+ </div>
+ <!--top-->
+ <div class="logo">
+ <dl>
+    <dt><img src="images/logo.png"/></dt>
+    <dd>
+    <form name="cscsearch" action="#" method="get" id="cscsearch" target="_blank">
+    <input name="" type="text" class="tex" value="" onfocus="glb_searchTextOnfocus(this);" onblur="glb_searchTextOnBlur(this);"/>
+    </form>
+     <form><input name="" class="but" type="button" /></form>
+     </dd>
+    <dd class="right"><img src="images/phonezz.png" /></dd>
+ </dl>
+</div>
+<!--logo-->
+<div class="menu">
+  <div id="nav">
+    <ul >
+      <li class="current"><a href="#">首页</a></li>
+      <li><a href="#">台铃电动车</a></li>
+      <li><a href="#">速派奇电动车</a></li>
+      <li><a href="#">奥娃电动车</a></li>
+      <li><a href="#">售后配件</a></li>
+      <li><a href="#">最新团购</a></li>
+      <li><a href="#">商城资讯</a></li>
+    </ul>
+  </div>
+</div>
+<!--//menu-->
+</div>
+<!--head-->
+
+<div class="container">
+ <div class="pro_left">
+  <div class="prol_mess">
+  <div class="prol_bt"></div>
+  <div class="prol_bc">
+   <div class="pro_tit"><h3>产品导航</h3></div>
+  <ul class="topic" id="J_navlist">
+    <li><h4>台玲电动车</h4>
+      <div class="list-item none">
+       <p ><a href="product.aspx?cId=6">简易款</a></p>
+       <p ><a href="product.aspx?cId=7">豪华款</a></p>
+       <p ><a href="product.aspx?cId=8">载重款</a></p>
+       <p ><a href="product.aspx?cId=9">锂电款</a></p>
+       <p ><a href="product.aspx?cId=10">电动三轮车</a></p>
+      </div>
+    </li>
+    <li><h4>速派电动车</h4>
+      <div class="list-item none">
+       <p ><a href="product.aspx?cId=11">简易款</a></p>
+       <p ><a href="product.aspx?cId=12">豪华款</a></p>
+       <p ><a href="product.aspx?cId=13">载重款</a></p>
+       <p ><a href="product.aspx?cId=14">锂电款</a></p>
+       <p ><a href="product.aspx?cId=15">电动三轮车</a></p>
+      </div>
+    </li>
+    <li><h4>奥娃电动车</h4>
+      <div class="list-item none">
+       <p ><a href="product.aspx?cId=17">简易款</a></p>
+       <p ><a href="product.aspx?cId=18">豪华款</a></p>
+       <p ><a href="product.aspx?cId=19">载重款</a></p>
+       <p ><a href="product.aspx?cId=20">锂电款</a></p>
+       <p ><a href="product.aspx?cId=21">电动三轮车</a></p>
+      </div>
+    </li>
+    <li><h4>售后配件</h4>
+      <div class="list-item none">
+       <p ><a href="product01.aspx?cId=2">电池</a></p>
+       <p ><a href="product01.aspx?cId=1">配件</a></p>
+      </div>
+    </li>
+   </ul>
+   <script type="text/javascript" language="javascript">
+			navList(12);
+   </script>
+  </div>
+  <div class="prol_bb"></div>
+  </div>
+  <!--prol_mess-->
+  <div class="prol_mess">
+  <div class="prol_bt"></div>
+  <div class="prol_bc">
+   <div class="recom_tit"><h3>同类商品推荐</h3></div>
+   <ul class="recom">
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+   </ul>
+  </div>
+  <div class="prol_bb"></div>
+  </div>
+  <!--prol_mess-->
+  <div class="prol_mess">
+  <div class="prol_bt"></div>
+  <div class="prol_bc">
+   <div class="recom_tit"><h3>收藏排行榜</h3></div>
+   <ul class="recom">
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+    <li><a href="#"><img src="images/014.jpg" /><h4>花木兰</h4><p>￥1023.0元</p></a></li>
+   </ul>
+  </div>
+  <div class="prol_bb"></div>
+  </div>
+  <!--prol_mess-->
+ </div>
+ <!--pro_left-->
+ <div class="pro_right">
+  <div class="shop_topic"><h3>商城资讯</h3><p>您当前所在位置： 首页 ><strong>商城资讯</strong></p></div>
+  <div class="listbox">
+       <div class="headline">
+        <h4>网上摩托车商城 推荐相关信息网站低价出售摩托车实为钓鱼</h4>
+       </div>
+       <!-- /title -->
+       <div class="info"><small>时间:</small>2013-05-23 23:29<small>阅读:</small> 1206次</div>
+       <div class="article"><p>记者从海南省住房和城乡建设厅获悉，为进一步规范入琼省外建筑企业市场行为，促进建筑企业
+       公平竞争，维护建筑市场秩序，海南全面开展入琼省外建筑企业市场行为和分支机构备案情况监督检查。
+</p><p>据了解，此次监督检查的范围为２０１１年度取得《省外建筑企业进琼分支机构备案手册》的省外施工企业、监理企业、勘察设计企业。监督检查的主要内容
+是《海南省建设工程建设单位检查评分表》贯彻落实情况和分支机构登记备案情况。</p><p>此次监督检查分三个阶段进行：３月２４日—３１日为企业自查阶段，由省外建筑企业对照核查内容进行自查；４月１日—３０日为市县监督检查阶段，由市县建设主管部门对本辖区由省外建筑企业承建的在建项目进行监督检查；５月中旬—６月３０日为省厅监督检查阶段，由省厅抽查各市县实施专项监督检查工作，其中对近三年内发生质量安全事故的、近三年有不良行为记录的、企业管理人员和技术人员变更频繁的、被投诉的、已备案但尚未承揽到工程的五类省外建筑企业将进行重点监督检查。</p></div>  
+    </div>
+     <!--//listbox-->
+  <div class="buy_see">
+ <div class="see_tit"><span>看了又看</span></div>
+ <div class="see_pro">
+  <ul class="see_shop">
+   <li><img src="images/012.jpg" width="137" height="106" />
+   <strong>女皇</strong>
+   <del>市场价:￥2400元</del>
+   <p>商城价:<b>￥2400元</b></p></li>
+   <li><img src="images/012.jpg" width="137" height="106" />
+   <strong>女皇</strong>
+   <del>市场价:￥2400元</del>
+   <p>商城价:<b>￥2400元</b></p></li>
+   <li><img src="images/012.jpg" width="137" height="106" />
+   <strong>女皇</strong>
+   <del>市场价:￥2400元</del>
+   <p>商城价:<b>￥2400元</b></p></li>
+  <li><img src="images/012.jpg" width="137" height="106" />
+   <strong>女皇</strong>
+   <del>市场价:￥2400元</del>
+   <p>商城价:<b>￥2400元</b></p></li></ul>
+ </div>
+ <!--see_pro-->
+ </div>
+ <!--buy_see-->
+ </div>
+ <!--pro_right-->
+</div>
+<!--container-->
+
+<div class="footer">
+<div class="foot_title"><img src="images/foot_logo.png" /></div>
+<div class="correlation">
+	<ul class="cor1">
+    	<li><a href="#">公司简介</a></li>
+        <li><a href="#">企业文化</a></li>
+        <li><a href="#">资质荣誉</a></li>
+    </ul>
+    <ul class="cor2">
+    	<li><a href="#">上门自提</a></li>
+        <li><a href="#">送货上门</a></li>
+        <li><a href="#">配送时间</a></li>
+        <li><a href="#">配送范围 </a></li>
+    </ul>
+    <ul class="cor3">
+    	<li><a href="#">退换货原则</a></li>
+        <li><a href="#">退换货流程</a></li>
+        <li><a href="#">退款流程</a></li>
+        <li><a href="#">电动车保养</a></li>
+    </ul>
+    <ul class="cor4">
+    	<li><a href="#">会员注册</a></li>
+        <li><a href="#">会员登陆</a></li>
+        <li><a href="#">会员积分</a></li>
+    </ul>  
+    <ul class="cor5">
+    	<li><a href="#">地理位置</a></li>
+        <li><a href="#">在线 Q Q</a></li>
+        <li><a href="#">联系方式 </a></li>
+    </ul>
+</div>
+
+<div class="foot_message">
+	<p>版权所有<span style="font-family:Arial;">&copy;</span>2010-2011 海南三友车行 中企在线 提供网络技术支持 琼ICP备201006090010号</p>
+    <p>海口总部：海南省海口市东湖路49号  电话：0898-66117033 传真：0898-66246183 </p>
+</div>
+</div>
+</body>
+</html>
